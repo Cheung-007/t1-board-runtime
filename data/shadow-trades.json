@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-04T06:40:54+00:00",
+  "asOf": "2026-09-04T06:45:45+00:00",
   "dataStatus": "live",
-  "freshness": 50,
-  "nextRefreshDueAt": "2026-09-04T06:45:00+00:00",
+  "freshness": 43,
+  "nextRefreshDueAt": "2026-09-04T06:50:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-04T14:40:54+08:00",
-      "fetchedAt": "2026-09-04T06:40:55.989738+00:00",
-      "freshness": 1,
+      "sourceTime": "2026-09-04T14:45:45+08:00",
+      "fetchedAt": "2026-09-04T06:45:47.914481+00:00",
+      "freshness": 2,
       "completeness": 1.0,
-      "checksum": "4e941609341327d52b9aab97ed7cbe16590444277bcc175260defa7218665f01",
+      "checksum": "75146653a533aa7eacae5fbad5db39cd2ce260ff7c9e04f5c242956677052ef1",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-04T06:41:28.164291+00:00",
-      "fetchedAt": "2026-09-04T06:41:28.164291+00:00",
+      "sourceTime": "2026-09-04T06:46:14.306631+00:00",
+      "fetchedAt": "2026-09-04T06:46:14.306631+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "8f40dabfe153bf0d67a3804628f7d4357d4aa8088e7be763a2631c9fbd9cdafa",
+      "checksum": "ae1945516933dee837324ec380b567f6a9cef7a1933f2dbbff86edf0f109a9d2",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-09-04T05:56:14.894705+00:00",
-      "fetchedAt": "2026-09-04T06:41:33.692802+00:00",
-      "freshness": 2718,
+      "fetchedAt": "2026-09-04T06:46:19.955745+00:00",
+      "freshness": 3005,
       "completeness": 1.0,
       "checksum": "976277683b063e97e840a70e6a8153288d7ccb54b8b0a3355d2add50de66700e",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-04T06:41:33.893368+00:00",
-      "fetchedAt": "2026-09-04T06:41:33.893368+00:00",
+      "sourceTime": "2026-09-04T06:46:20.095347+00:00",
+      "fetchedAt": "2026-09-04T06:46:20.095347+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "5bf2b3f734e4d92d2c180544ae2722c69c5f23937780c06e3646c4102d46dd2e",
+      "checksum": "bdee964c70dfb2897b4b8fc23c5bb47093919da01ee1e249d77a89ea00327068",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -10128,6 +10128,268 @@
           "noviceFit": false,
           "personalizedReason": "题材#4 AI应用；热度69.4；今日+10.14%；成交额24.0亿；换手32.9%；趋势向上、突破/动量；站在VWAP上方",
           "personalizedAdvice": "题材为AI应用、今日涨幅+10.14%，现价3.15元先跟踪；需放量上行并保持资金同向后再执行。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 3,
+          "candidateTier": "priority",
+          "recommendationLabel": "B1｜等待放量上行后再买"
+        },
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "同花顺个股资金",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 115,
+        "occurredAt": "2026-09-04T06:46:20.114825+00:00",
+        "signalSnapshotId": "aed5fa34-206a-4f35-9da8-9431afb82d2a",
+        "candidate": {
+          "code": "003040",
+          "name": "楚天龙",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 69.0,
+          "rawBand": "B",
+          "bLevel": "B1",
+          "totalScore": 69.0,
+          "marketScore": 8.73,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 27.0,
+          "theme": "AI应用",
+          "themeRank": 4,
+          "themeHeat": 69.4,
+          "vwap": 21.085,
+          "intradayVwap": 21.085,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 21.12,
+          "changePct": 10.0,
+          "amount": 1001130000.0,
+          "turnoverRate": 10.39,
+          "floatMarketCap": 9649000000.0,
+          "netInflow": 659626100.0,
+          "netInflowRatio": 0.6588815638,
+          "flow5d": 3467334900.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "entryWindow": "B1｜等待放量上行后再买",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 2119.24,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "AI应用位居热点第4；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#4 AI应用；热度69.4；今日+10.00%；成交额10.0亿；换手10.4%；趋势向上、突破/动量；站在VWAP上方",
+          "personalizedAdvice": "题材为AI应用、今日涨幅+10.00%，现价21.12元先跟踪；需放量上行并保持资金同向后再执行。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 1,
+          "candidateTier": "priority",
+          "recommendationLabel": "B1｜等待放量上行后再买"
+        },
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "同花顺个股资金",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 116,
+        "occurredAt": "2026-09-04T06:46:20.114825+00:00",
+        "signalSnapshotId": "aed5fa34-206a-4f35-9da8-9431afb82d2a",
+        "candidate": {
+          "code": "001366",
+          "name": "播恩集团",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 69.0,
+          "rawBand": "B",
+          "bLevel": "B1",
+          "totalScore": 69.0,
+          "marketScore": 8.73,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 25.0,
+          "theme": "粤港澳大湾区",
+          "themeRank": 2,
+          "themeHeat": 69.7,
+          "vwap": 13.6929,
+          "intradayVwap": 13.6929,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 14.36,
+          "changePct": 10.04,
+          "amount": 204600000.0,
+          "turnoverRate": 9.3,
+          "floatMarketCap": 2307000000.0,
+          "netInflow": 83805800.0,
+          "netInflowRatio": 0.4096080156,
+          "flow5d": 155924400.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "B1｜等待放量上行后再买",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 1442.53,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "粤港澳大湾区位居热点第2；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#2 粤港澳大湾区；热度69.7；今日+10.04%；成交额2.0亿；换手9.3%；趋势向上、突破/动量；站在VWAP上方",
+          "personalizedAdvice": "题材为粤港澳大湾区、今日涨幅+10.04%，现价14.36元先跟踪；需放量上行并保持资金同向后再执行。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 2,
+          "candidateTier": "priority",
+          "recommendationLabel": "B1｜等待放量上行后再买"
+        },
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "同花顺个股资金",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 117,
+        "occurredAt": "2026-09-04T06:46:20.114825+00:00",
+        "signalSnapshotId": "aed5fa34-206a-4f35-9da8-9431afb82d2a",
+        "candidate": {
+          "code": "002949",
+          "name": "华阳国际",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 67.0,
+          "rawBand": "B",
+          "bLevel": "B1",
+          "totalScore": 67.0,
+          "marketScore": 8.73,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 25.0,
+          "theme": "粤港澳大湾区",
+          "themeRank": 2,
+          "themeHeat": 69.7,
+          "vwap": 13.6426,
+          "intradayVwap": 13.6426,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 14.07,
+          "changePct": 10.01,
+          "amount": 239170000.0,
+          "turnoverRate": 11.54,
+          "floatMarketCap": 2138000000.0,
+          "netInflow": 50367500.0,
+          "netInflowRatio": 0.2105928837,
+          "flow5d": 249782900.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "entryWindow": "B1｜等待放量上行后再买",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 1413.5,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "粤港澳大湾区位居热点第2；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#2 粤港澳大湾区；热度69.7；今日+10.01%；成交额2.4亿；换手11.5%；趋势向上、突破/动量；站在VWAP上方",
+          "personalizedAdvice": "题材为粤港澳大湾区、今日涨幅+10.01%，现价14.07元先跟踪；需放量上行并保持资金同向后再执行。 成交可得性低，不代表方向判断失效。",
           "formalRank": 3,
           "candidateTier": "priority",
           "recommendationLabel": "B1｜等待放量上行后再买"
