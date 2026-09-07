@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-07T05:00:48+00:00",
+  "asOf": "2026-09-07T05:05:42+00:00",
   "dataStatus": "live",
-  "freshness": 57,
-  "nextRefreshDueAt": "2026-09-07T05:05:00+00:00",
+  "freshness": 43,
+  "nextRefreshDueAt": "2026-09-07T05:10:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-07T13:00:48+08:00",
-      "fetchedAt": "2026-09-07T05:00:51.727973+00:00",
+      "sourceTime": "2026-09-07T13:05:42+08:00",
+      "fetchedAt": "2026-09-07T05:05:45.370502+00:00",
       "freshness": 3,
       "completeness": 1.0,
-      "checksum": "8569ce6088059e2b9e34f713a2cf6d806f3a9d08d74b860cfaf54a782d081818",
+      "checksum": "e8df345640540cf9504d38f56aaf3389a5108bd040f472e6019eb7af2ccaf457",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-07T05:01:16.174518+00:00",
-      "fetchedAt": "2026-09-07T05:01:16.174518+00:00",
+      "sourceTime": "2026-09-07T05:06:04.353580+00:00",
+      "fetchedAt": "2026-09-07T05:06:04.353580+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "6935b2b4f840be2178183006d3364aab704e0c9bf15e6a3596fbad62d893582b",
+      "checksum": "1b4d74ead251a0bbc288458506adb4467ddda68d7b2ae7144033a5b692835b31",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-09-07T02:36:33.811867+00:00",
-      "fetchedAt": "2026-09-07T05:01:25.107394+00:00",
-      "freshness": 8691,
+      "fetchedAt": "2026-09-07T05:06:09.955878+00:00",
+      "freshness": 8976,
       "completeness": 1.0,
       "checksum": "df514b5177a725736d631fbc87f76e289d0fd527e1d0732427eadd646e44c183",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-07T05:01:25.277131+00:00",
-      "fetchedAt": "2026-09-07T05:01:25.277131+00:00",
+      "sourceTime": "2026-09-07T05:06:10.097366+00:00",
+      "fetchedAt": "2026-09-07T05:06:10.097366+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "d2376321aa1075046d1304d799e9a5534814b7abcaa649172b505653637b0973",
+      "checksum": "0dd615539a930834a15f9b1a245fbfd8e9d68b088690421bb98f9f8bf6569ee3",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -608,6 +608,16 @@
         "code": "000823",
         "signalSnapshotId": "ee96d8cb-5c8d-49cf-8308-7bfbbdbfc965",
         "supersededBySnapshotId": "bac7a9df-4a83-4b8f-a26e-4c86e90b6875",
+        "reason": "最新快照已撤销或改变原可执行评级",
+        "name": "超声电子"
+      },
+      {
+        "sequence": 76,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-09-07T05:06:10.119012+00:00",
+        "code": "000823",
+        "signalSnapshotId": "982c4984-ac86-4e6f-81b1-dc74e2ec02f9",
+        "supersededBySnapshotId": "a5bbb93e-c0fc-48c8-987f-8d84b665420d",
         "reason": "最新快照已撤销或改变原可执行评级",
         "name": "超声电子"
       }
@@ -26919,6 +26929,618 @@
           "formalRank": 3,
           "candidateTier": "priority",
           "recommendationLabel": "B1｜等待放量上行后再买"
+        },
+        "strategyVersion": "v1.1.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "腾讯zljlr大单资金强度",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 199,
+        "occurredAt": "2026-09-07T05:06:10.119012+00:00",
+        "signalSnapshotId": "a5bbb93e-c0fc-48c8-987f-8d84b665420d",
+        "candidate": {
+          "code": "002708",
+          "name": "光洋股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 69.0,
+          "rawBand": "B",
+          "bLevel": "B1",
+          "totalScore": 69.0,
+          "marketScore": 14.65,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 25.0,
+          "theme": "人形机器人",
+          "themeRank": 3,
+          "themeHeat": 69.5,
+          "vwap": 16.3754,
+          "intradayVwap": 16.3754,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-07T13:05:00+08:00",
+          "vwapCumulativeVolume": 56016300.0,
+          "vwapCumulativeAmount": 917287905.18,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-07T05:05:42+00:00",
+          "volumeRatio": 1.77,
+          "weekChangePct": 32.18,
+          "dailyBars": [
+            [
+              "2026-08-28",
+              "12.370",
+              "12.270",
+              "12.400",
+              "12.090",
+              "188665.000"
+            ],
+            [
+              "2026-08-31",
+              "12.100",
+              "12.710",
+              "12.800",
+              "12.060",
+              "243775.000"
+            ],
+            [
+              "2026-09-01",
+              "12.630",
+              "12.870",
+              "12.930",
+              "12.610",
+              "194512.000"
+            ],
+            [
+              "2026-09-02",
+              "12.920",
+              "14.160",
+              "14.160",
+              "12.710",
+              "623312.000"
+            ],
+            [
+              "2026-09-03",
+              "14.160",
+              "15.580",
+              "15.580",
+              "14.150",
+              "943056.000"
+            ],
+            [
+              "2026-09-04",
+              "15.430",
+              "15.270",
+              "16.000",
+              "14.890",
+              "1004145.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 16.8,
+          "changePct": 10.02,
+          "amount": 917340000.0,
+          "turnoverRate": 10.99,
+          "floatMarketCap": 8562000000.0,
+          "netInflow": 138389900.0,
+          "netInflowRatio": 0.1508599865,
+          "flow5d": 2017558599.9999998,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "B1｜等待放量上行后再买",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 1686.79,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "人形机器人位居热点第3；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 80,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.5929,
+            "flowToAmountRatio": 0.15086,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-04",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-28",
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04"
+              ],
+              "closes": [
+                12.27,
+                12.71,
+                12.87,
+                14.16,
+                15.58,
+                15.27
+              ],
+              "previousClose": 15.27,
+              "priorFiveDayChangePct": 24.4499,
+              "upDays": 4,
+              "aboveMA5": true,
+              "priorMA5": 14.118,
+              "currentVsMA5Pct": 18.997,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": true,
+              "entryQuality": false,
+              "dailyHistory": true,
+              "trend": false,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 20,
+              "theme": 10,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#3 人形机器人；热度69.5；今日+10.02%；成交额9.2亿；换手11.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.59%；此前5日+24.45%，5日中4日上涨",
+          "personalizedAdvice": "题材为人形机器人、今日涨幅+10.02%，现价16.80元先跟踪；需放量上行并保持资金同向后再执行。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 1,
+          "candidateTier": "priority",
+          "recommendationLabel": "B1｜等待放量上行后再买"
+        },
+        "strategyVersion": "v1.1.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "腾讯zljlr大单资金强度",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 200,
+        "occurredAt": "2026-09-07T05:06:10.119012+00:00",
+        "signalSnapshotId": "a5bbb93e-c0fc-48c8-987f-8d84b665420d",
+        "candidate": {
+          "code": "301550",
+          "name": "斯菱智驱",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 69.0,
+          "rawBand": "B",
+          "bLevel": "B1",
+          "totalScore": 69.0,
+          "marketScore": 14.65,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 25.0,
+          "theme": "专精特新",
+          "themeRank": 2,
+          "themeHeat": 69.7,
+          "vwap": 95.1878,
+          "intradayVwap": 95.1878,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-07T13:05:00+08:00",
+          "vwapCumulativeVolume": 15980300.0,
+          "vwapCumulativeAmount": 1521130213.8,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-07T05:05:42+00:00",
+          "volumeRatio": 3.61,
+          "weekChangePct": 9.38,
+          "dailyBars": [
+            [
+              "2026-08-28",
+              "91.800",
+              "87.320",
+              "91.890",
+              "85.550",
+              "80845.000"
+            ],
+            [
+              "2026-08-31",
+              "86.450",
+              "89.370",
+              "89.930",
+              "85.530",
+              "66116.000"
+            ],
+            [
+              "2026-09-01",
+              "90.700",
+              "87.250",
+              "91.580",
+              "86.430",
+              "60742.000"
+            ],
+            [
+              "2026-09-02",
+              "86.800",
+              "85.890",
+              "88.810",
+              "85.010",
+              "54201.000"
+            ],
+            [
+              "2026-09-03",
+              "86.590",
+              "89.400",
+              "91.880",
+              "86.000",
+              "119263.000"
+            ],
+            [
+              "2026-09-04",
+              "90.500",
+              "81.460",
+              "90.990",
+              "80.740",
+              "120750.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 97.75,
+          "changePct": 20.0,
+          "amount": 1521180000.0,
+          "turnoverRate": 7.79,
+          "floatMarketCap": 20060000000.0,
+          "netInflow": 221167500.0,
+          "netInflowRatio": 0.1453920641,
+          "flow5d": 1639452800.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "B1｜等待放量上行后再买",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 9790.41,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "专精特新位居热点第2；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": false,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 65,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.6917,
+            "flowToAmountRatio": 0.145392,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-04",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-28",
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04"
+              ],
+              "closes": [
+                87.32,
+                89.37,
+                87.25,
+                85.89,
+                89.4,
+                81.46
+              ],
+              "previousClose": 81.46,
+              "priorFiveDayChangePct": -6.7109,
+              "upDays": 2,
+              "aboveMA5": false,
+              "priorMA5": 86.674,
+              "currentVsMA5Pct": 12.7789,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": true,
+              "entryQuality": false,
+              "dailyHistory": true,
+              "trend": false,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 5,
+              "theme": 10,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#2 专精特新；热度69.7；今日+20.00%；成交额15.2亿；换手7.8%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.69%；此前5日-6.71%，5日中2日上涨",
+          "personalizedAdvice": "题材为专精特新、今日涨幅+20.00%，现价97.75元先跟踪；需放量上行并保持资金同向后再执行。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 2,
+          "candidateTier": "priority",
+          "recommendationLabel": "B1｜等待放量上行后再买"
+        },
+        "strategyVersion": "v1.1.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "腾讯zljlr大单资金强度",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 201,
+        "occurredAt": "2026-09-07T05:06:10.119012+00:00",
+        "signalSnapshotId": "a5bbb93e-c0fc-48c8-987f-8d84b665420d",
+        "candidate": {
+          "code": "000978",
+          "name": "桂林旅游",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 56.0,
+          "rawBand": "B",
+          "bLevel": "B2",
+          "totalScore": 56.0,
+          "marketScore": 14.65,
+          "themeScore": 19.0,
+          "themeScoreDetails": {
+            "topBoard": 0.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 27.0,
+          "theme": "腾讯概念",
+          "themeRank": 38,
+          "themeHeat": 51.8,
+          "vwap": 7.1232,
+          "intradayVwap": 7.1232,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-07T13:05:00+08:00",
+          "vwapCumulativeVolume": 57950600.0,
+          "vwapCumulativeAmount": 412795213.67,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-07T05:05:42+00:00",
+          "volumeRatio": 4.77,
+          "weekChangePct": 15.19,
+          "dailyBars": [
+            [
+              "2026-08-28",
+              "6.090",
+              "6.160",
+              "6.200",
+              "6.090",
+              "70456.000"
+            ],
+            [
+              "2026-08-31",
+              "6.150",
+              "6.320",
+              "6.340",
+              "6.150",
+              "141010.000"
+            ],
+            [
+              "2026-09-01",
+              "6.310",
+              "6.420",
+              "6.420",
+              "6.290",
+              "103615.000"
+            ],
+            [
+              "2026-09-02",
+              "6.440",
+              "6.550",
+              "6.750",
+              "6.290",
+              "313407.000"
+            ],
+            [
+              "2026-09-03",
+              "6.660",
+              "6.450",
+              "6.870",
+              "6.420",
+              "312929.000"
+            ],
+            [
+              "2026-09-04",
+              "6.440",
+              "6.620",
+              "6.730",
+              "6.360",
+              "286581.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 7.28,
+          "changePct": 9.97,
+          "amount": 412810000.0,
+          "turnoverRate": 12.38,
+          "floatMarketCap": 3408000000.0,
+          "netInflow": 107552300.0,
+          "netInflowRatio": 0.2605370509,
+          "flow5d": 360918900.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "B2｜等待涨幅与资金转强",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 733.77,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "腾讯概念位居热点第38；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 85,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.2013,
+            "flowToAmountRatio": 0.260537,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-04",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-28",
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04"
+              ],
+              "closes": [
+                6.16,
+                6.32,
+                6.42,
+                6.55,
+                6.45,
+                6.62
+              ],
+              "previousClose": 6.62,
+              "priorFiveDayChangePct": 7.4675,
+              "upDays": 4,
+              "aboveMA5": true,
+              "priorMA5": 6.472,
+              "currentVsMA5Pct": 12.4845,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": false,
+              "entryQuality": true,
+              "dailyHistory": true,
+              "trend": true,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 30,
+              "theme": 5,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#38 腾讯概念；热度51.8；今日+9.97%；成交额4.1亿；换手12.4%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.20%；此前5日+7.47%，5日中4日上涨",
+          "personalizedAdvice": "题材为腾讯概念、今日涨幅+9.97%，现价7.28元暂不执行；等涨幅、资金和题材热度同步转强。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 3,
+          "candidateTier": "priority",
+          "recommendationLabel": "B2｜等待涨幅与资金转强"
         },
         "strategyVersion": "v1.1.0",
         "dataVersion": "v1",
