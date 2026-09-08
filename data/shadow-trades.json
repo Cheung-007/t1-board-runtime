@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-08T06:45:39+00:00",
+  "asOf": "2026-09-08T06:50:45+00:00",
   "dataStatus": "live",
-  "freshness": 47,
-  "nextRefreshDueAt": "2026-09-08T06:50:00+00:00",
+  "freshness": 83,
+  "nextRefreshDueAt": "2026-09-08T06:55:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-08T14:45:39+08:00",
-      "fetchedAt": "2026-09-08T06:45:41.714206+00:00",
-      "freshness": 2,
+      "sourceTime": "2026-09-08T14:50:45+08:00",
+      "fetchedAt": "2026-09-08T06:50:48.309574+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "b6cb60e96867d2ec9139e6cec07bfc66e57d53e29633c28182a4cefe168101be",
+      "checksum": "9fa9f66e87775db432f7102b4e085b09c5ed220ff8b552c19e8baaa8b9f6bc87",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-08T06:46:04.454103+00:00",
-      "fetchedAt": "2026-09-08T06:46:04.454103+00:00",
+      "sourceTime": "2026-09-08T06:51:38.418972+00:00",
+      "fetchedAt": "2026-09-08T06:51:38.418972+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "a7bba7eca476b8e0a97b9f4cbe1eb77d4ebe535453bc28aea13f6749b12cb1d4",
+      "checksum": "3618a5d44eeea2ac559470f4b0fcb4e7d5caa66b724c686294ed1ce7fb2d450a",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-09-07T02:36:33.811867+00:00",
-      "fetchedAt": "2026-09-08T06:46:10.111938+00:00",
-      "freshness": 101376,
+      "fetchedAt": "2026-09-08T06:51:46.593104+00:00",
+      "freshness": 101712,
       "completeness": 1.0,
       "checksum": "df514b5177a725736d631fbc87f76e289d0fd527e1d0732427eadd646e44c183",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-08T06:46:10.271155+00:00",
-      "fetchedAt": "2026-09-08T06:46:10.271155+00:00",
+      "sourceTime": "2026-09-08T06:51:46.801770+00:00",
+      "fetchedAt": "2026-09-08T06:51:46.801770+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "d7dca2f2ce822076fcb634aa6746793eb7624c5eb13d28a7e825c9bf86cedfd6",
+      "checksum": "6f5ded45dabddd2345d6bceb0ac92817b861ef22bf2f8a8c4cc567c6b32c21bc",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -1415,6 +1415,753 @@
         "supersededBySnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
         "reason": "最新快照已撤销或改变原可执行评级",
         "name": "通宇通讯"
+      },
+      {
+        "sequence": 150,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-08T06:50:00+00:00",
+        "code": "300788",
+        "quantity": 100,
+        "price": "31.05",
+        "notional": "3105.00",
+        "fees": "5.20",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.03",
+          "exchangeHandling": "0.11",
+          "regulatoryFee": "0.06",
+          "total": "5.20"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-08",
+        "signalSnapshotId": "2744ddaf-30b0-488a-87ff-efc3612b7c90",
+        "signal": "A",
+        "candidateScore": "75.0",
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": "minute-vwap",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 151,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:41:41.885810+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "c90f9366-74e0-4c85-b431-a8b334a9dd6d",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 152,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:46:22.066808+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "67896aca-6468-4630-b118-9b73c5775c42",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 153,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:51:14.679249+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "439f87eb-d7e7-450c-a361-2e2472e605e6",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 154,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:56:47.773814+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "41a2ab49-3684-4267-8989-d1bbe32ce8fa",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 155,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:01:15.339968+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "a53021a7-819d-452d-8f48-1219e411e5f7",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 156,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:06:14.644569+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "2b6e2b6a-6a81-457c-a714-c106b66203c1",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 157,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:11:25.634420+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "d0b93e56-3770-4b73-9e94-61a195032f92",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 158,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:16:11.202606+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d31e984-9b56-4020-8d85-fe8e972d7356",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 159,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:21:47.956420+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "3bee2d12-5f2b-4ee6-8641-5f112fce3078",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 160,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:26:47.301953+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "27d7a932-3895-4e2c-b13c-311ae4798abb",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 161,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:31:56.847310+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "5d116afd-5778-4e37-b25d-4cda597e0251",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 162,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:36:25.836207+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "4307e455-6808-49bb-a990-9d2604e80006",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 163,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:41:30.189204+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "fc13df3e-1f51-4b8c-a5f4-17261f0c2974",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 164,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:46:39.131228+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "e725cefd-452b-4545-a8c0-a2aae76329ff",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 165,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:51:21.319932+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "3c8d147b-41e4-4375-b853-59f1f5a556cb",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 166,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:56:15.269194+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "aa254ec4-3c27-4479-a182-569d43152b5c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 167,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:01:13.110300+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "50e301d8-4625-4689-a3fe-ed0a1e8bea6b",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 168,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:06:20.947638+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "417421e4-52e4-4c09-81b8-816e42283607",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 169,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:11:54.628615+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "38ed34c2-0ee8-4ecf-96a3-4562085e7489",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 170,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:16:26.569689+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "252c7349-a319-4fd6-a621-1c9db4dab8b4",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 171,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:21:25.511160+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "37ccc485-79ff-429e-a3b2-d87de7182925",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 172,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:26:17.649070+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "38dbf4de-0090-4b01-b25a-491d1051b6c2",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 173,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:31:31.221188+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "cb9e832a-ed31-44d0-9d2a-f0d5904d123c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 174,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:01:14.700497+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "fc431ce9-d480-48f0-ae46-0741f227b7c9",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 175,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:06:10.878992+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "12ad9abf-4bc6-479c-b47e-ca96f1054b5c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 176,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:11:09.378888+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "636017e6-fe3c-41db-ba2b-3907f60c533a",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 177,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:16:13.971718+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "17683805-b5e6-406a-abed-5e5538cb9d07",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 178,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:21:55.434177+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "c844cd9a-c226-416f-9aee-94d92159ab93",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 179,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:26:57.316346+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "35262a64-bc39-4f03-9fd0-3e947276ef04",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 180,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:31:14.422916+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "100c43ca-92a2-4486-bd30-1890f496efc9",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 181,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-08T06:50:00+00:00",
+        "code": "002264",
+        "quantity": 500,
+        "price": "7.56",
+        "notional": "3780.00",
+        "fees": "5.25",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "5.25"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-08",
+        "signalSnapshotId": "100c43ca-92a2-4486-bd30-1890f496efc9",
+        "signal": "A",
+        "candidateScore": "71.0",
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": "minute-vwap",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 182,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:36:21.060391+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "868cf8df-73c9-43a9-98d3-c681417ae1fe",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 183,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:36:21.060391+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "868cf8df-73c9-43a9-98d3-c681417ae1fe",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 184,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:41:29.346673+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "d3220148-ce25-4fdb-b1b0-2427eab4e6ed",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 185,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:41:29.346673+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "d3220148-ce25-4fdb-b1b0-2427eab4e6ed",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 186,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:46:37.191318+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "2b6441e4-059e-4fd1-b644-d651c14c2810",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 187,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:46:37.191318+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "2b6441e4-059e-4fd1-b644-d651c14c2810",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 188,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:50:55.136266+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "04420d07-b5b5-4762-b9a9-e90f526842d1",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 189,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:50:55.136266+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "04420d07-b5b5-4762-b9a9-e90f526842d1",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 190,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:52:45.761871+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "88c9a748-c739-4add-a44c-441676cf49b8",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 191,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:52:45.761871+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "88c9a748-c739-4add-a44c-441676cf49b8",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 192,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:56:19.901556+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "a4302c0a-7500-4744-bccb-47306bbcffe2",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 193,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:56:19.901556+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "a4302c0a-7500-4744-bccb-47306bbcffe2",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 194,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:01:19.990443+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 195,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:01:19.990443+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 196,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-08T06:50:00+00:00",
+        "code": "600881",
+        "quantity": 1700,
+        "price": "2.02",
+        "notional": "3434.00",
+        "fees": "5.22",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.03",
+          "exchangeHandling": "0.12",
+          "regulatoryFee": "0.07",
+          "total": "5.22"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-08",
+        "signalSnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
+        "signal": "A",
+        "candidateScore": "71.0",
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": "minute-vwap",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 197,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:07:34.221916+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "cbfe4fe4-7a99-4377-84f7-adaa78b790c6",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 198,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:07:34.221916+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "cbfe4fe4-7a99-4377-84f7-adaa78b790c6",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 199,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:07:34.221916+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "cbfe4fe4-7a99-4377-84f7-adaa78b790c6",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 200,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:11:25.250274+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "5adc8e4a-ef81-4b0b-801f-1911a33438ac",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 201,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:11:25.250274+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "5adc8e4a-ef81-4b0b-801f-1911a33438ac",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 202,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:11:25.250274+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "5adc8e4a-ef81-4b0b-801f-1911a33438ac",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 203,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:16:52.662528+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "583cc7f1-6336-4e0e-9d4f-09fd27312dfb",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 204,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:16:52.662528+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "583cc7f1-6336-4e0e-9d4f-09fd27312dfb",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 205,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:16:52.662528+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "583cc7f1-6336-4e0e-9d4f-09fd27312dfb",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 206,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:21:20.016523+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "acd410c5-6f09-47b2-a74f-a00b903ee979",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 207,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:21:20.016523+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "acd410c5-6f09-47b2-a74f-a00b903ee979",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 208,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:21:20.016523+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "acd410c5-6f09-47b2-a74f-a00b903ee979",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 209,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:26:11.987667+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "5166f2a6-635d-497c-9e45-de4c1cdfd26c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 210,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:26:11.987667+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "5166f2a6-635d-497c-9e45-de4c1cdfd26c",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 211,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:26:11.987667+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "5166f2a6-635d-497c-9e45-de4c1cdfd26c",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 212,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:31:49.992812+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "0aee13b8-8831-4bb4-bbc3-684ce4a46476",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 213,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:31:49.992812+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "0aee13b8-8831-4bb4-bbc3-684ce4a46476",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 214,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:31:49.992812+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "0aee13b8-8831-4bb4-bbc3-684ce4a46476",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 215,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:36:17.767540+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "7ea03f30-0d04-42c2-9bcf-22bb71d35c62",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 216,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:36:17.767540+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "7ea03f30-0d04-42c2-9bcf-22bb71d35c62",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 217,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:36:17.767540+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "7ea03f30-0d04-42c2-9bcf-22bb71d35c62",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 218,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:41:07.384322+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "57259f7f-d4ca-4b4a-9bbc-618f430eb93a",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 219,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:41:07.384322+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "57259f7f-d4ca-4b4a-9bbc-618f430eb93a",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 220,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:41:07.384322+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "57259f7f-d4ca-4b4a-9bbc-618f430eb93a",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 221,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:46:10.296596+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "17616a71-01f6-4ee7-93e6-3b2d96201532",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 222,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:46:10.296596+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "17616a71-01f6-4ee7-93e6-3b2d96201532",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 223,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:46:10.296596+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "17616a71-01f6-4ee7-93e6-3b2d96201532",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 224,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 225,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 226,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "name": "亚泰集团"
       }
     ],
     "fills": [
@@ -1683,6 +2430,87 @@
         "dataVersion": "v1",
         "sourceTrace": "minute-vwap",
         "name": "崇达技术"
+      },
+      {
+        "sequence": 150,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-08T06:50:00+00:00",
+        "code": "300788",
+        "quantity": 100,
+        "price": "31.05",
+        "notional": "3105.00",
+        "fees": "5.20",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.03",
+          "exchangeHandling": "0.11",
+          "regulatoryFee": "0.06",
+          "total": "5.20"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-08",
+        "signalSnapshotId": "2744ddaf-30b0-488a-87ff-efc3612b7c90",
+        "signal": "A",
+        "candidateScore": "75.0",
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": "minute-vwap",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 181,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-08T06:50:00+00:00",
+        "code": "002264",
+        "quantity": 500,
+        "price": "7.56",
+        "notional": "3780.00",
+        "fees": "5.25",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "5.25"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-08",
+        "signalSnapshotId": "100c43ca-92a2-4486-bd30-1890f496efc9",
+        "signal": "A",
+        "candidateScore": "71.0",
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": "minute-vwap",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 196,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-08T06:50:00+00:00",
+        "code": "600881",
+        "quantity": 1700,
+        "price": "2.02",
+        "notional": "3434.00",
+        "fees": "5.22",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.03",
+          "exchangeHandling": "0.12",
+          "regulatoryFee": "0.07",
+          "total": "5.22"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-08",
+        "signalSnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
+        "signal": "A",
+        "candidateScore": "71.0",
+        "strategyVersion": "v1.0.0",
+        "dataVersion": "v1",
+        "sourceTrace": "minute-vwap",
+        "name": "亚泰集团"
       }
     ],
     "rejectedOrders": [
@@ -1731,6 +2559,672 @@
         "signalSnapshotId": "eadfa6be-d374-4de5-918f-3198ce3e531c",
         "orderType": "REBALANCE",
         "name": "古越龙山"
+      },
+      {
+        "sequence": 151,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:41:41.885810+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "c90f9366-74e0-4c85-b431-a8b334a9dd6d",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 152,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:46:22.066808+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "67896aca-6468-4630-b118-9b73c5775c42",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 153,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:51:14.679249+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "439f87eb-d7e7-450c-a361-2e2472e605e6",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 154,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T01:56:47.773814+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "41a2ab49-3684-4267-8989-d1bbe32ce8fa",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 155,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:01:15.339968+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "a53021a7-819d-452d-8f48-1219e411e5f7",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 156,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:06:14.644569+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "2b6e2b6a-6a81-457c-a714-c106b66203c1",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 157,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:11:25.634420+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "d0b93e56-3770-4b73-9e94-61a195032f92",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 158,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:16:11.202606+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d31e984-9b56-4020-8d85-fe8e972d7356",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 159,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:21:47.956420+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "3bee2d12-5f2b-4ee6-8641-5f112fce3078",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 160,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:26:47.301953+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "27d7a932-3895-4e2c-b13c-311ae4798abb",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 161,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:31:56.847310+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "5d116afd-5778-4e37-b25d-4cda597e0251",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 162,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:36:25.836207+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "4307e455-6808-49bb-a990-9d2604e80006",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 163,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:41:30.189204+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "fc13df3e-1f51-4b8c-a5f4-17261f0c2974",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 164,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:46:39.131228+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "e725cefd-452b-4545-a8c0-a2aae76329ff",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 165,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:51:21.319932+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "3c8d147b-41e4-4375-b853-59f1f5a556cb",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 166,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T02:56:15.269194+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "aa254ec4-3c27-4479-a182-569d43152b5c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 167,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:01:13.110300+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "50e301d8-4625-4689-a3fe-ed0a1e8bea6b",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 168,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:06:20.947638+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "417421e4-52e4-4c09-81b8-816e42283607",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 169,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:11:54.628615+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "38ed34c2-0ee8-4ecf-96a3-4562085e7489",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 170,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:16:26.569689+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "252c7349-a319-4fd6-a621-1c9db4dab8b4",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 171,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:21:25.511160+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "37ccc485-79ff-429e-a3b2-d87de7182925",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 172,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:26:17.649070+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "38dbf4de-0090-4b01-b25a-491d1051b6c2",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 173,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T03:31:31.221188+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "cb9e832a-ed31-44d0-9d2a-f0d5904d123c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 174,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:01:14.700497+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "fc431ce9-d480-48f0-ae46-0741f227b7c9",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 175,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:06:10.878992+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "12ad9abf-4bc6-479c-b47e-ca96f1054b5c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 176,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:11:09.378888+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "636017e6-fe3c-41db-ba2b-3907f60c533a",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 177,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:16:13.971718+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "17683805-b5e6-406a-abed-5e5538cb9d07",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 178,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:21:55.434177+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "c844cd9a-c226-416f-9aee-94d92159ab93",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 179,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:26:57.316346+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "35262a64-bc39-4f03-9fd0-3e947276ef04",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 180,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:31:14.422916+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "100c43ca-92a2-4486-bd30-1890f496efc9",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 182,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:36:21.060391+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "868cf8df-73c9-43a9-98d3-c681417ae1fe",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 183,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:36:21.060391+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "868cf8df-73c9-43a9-98d3-c681417ae1fe",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 184,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:41:29.346673+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "d3220148-ce25-4fdb-b1b0-2427eab4e6ed",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 185,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:41:29.346673+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "d3220148-ce25-4fdb-b1b0-2427eab4e6ed",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 186,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:46:37.191318+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "2b6441e4-059e-4fd1-b644-d651c14c2810",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 187,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:46:37.191318+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "2b6441e4-059e-4fd1-b644-d651c14c2810",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 188,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:50:55.136266+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "04420d07-b5b5-4762-b9a9-e90f526842d1",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 189,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:50:55.136266+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "04420d07-b5b5-4762-b9a9-e90f526842d1",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 190,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:52:45.761871+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "88c9a748-c739-4add-a44c-441676cf49b8",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 191,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:52:45.761871+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "88c9a748-c739-4add-a44c-441676cf49b8",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 192,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:56:19.901556+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "a4302c0a-7500-4744-bccb-47306bbcffe2",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 193,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T05:56:19.901556+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "a4302c0a-7500-4744-bccb-47306bbcffe2",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 194,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:01:19.990443+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 195,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:01:19.990443+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "7f29fce3-6c2a-4170-8a81-6dde31005f6b",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 197,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:07:34.221916+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "cbfe4fe4-7a99-4377-84f7-adaa78b790c6",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 198,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:07:34.221916+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "cbfe4fe4-7a99-4377-84f7-adaa78b790c6",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 199,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:07:34.221916+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "cbfe4fe4-7a99-4377-84f7-adaa78b790c6",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 200,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:11:25.250274+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "5adc8e4a-ef81-4b0b-801f-1911a33438ac",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 201,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:11:25.250274+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "5adc8e4a-ef81-4b0b-801f-1911a33438ac",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 202,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:11:25.250274+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "5adc8e4a-ef81-4b0b-801f-1911a33438ac",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 203,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:16:52.662528+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "583cc7f1-6336-4e0e-9d4f-09fd27312dfb",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 204,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:16:52.662528+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "583cc7f1-6336-4e0e-9d4f-09fd27312dfb",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 205,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:16:52.662528+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "583cc7f1-6336-4e0e-9d4f-09fd27312dfb",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 206,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:21:20.016523+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "acd410c5-6f09-47b2-a74f-a00b903ee979",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 207,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:21:20.016523+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "acd410c5-6f09-47b2-a74f-a00b903ee979",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 208,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:21:20.016523+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "acd410c5-6f09-47b2-a74f-a00b903ee979",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 209,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:26:11.987667+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "5166f2a6-635d-497c-9e45-de4c1cdfd26c",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 210,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:26:11.987667+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "5166f2a6-635d-497c-9e45-de4c1cdfd26c",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 211,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:26:11.987667+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "5166f2a6-635d-497c-9e45-de4c1cdfd26c",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 212,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:31:49.992812+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "0aee13b8-8831-4bb4-bbc3-684ce4a46476",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 213,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:31:49.992812+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "0aee13b8-8831-4bb4-bbc3-684ce4a46476",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 214,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:31:49.992812+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "0aee13b8-8831-4bb4-bbc3-684ce4a46476",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 215,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:36:17.767540+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "7ea03f30-0d04-42c2-9bcf-22bb71d35c62",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 216,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:36:17.767540+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "7ea03f30-0d04-42c2-9bcf-22bb71d35c62",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 217,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:36:17.767540+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "7ea03f30-0d04-42c2-9bcf-22bb71d35c62",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 218,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:41:07.384322+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "57259f7f-d4ca-4b4a-9bbc-618f430eb93a",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 219,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:41:07.384322+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "57259f7f-d4ca-4b4a-9bbc-618f430eb93a",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 220,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:41:07.384322+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "57259f7f-d4ca-4b4a-9bbc-618f430eb93a",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 221,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:46:10.296596+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "17616a71-01f6-4ee7-93e6-3b2d96201532",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 222,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:46:10.296596+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "17616a71-01f6-4ee7-93e6-3b2d96201532",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 223,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:46:10.296596+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "17616a71-01f6-4ee7-93e6-3b2d96201532",
+        "name": "亚泰集团"
+      },
+      {
+        "sequence": 224,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "code": "300788",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "name": "中信出版"
+      },
+      {
+        "sequence": 225,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "code": "002264",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "name": "新 华 都"
+      },
+      {
+        "sequence": 226,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "code": "600881",
+        "reason": "已持仓",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "name": "亚泰集团"
       }
     ],
     "signalLedger": [
@@ -71215,6 +72709,618 @@
             "scoreMeaning": "证据与买点质量，非胜率",
             "vwapGapPct": 2.8163,
             "flowToAmountRatio": 0.229013,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-07",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-07"
+              ],
+              "closes": [
+                1.91,
+                1.96,
+                1.92,
+                1.85,
+                1.86,
+                1.88
+              ],
+              "previousClose": 1.88,
+              "priorFiveDayChangePct": -1.5707,
+              "upDays": 3,
+              "aboveMA5": false,
+              "priorMA5": 1.894,
+              "currentVsMA5Pct": 9.2925,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": true,
+              "entryQuality": false,
+              "dailyHistory": true,
+              "trend": false,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 15,
+              "theme": 10,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#2 国企改革；热度69.7；今日+10.11%；成交额5.2亿；换手7.9%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.82%；此前5日-1.57%，5日中3日上涨",
+          "personalizedAdvice": "题材为国企改革、今日涨幅+10.11%，现价2.07元、VWAP 2.01元，尾盘14:50–14:55执行买入；若重新跌破VWAP则取消买入。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 3,
+          "candidateTier": "priority",
+          "recommendationLabel": "A｜尾盘14:50–14:55买入，当前快照在VWAP上方"
+        },
+        "strategyVersion": "v1.1.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "腾讯zljlr大单资金强度",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 412,
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "candidate": {
+          "code": "300788",
+          "name": "中信出版",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "A",
+          "scoreBand": "A",
+          "rawScore": 77.0,
+          "rawBand": "A",
+          "bLevel": null,
+          "totalScore": 77.0,
+          "marketScore": 15.96,
+          "themeScore": 40.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 15.0
+          },
+          "capitalScore": 27.0,
+          "theme": "国企改革",
+          "themeRank": 2,
+          "themeHeat": 69.7,
+          "vwap": 31.0184,
+          "intradayVwap": 31.0184,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-08T14:50:00+08:00",
+          "vwapCumulativeVolume": 15131800.0,
+          "vwapCumulativeAmount": 469363475.93,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-08T06:50:45+00:00",
+          "volumeRatio": 2.74,
+          "weekChangePct": 25.1,
+          "dailyBars": [
+            [
+              "2026-08-31",
+              "23.320",
+              "24.970",
+              "25.060",
+              "23.320",
+              "69692.000"
+            ],
+            [
+              "2026-09-01",
+              "24.950",
+              "25.380",
+              "26.000",
+              "24.770",
+              "64033.000"
+            ],
+            [
+              "2026-09-02",
+              "25.130",
+              "24.850",
+              "25.430",
+              "24.680",
+              "32690.000"
+            ],
+            [
+              "2026-09-03",
+              "24.920",
+              "24.630",
+              "25.850",
+              "24.390",
+              "34408.000"
+            ],
+            [
+              "2026-09-04",
+              "24.650",
+              "25.580",
+              "26.800",
+              "24.500",
+              "73267.000"
+            ],
+            [
+              "2026-09-07",
+              "25.890",
+              "26.460",
+              "26.500",
+              "25.500",
+              "82782.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 31.75,
+          "changePct": 19.99,
+          "amount": 469410000.0,
+          "turnoverRate": 7.96,
+          "floatMarketCap": 6037000000.0,
+          "netInflow": 145545700.0,
+          "netInflowRatio": 0.3100609275,
+          "flow5d": 269640300.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "A｜尾盘14:50–14:55买入，当前快照在VWAP上方",
+          "suggestedPosition": 0.1,
+          "shadowMinLotCost": 3183.38,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "可直接执行",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "国企改革位居热点第2；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": false,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 90,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.3586,
+            "flowToAmountRatio": 0.310061,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-07",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-07"
+              ],
+              "closes": [
+                24.97,
+                25.38,
+                24.85,
+                24.63,
+                25.58,
+                26.46
+              ],
+              "previousClose": 26.46,
+              "priorFiveDayChangePct": 5.9672,
+              "upDays": 3,
+              "aboveMA5": true,
+              "priorMA5": 25.38,
+              "currentVsMA5Pct": 25.0985,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": true,
+              "entryQuality": true,
+              "dailyHistory": true,
+              "trend": true,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 30,
+              "theme": 10,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#2 国企改革；热度69.7；今日+19.99%；成交额4.7亿；换手8.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.36%；此前5日+5.97%，5日中3日上涨",
+          "personalizedAdvice": "题材为国企改革、今日涨幅+19.99%，现价31.75元、VWAP 31.02元，尾盘14:50–14:55执行买入；若重新跌破VWAP则取消买入。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 1,
+          "candidateTier": "priority",
+          "recommendationLabel": "A｜尾盘14:50–14:55买入，当前快照在VWAP上方"
+        },
+        "strategyVersion": "v1.1.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "腾讯zljlr大单资金强度",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 413,
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "candidate": {
+          "code": "002264",
+          "name": "新 华 都",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "A",
+          "scoreBand": "A",
+          "rawScore": 71.0,
+          "rawBand": "A",
+          "bLevel": null,
+          "totalScore": 71.0,
+          "marketScore": 15.96,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 27.0,
+          "theme": "AI应用",
+          "themeRank": 4,
+          "themeHeat": 69.4,
+          "vwap": 7.5483,
+          "intradayVwap": 7.5483,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-08T14:50:00+08:00",
+          "vwapCumulativeVolume": 39981200.0,
+          "vwapCumulativeAmount": 301789950.16,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-08T06:50:45+00:00",
+          "volumeRatio": 1.89,
+          "weekChangePct": 10.46,
+          "dailyBars": [
+            [
+              "2026-08-31",
+              "6.660",
+              "6.790",
+              "6.820",
+              "6.630",
+              "223359.000"
+            ],
+            [
+              "2026-09-01",
+              "6.790",
+              "6.980",
+              "7.030",
+              "6.760",
+              "280558.000"
+            ],
+            [
+              "2026-09-02",
+              "6.900",
+              "6.850",
+              "6.980",
+              "6.790",
+              "168768.000"
+            ],
+            [
+              "2026-09-03",
+              "6.850",
+              "6.720",
+              "6.920",
+              "6.700",
+              "159531.000"
+            ],
+            [
+              "2026-09-04",
+              "6.750",
+              "6.920",
+              "7.030",
+              "6.720",
+              "262764.000"
+            ],
+            [
+              "2026-09-07",
+              "6.850",
+              "7.010",
+              "7.030",
+              "6.850",
+              "227349.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 7.71,
+          "changePct": 9.99,
+          "amount": 301930000.0,
+          "turnoverRate": 6.15,
+          "floatMarketCap": 5018000000.0,
+          "netInflow": 108052000.0,
+          "netInflowRatio": 0.3578710297,
+          "flow5d": 234390500.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "A｜尾盘14:50–14:55买入，当前快照在VWAP上方",
+          "suggestedPosition": 0.1,
+          "shadowMinLotCost": 776.83,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "可直接执行",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "AI应用位居热点第4；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 90,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.1422,
+            "flowToAmountRatio": 0.357871,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-07",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-07"
+              ],
+              "closes": [
+                6.79,
+                6.98,
+                6.85,
+                6.72,
+                6.92,
+                7.01
+              ],
+              "previousClose": 7.01,
+              "priorFiveDayChangePct": 3.2401,
+              "upDays": 3,
+              "aboveMA5": true,
+              "priorMA5": 6.896,
+              "currentVsMA5Pct": 11.8039,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": true,
+              "entryQuality": true,
+              "dailyHistory": true,
+              "trend": true,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 30,
+              "theme": 10,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#4 AI应用；热度69.4；今日+9.99%；成交额3.0亿；换手6.2%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.14%；此前5日+3.24%，5日中3日上涨",
+          "personalizedAdvice": "题材为AI应用、今日涨幅+9.99%，现价7.71元、VWAP 7.55元，尾盘14:50–14:55执行买入；若重新跌破VWAP则取消买入。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 2,
+          "candidateTier": "priority",
+          "recommendationLabel": "A｜尾盘14:50–14:55买入，当前快照在VWAP上方"
+        },
+        "strategyVersion": "v1.1.0",
+        "dataVersion": "v1",
+        "sourceTrace": [
+          "腾讯财经行情",
+          "同花顺概念资金",
+          "腾讯zljlr大单资金强度",
+          "上交所/深交所上市清单"
+        ]
+      },
+      {
+        "sequence": 414,
+        "occurredAt": "2026-09-08T06:51:46.828954+00:00",
+        "signalSnapshotId": "4d5c827a-b6ea-45c9-81df-ec6204bd5e95",
+        "candidate": {
+          "code": "600881",
+          "name": "亚泰集团",
+          "exchange": "SSE",
+          "securityType": "stock",
+          "signal": "A",
+          "scoreBand": "A",
+          "rawScore": 71.0,
+          "rawBand": "A",
+          "bLevel": null,
+          "totalScore": 71.0,
+          "marketScore": 15.96,
+          "themeScore": 34.0,
+          "themeScoreDetails": {
+            "topBoard": 15.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 27.0,
+          "theme": "国企改革",
+          "themeRank": 2,
+          "themeHeat": 69.7,
+          "vwap": 2.0133,
+          "intradayVwap": 2.0133,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-08T14:50:00+08:00",
+          "vwapCumulativeVolume": 255961500.0,
+          "vwapCumulativeAmount": 515328714.23,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-08T06:50:45+00:00",
+          "volumeRatio": 2.51,
+          "weekChangePct": 5.61,
+          "dailyBars": [
+            [
+              "2026-08-31",
+              "1.980",
+              "1.910",
+              "1.990",
+              "1.890",
+              "1389239.000"
+            ],
+            [
+              "2026-09-01",
+              "1.890",
+              "1.960",
+              "1.980",
+              "1.870",
+              "1323680.000"
+            ],
+            [
+              "2026-09-02",
+              "1.980",
+              "1.920",
+              "1.980",
+              "1.890",
+              "1079098.000"
+            ],
+            [
+              "2026-09-03",
+              "1.920",
+              "1.850",
+              "1.920",
+              "1.840",
+              "1178918.000"
+            ],
+            [
+              "2026-09-04",
+              "1.860",
+              "1.860",
+              "1.890",
+              "1.810",
+              "960565.000"
+            ],
+            [
+              "2026-09-07",
+              "1.850",
+              "1.880",
+              "1.890",
+              "1.830",
+              "756003.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 2.07,
+          "changePct": 10.11,
+          "amount": 515360000.0,
+          "turnoverRate": 7.92,
+          "floatMarketCap": 6691000000.0,
+          "netInflow": 118223799.99999999,
+          "netInflowRatio": 0.2294004191,
+          "flow5d": 518766700.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "A｜尾盘14:50–14:55买入，当前快照在VWAP上方",
+          "suggestedPosition": 0.1,
+          "shadowMinLotCost": 212.22,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "可直接执行",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在当前交易时段重新确认"
+          ],
+          "selectionReason": "国企改革位居热点第2；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": false,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 75,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.8163,
+            "flowToAmountRatio": 0.2294,
             "daily": {
               "status": "complete",
               "throughDate": "2026-09-07",
