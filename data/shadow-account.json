@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-11T06:46:03+00:00",
+  "asOf": "2026-09-11T06:51:00+00:00",
   "dataStatus": "live",
-  "freshness": 102,
-  "nextRefreshDueAt": "2026-09-11T06:50:00+00:00",
+  "freshness": 79,
+  "nextRefreshDueAt": "2026-09-11T06:55:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-11T14:46:03+08:00",
-      "fetchedAt": "2026-09-11T06:46:05.730690+00:00",
-      "freshness": 2,
+      "sourceTime": "2026-09-11T14:51:00+08:00",
+      "fetchedAt": "2026-09-11T06:51:05.143810+00:00",
+      "freshness": 5,
       "completeness": 1.0,
-      "checksum": "552c41b0c0a63ce4a8c4c10b8c83aebfa215f03c495e1778fcabfa146acee45f",
+      "checksum": "baf81a67b0cc3f81178d12b541860b742b4a4a74302be2ce41fc1e9db562b627",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-11T06:46:53.824071+00:00",
-      "fetchedAt": "2026-09-11T06:46:53.824071+00:00",
+      "sourceTime": "2026-09-11T06:51:53.338574+00:00",
+      "fetchedAt": "2026-09-11T06:51:53.338574+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "33f80ecb659ae1b29c7c6073fc0aa479a5396dae8a40531145463c22e9ad7cb3",
+      "checksum": "6f2165b01e61571aa56220688cee1ab64b3e8dbe0a2a7b526739d2bfb82168a1",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,21 +31,21 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-09-11T06:47:21.561840+00:00",
-      "fetchedAt": "2026-09-11T06:47:21.561840+00:00",
-      "freshness": 0,
-      "completeness": 0.4441463881969726,
+      "fetchedAt": "2026-09-11T06:51:56.014848+00:00",
+      "freshness": 274,
+      "completeness": 1.0,
       "checksum": "e76681204c7527c647d7e583f2f50f2e3331edc0d1f3bdbe426883c12b8f6f68",
-      "error": null,
-      "semantics": "上交所与深交所公开A股清单，用于交易所和上市天数校验"
+      "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: HTTPError",
+      "semantics": "上交所与深交所官方A股清单缓存；仅用于交易所和上市天数校验，不参与实时行情评分"
     },
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-11T06:47:21.820005+00:00",
-      "fetchedAt": "2026-09-11T06:47:21.820005+00:00",
+      "sourceTime": "2026-09-11T06:51:56.188271+00:00",
+      "fetchedAt": "2026-09-11T06:51:56.188271+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "eba8a2cd178bf643cb994d46a6d3c572649b99f203d2c2626bc5c9bca847bc38",
+      "checksum": "c838d1128fe9fa0263bea5bb165251dcede74859f884d8ec5856eea61b334348",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -65,7 +65,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "45612.72",
+    "cash": "49854.34",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -75,31 +75,7 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [
-      {
-        "code": "300040",
-        "quantity": 700,
-        "price": "6.26",
-        "buyFees": "5.28",
-        "name": "九洲集团",
-        "boughtAt": "2026-09-10T06:00:09+00:00",
-        "buySequence": 311,
-        "buyReason": "题材#2 专精特新；热度69.7；今日+7.56%；成交额4.6亿；换手14.4%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.92%；此前5日+1.39%，5日中3日上涨",
-        "tradeDate": "2026-09-10",
-        "signalSnapshotId": "7e176dc2-1ec9-4e4c-85d8-2a42056ece2b",
-        "signal": "A",
-        "candidateScore": "58.0",
-        "costBasis": "4387.28",
-        "latestPrice": "6.08",
-        "marketValue": "4256.00",
-        "unrealizedPnl": "-131.28",
-        "returnPct": "-0.02992286792728068415966156708",
-        "priceChangePct": "-0.0287539936102236421725239617",
-        "quoteTime": "2026-09-11T06:47:39+00:00",
-        "quoteSource": "腾讯财经个股行情",
-        "valuationStatus": "已估值"
-      }
-    ],
+    "positions": [],
     "orders": [
       {
         "sequence": 307,
@@ -208,6 +184,67 @@
         "supersededBySnapshotId": "13e35c51-a7b2-49e5-8d15-48efe474655f",
         "reason": "最新快照已撤销或改变原可执行评级",
         "name": "铭普光磁"
+      },
+      {
+        "sequence": 374,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-09-11T06:52:15+00:00",
+        "code": "300040",
+        "quantity": 700,
+        "price": "6.07",
+        "notional": "4249.00",
+        "fees": "7.38",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "2.12",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.14",
+          "regulatoryFee": "0.08",
+          "total": "7.38"
+        },
+        "slippageRate": "0.001",
+        "signalSnapshotId": "6cd88e40-318c-4765-9c46-cbf8d40995cc",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.28",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 6.09,
+          "name": "九洲集团",
+          "quoteTime": "2026-09-11T14:52:15+08:00",
+          "bid": 6.08,
+          "bidVolume": 41800,
+          "ask": 6.09,
+          "askVolume": 1500,
+          "limitUp": 7.55,
+          "limitDown": 5.03,
+          "source": "腾讯实时五档",
+          "previousClose": 6.29,
+          "open": 6.15,
+          "observedAt": "2026-09-11T06:52:18.051186+00:00",
+          "minutePrevious": {
+            "date": "2026-09-11",
+            "time": "14:51",
+            "price": 6.07,
+            "volume": 602762.0,
+            "amount": 370080241.82
+          },
+          "minuteLatest": {
+            "date": "2026-09-11",
+            "time": "14:52",
+            "price": 6.1,
+            "volume": 609326.0,
+            "amount": 374076306.87
+          },
+          "incrementalVolumeShares": 656400,
+          "incrementalAmount": "3996065.05",
+          "participationCap": "0.01"
+        },
+        "name": "九洲集团",
+        "realizedPnl": "-145.66",
+        "returnPct": "-0.03320052515453766342699804891",
+        "buyPrice": "6.26",
+        "boughtAt": "2026-09-10T06:00:09+00:00"
       }
     ],
     "fills": [
@@ -271,6 +308,67 @@
           "participationCap": "0.01"
         },
         "name": "九洲集团"
+      },
+      {
+        "sequence": 374,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-09-11T06:52:15+00:00",
+        "code": "300040",
+        "quantity": 700,
+        "price": "6.07",
+        "notional": "4249.00",
+        "fees": "7.38",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "2.12",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.14",
+          "regulatoryFee": "0.08",
+          "total": "7.38"
+        },
+        "slippageRate": "0.001",
+        "signalSnapshotId": "6cd88e40-318c-4765-9c46-cbf8d40995cc",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.28",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 6.09,
+          "name": "九洲集团",
+          "quoteTime": "2026-09-11T14:52:15+08:00",
+          "bid": 6.08,
+          "bidVolume": 41800,
+          "ask": 6.09,
+          "askVolume": 1500,
+          "limitUp": 7.55,
+          "limitDown": 5.03,
+          "source": "腾讯实时五档",
+          "previousClose": 6.29,
+          "open": 6.15,
+          "observedAt": "2026-09-11T06:52:18.051186+00:00",
+          "minutePrevious": {
+            "date": "2026-09-11",
+            "time": "14:51",
+            "price": 6.07,
+            "volume": 602762.0,
+            "amount": 370080241.82
+          },
+          "minuteLatest": {
+            "date": "2026-09-11",
+            "time": "14:52",
+            "price": 6.1,
+            "volume": 609326.0,
+            "amount": 374076306.87
+          },
+          "incrementalVolumeShares": 656400,
+          "incrementalAmount": "3996065.05",
+          "participationCap": "0.01"
+        },
+        "name": "九洲集团",
+        "realizedPnl": "-145.66",
+        "returnPct": "-0.03320052515453766342699804891",
+        "buyPrice": "6.26",
+        "boughtAt": "2026-09-10T06:00:09+00:00"
       }
     ],
     "rejectedOrders": [
@@ -303,11 +401,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "5.28",
-    "slippageRateTotal": "0.001",
-    "realizedPnl": "0.00",
-    "unrealizedPnl": "-131.28",
-    "equity": "49868.72",
+    "fees": "12.66",
+    "slippageRateTotal": "0.002",
+    "realizedPnl": "-145.66",
+    "unrealizedPnl": "0.00",
+    "equity": "49854.34",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -318,14 +416,14 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "8fae135a-5df2-4a69-a33f-99bd29c7b32a",
-    "capturedAt": "2026-09-11T06:47:43.928861+00:00",
-    "valuationAsOf": "2026-09-11T06:46:03+00:00",
-    "marketValue": "4256.00",
-    "totalPnl": "-131.28",
-    "totalReturnPct": "-0.0026256",
-    "positionRatio": "0.08534407941491179240213103525",
-    "closedTradeCount": 0,
-    "winRate": null
+    "snapshotId": "6cd88e40-318c-4765-9c46-cbf8d40995cc",
+    "capturedAt": "2026-09-11T06:52:18.495824+00:00",
+    "valuationAsOf": "2026-09-11T06:51:00+00:00",
+    "marketValue": "0.00",
+    "totalPnl": "-145.66",
+    "totalReturnPct": "-0.0029132",
+    "positionRatio": "0E+2",
+    "closedTradeCount": 1,
+    "winRate": "0"
   }
 }
