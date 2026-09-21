@@ -10,9 +10,6 @@ on:
         type: boolean
   repository_dispatch:
     types: [scheduled-refresh]
-  schedule:
-    # GitHub Actions 使用 UTC；北京时间 09:00–15:55 工作日每 5 分钟唤起。
-    - cron: "2-57/5 1-7 * * 1-5"
 
 concurrency:
   group: t1-runtime-refresh
