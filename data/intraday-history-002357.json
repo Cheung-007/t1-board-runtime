@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-08T08:14:03+00:00",
+  "asOf": "2026-09-21T08:14:00+00:00",
   "dataStatus": "live",
   "data": {
     "source": "current-strategy-intraday-snapshots",
@@ -5599,15 +5599,15 @@
       {
         "code": "002357",
         "tradingDate": "2026-09-08",
-        "capturedAt": "2026-09-08T08:06:00.056980",
-        "sourceTime": "2026-09-08T08:05:03",
+        "capturedAt": "2026-09-08T07:11:39.078931",
+        "sourceTime": "2026-09-08T07:10:00",
         "price": 12.6,
         "amount": 305680000.0,
         "vwap": 12.2705,
         "rawScore": 54.0,
         "rawBand": "C",
         "signal": "C",
-        "executionState": "成交受限，不买入",
+        "executionState": "收盘参考，下个交易日重算",
         "theme": "低空经济",
         "themeRank": 13,
         "themeHeat": 59.3,
@@ -5641,7 +5641,421 @@
           "vwapCumulativeVolume": 24911800.0,
           "vwapCumulativeAmount": 305680543.22,
           "vwapAboveStreak": 10,
-          "quoteTime": "2026-09-08T08:05:03+00:00",
+          "quoteTime": "2026-09-08T07:10:00+00:00",
+          "volumeRatio": 4.05,
+          "weekChangePct": 11.41,
+          "dailyBars": [
+            [
+              "2026-08-31",
+              "11.090",
+              "11.280",
+              "11.330",
+              "11.000",
+              "85126.000"
+            ],
+            [
+              "2026-09-01",
+              "11.280",
+              "11.310",
+              "11.480",
+              "11.170",
+              "71552.000"
+            ],
+            [
+              "2026-09-02",
+              "11.280",
+              "11.380",
+              "11.400",
+              "11.080",
+              "67854.000"
+            ],
+            [
+              "2026-09-03",
+              "11.350",
+              "11.230",
+              "11.460",
+              "11.100",
+              "60313.000"
+            ],
+            [
+              "2026-09-04",
+              "11.310",
+              "11.300",
+              "11.430",
+              "11.180",
+              "50972.000"
+            ],
+            [
+              "2026-09-07",
+              "11.310",
+              "11.450",
+              "11.450",
+              "11.180",
+              "56635.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 12.6,
+          "changePct": 10.04,
+          "amount": 305680000.0,
+          "turnoverRate": 7.95,
+          "floatMarketCap": 3950000000.0,
+          "netInflow": 84785800.0,
+          "netInflowRatio": 0.2773678356,
+          "flow5d": 145856700.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "C｜成交可得性低",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 1266.34,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "收盘参考，下个交易日重算",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "低空经济位居热点第13；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 85,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.6853,
+            "flowToAmountRatio": 0.277368,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-07",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-07"
+              ],
+              "closes": [
+                11.28,
+                11.31,
+                11.38,
+                11.23,
+                11.3,
+                11.45
+              ],
+              "previousClose": 11.45,
+              "priorFiveDayChangePct": 1.5071,
+              "upDays": 4,
+              "aboveMA5": true,
+              "priorMA5": 11.334,
+              "currentVsMA5Pct": 11.1699,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": false,
+              "entryQuality": true,
+              "dailyHistory": true,
+              "trend": true,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 30,
+              "theme": 5,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#13 低空经济；热度59.3；今日+10.04%；成交额3.1亿；换手8.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.69%；此前5日+1.51%，5日中4日上涨",
+          "personalizedAdvice": "当前不执行：信号不足。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 36,
+          "candidateTier": "qualified",
+          "recommendationLabel": "C｜成交可得性低"
+        }
+      },
+      {
+        "code": "002357",
+        "tradingDate": "2026-09-08",
+        "capturedAt": "2026-09-08T07:22:44.516184",
+        "sourceTime": "2026-09-08T07:20:00",
+        "price": 12.6,
+        "amount": 305680000.0,
+        "vwap": 12.2705,
+        "rawScore": 54.0,
+        "rawBand": "C",
+        "signal": "C",
+        "executionState": "收盘参考，下个交易日重算",
+        "theme": "低空经济",
+        "themeRank": 12,
+        "themeHeat": 64.4,
+        "payload": {
+          "code": "002357",
+          "name": "富临运业",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "C",
+          "scoreBand": "C",
+          "rawScore": 54.0,
+          "rawBand": "C",
+          "bLevel": null,
+          "totalScore": 54.0,
+          "marketScore": 15.99,
+          "themeScore": 19.0,
+          "themeScoreDetails": {
+            "topBoard": 0.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 25.0,
+          "theme": "低空经济",
+          "themeRank": 12,
+          "themeHeat": 64.4,
+          "vwap": 12.2705,
+          "intradayVwap": 12.2705,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-08T15:00:00+08:00",
+          "vwapCumulativeVolume": 24911800.0,
+          "vwapCumulativeAmount": 305680543.22,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-08T07:20:00+00:00",
+          "volumeRatio": 4.05,
+          "weekChangePct": 11.41,
+          "dailyBars": [
+            [
+              "2026-08-31",
+              "11.090",
+              "11.280",
+              "11.330",
+              "11.000",
+              "85126.000"
+            ],
+            [
+              "2026-09-01",
+              "11.280",
+              "11.310",
+              "11.480",
+              "11.170",
+              "71552.000"
+            ],
+            [
+              "2026-09-02",
+              "11.280",
+              "11.380",
+              "11.400",
+              "11.080",
+              "67854.000"
+            ],
+            [
+              "2026-09-03",
+              "11.350",
+              "11.230",
+              "11.460",
+              "11.100",
+              "60313.000"
+            ],
+            [
+              "2026-09-04",
+              "11.310",
+              "11.300",
+              "11.430",
+              "11.180",
+              "50972.000"
+            ],
+            [
+              "2026-09-07",
+              "11.310",
+              "11.450",
+              "11.450",
+              "11.180",
+              "56635.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 12.6,
+          "changePct": 10.04,
+          "amount": 305680000.0,
+          "turnoverRate": 7.95,
+          "floatMarketCap": 3950000000.0,
+          "netInflow": 84785800.0,
+          "netInflowRatio": 0.2773678356,
+          "flow5d": 145856700.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "C｜成交可得性低",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 1266.34,
+          "shadowAffordable": true,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低"
+          ],
+          "liquidityTags": [
+            "成交可得性低"
+          ],
+          "executionState": "收盘参考，下个交易日重算",
+          "executionReason": "成交可得性低",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "低空经济位居热点第12；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "entryEvidence": {
+            "version": "entry-evidence-v2",
+            "score": 85,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 2.6853,
+            "flowToAmountRatio": 0.277368,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-09-07",
+              "sampleCount": 6,
+              "dates": [
+                "2026-08-31",
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-07"
+              ],
+              "closes": [
+                11.28,
+                11.31,
+                11.38,
+                11.23,
+                11.3,
+                11.45
+              ],
+              "previousClose": 11.45,
+              "priorFiveDayChangePct": 1.5071,
+              "upDays": 4,
+              "aboveMA5": true,
+              "priorMA5": 11.334,
+              "currentVsMA5Pct": 11.1699,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [],
+            "sChecks": {
+              "rawStrength": false,
+              "entryQuality": true,
+              "dailyHistory": true,
+              "trend": true,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": true
+            },
+            "sEligible": false,
+            "components": {
+              "entry": 20,
+              "capital": 25,
+              "trend": 30,
+              "theme": 5,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v2",
+          "personalizedReason": "题材#12 低空经济；热度64.4；今日+10.04%；成交额3.1亿；换手8.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.69%；此前5日+1.51%，5日中4日上涨",
+          "personalizedAdvice": "当前不执行：信号不足。 成交可得性低，不代表方向判断失效。",
+          "formalRank": 36,
+          "candidateTier": "qualified",
+          "recommendationLabel": "C｜成交可得性低"
+        }
+      },
+      {
+        "code": "002357",
+        "tradingDate": "2026-09-08",
+        "capturedAt": "2026-09-08T08:14:11.863958",
+        "sourceTime": "2026-09-08T08:13:03",
+        "price": 12.6,
+        "amount": 305680000.0,
+        "vwap": 12.2705,
+        "rawScore": 54.0,
+        "rawBand": "C",
+        "signal": "C",
+        "executionState": "成交受限，不买入",
+        "theme": "低空经济",
+        "themeRank": 13,
+        "themeHeat": 64.3,
+        "payload": {
+          "code": "002357",
+          "name": "富临运业",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "C",
+          "scoreBand": "C",
+          "rawScore": 54.0,
+          "rawBand": "C",
+          "bLevel": null,
+          "totalScore": 54.0,
+          "marketScore": 15.99,
+          "themeScore": 19.0,
+          "themeScoreDetails": {
+            "topBoard": 0.0,
+            "stage": 10.0,
+            "leader": 9.0
+          },
+          "capitalScore": 25.0,
+          "theme": "低空经济",
+          "themeRank": 13,
+          "themeHeat": 64.3,
+          "vwap": 12.2705,
+          "intradayVwap": 12.2705,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-09-08T15:00:00+08:00",
+          "vwapCumulativeVolume": 24911800.0,
+          "vwapCumulativeAmount": 305680543.22,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-09-08T08:13:03+00:00",
           "volumeRatio": 4.05,
           "weekChangePct": 11.41,
           "dailyBars": [
@@ -5796,7 +6210,7 @@
             }
           },
           "strategyVersion": "entry-evidence-v2",
-          "personalizedReason": "题材#13 低空经济；热度59.3；今日+10.04%；成交额3.1亿；换手8.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.69%；此前5日+1.51%，5日中4日上涨",
+          "personalizedReason": "题材#13 低空经济；热度64.3；今日+10.04%；成交额3.1亿；换手8.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.69%；此前5日+1.51%，5日中4日上涨",
           "personalizedAdvice": "2026-09-08行情：富临运业涨幅10.04%，已接近涨停；保留方向评级，当前不提交模拟买单，不计作可成交收益。下个交易日重新计算。",
           "retailBuyBlocked": true,
           "retailExecutionStatus": "近涨停，成交受限",
@@ -5808,7 +6222,7 @@
       {
         "code": "002357",
         "tradingDate": "2026-09-08",
-        "capturedAt": "2026-09-08T08:29:15.165826",
+        "capturedAt": "2026-09-08T08:22:06.298845",
         "sourceTime": "2026-09-08T08:14:03",
         "price": 12.6,
         "amount": 305680000.0,
