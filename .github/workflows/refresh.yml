@@ -54,7 +54,14 @@ jobs:
         run: |
           mkdir -p backend/data
           git fetch origin runtime-state:runtime-state 2>/dev/null || true
-          if git show runtime-state:backend/data/t1.db.gz > /tmp/t1.db.gz 2>/dev/null; then
+          mapfile -t ledger_parts < <(git ls-tree -r --name-only runtime-state -- backend/data 2>/dev/null | grep '^backend/data/t1\.db\.gz\.part-' | sort || true)
+          if (( ${#ledger_parts[@]} > 0 )); then
+            : > /tmp/t1.db.gz
+            for part in "${ledger_parts[@]}"; do
+              git show "runtime-state:${part}"
+            done > /tmp/t1.db.gz
+            gzip -dc /tmp/t1.db.gz > backend/data/t1.db
+          elif git show runtime-state:backend/data/t1.db.gz > /tmp/t1.db.gz 2>/dev/null; then
             gzip -dc /tmp/t1.db.gz > backend/data/t1.db
           elif git show runtime-state:backend/data/t1.db > /tmp/t1.db 2>/dev/null; then
             cp /tmp/t1.db backend/data/t1.db
@@ -102,11 +109,21 @@ jobs:
         shell: bash
         run: |
           gzip -9 -n -c backend/data/t1.db > /tmp/t1.db.gz
-          compressed_bytes=$(wc -c < /tmp/t1.db.gz)
-          if (( compressed_bytes >= 95 * 1024 * 1024 )); then
-            echo "压缩后的 runtime ledger 接近 GitHub 单文件限制 (${compressed_bytes} bytes)" >&2
+          rm -f /tmp/t1.db.gz.part-*
+          split -b 40m -d -a 3 /tmp/t1.db.gz /tmp/t1.db.gz.part-
+          part_count=$(find /tmp -maxdepth 1 -type f -name 't1.db.gz.part-*' | wc -l | tr -d ' ')
+          if (( part_count == 0 )); then
+            echo "runtime ledger 分片失败" >&2
             exit 1
           fi
+          while IFS= read -r part; do
+            part_bytes=$(wc -c < "$part")
+            if (( part_bytes >= 95 * 1024 * 1024 )); then
+              echo "runtime ledger 分片仍接近 GitHub 单文件限制 (${part}: ${part_bytes} bytes)" >&2
+              exit 1
+            fi
+          done < <(find /tmp -maxdepth 1 -type f -name 't1.db.gz.part-*' | sort)
+          cat /tmp/t1.db.gz.part-* | gzip -dc | cmp - backend/data/t1.db
           gzip -dc /tmp/t1.db.gz | cmp - backend/data/t1.db
           cp backend/data/listings-cache.json /tmp/listings-cache.json
           cp -R runtime-export /tmp/runtime-export
@@ -116,9 +133,9 @@ jobs:
           git switch --orphan runtime-state-new
           git rm -rf . >/dev/null 2>&1 || true
           mkdir -p backend/data
-          cp /tmp/t1.db.gz backend/data/t1.db.gz
+          cp /tmp/t1.db.gz.part-* backend/data/
           cp /tmp/listings-cache.json backend/data/listings-cache.json
-          git add backend/data/t1.db.gz backend/data/listings-cache.json
+          git add backend/data/t1.db.gz.part-* backend/data/listings-cache.json
           git commit -m "chore: persist runtime ledger" --allow-empty
           git push origin HEAD:runtime-state --force
 
