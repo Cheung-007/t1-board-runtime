@@ -1,0 +1,161 @@
+name: refresh-t1-runtime
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: "事故恢复时强制执行一次真实刷新"
+        required: false
+        default: false
+        type: boolean
+  repository_dispatch:
+    types: [scheduled-refresh]
+  schedule:
+    # GitHub Actions 使用 UTC；北京时间 09:00–15:55 工作日每 5 分钟唤起。
+    - cron: "2-57/5 1-7 * * 1-5"
+
+concurrency:
+  group: t1-runtime-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DATABASE_URL: sqlite:///./backend/data/t1.db
+  APP_ENV: production
+  REFRESH_SECRET: ci-local-secret
+  TENCENT_TIMEOUT_SECONDS: "75"
+  THEME_TIMEOUT_SECONDS: "120"
+  DATA_MAX_RETRIES: "2"
+  PYTHONPATH: backend
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public runtime repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Checkout private source repository
+        uses: actions/checkout@v4
+        with:
+          repository: Cheung-007/t1-ultrashort-system
+          ref: main
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          path: source
+          fetch-depth: 0
+
+      - name: Restore append-only runtime ledger
+        working-directory: source
+        shell: bash
+        run: |
+          mkdir -p backend/data
+          git fetch origin runtime-state:runtime-state 2>/dev/null || true
+          if git show runtime-state:backend/data/t1.db.gz > /tmp/t1.db.gz 2>/dev/null; then
+            gzip -dc /tmp/t1.db.gz > backend/data/t1.db
+          elif git show runtime-state:backend/data/t1.db > /tmp/t1.db 2>/dev/null; then
+            cp /tmp/t1.db backend/data/t1.db
+          fi
+          if git show runtime-state:backend/data/listings-cache.json > /tmp/listings-cache.json 2>/dev/null; then
+            cp /tmp/listings-cache.json backend/data/listings-cache.json
+          fi
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: latest
+          enable-cache: true
+
+      - name: Compact legacy runtime ledger payloads
+        working-directory: source
+        run: uv run python scripts/compact_runtime_ledger.py
+
+      - name: Refresh real market data
+        id: refresh
+        working-directory: source
+        env:
+          FORCE_REFRESH: ${{ github.event_name == 'workflow_dispatch' && inputs.force_refresh || 'false' }}
+          SCHEDULED_AT: ${{ github.event.client_payload.scheduled_at || '' }}
+        shell: bash
+        run: |
+          args=()
+          if [[ "$FORCE_REFRESH" == "true" ]]; then args+=(--force); fi
+          if [[ -n "$SCHEDULED_AT" ]]; then args+=(--scheduled-at "$SCHEDULED_AT"); fi
+          uv run python scripts/run_scheduled_refresh.py "${args[@]}"
+
+      - name: Export public snapshot
+        if: steps.refresh.outputs.refreshed == 'true'
+        working-directory: source
+        run: uv run python scripts/export_runtime.py
+
+      - name: Verify fresh runtime snapshot
+        if: steps.refresh.outputs.refreshed == 'true'
+        working-directory: source
+        run: uv run python scripts/verify_runtime_export.py runtime-export --max-source-age 900
+
+      - name: Persist append-only runtime ledger
+        if: steps.refresh.outputs.refreshed == 'true'
+        working-directory: source
+        shell: bash
+        run: |
+          gzip -9 -n -c backend/data/t1.db > /tmp/t1.db.gz
+          compressed_bytes=$(wc -c < /tmp/t1.db.gz)
+          if (( compressed_bytes >= 95 * 1024 * 1024 )); then
+            echo "压缩后的 runtime ledger 接近 GitHub 单文件限制 (${compressed_bytes} bytes)" >&2
+            exit 1
+          fi
+          gzip -dc /tmp/t1.db.gz | cmp - backend/data/t1.db
+          cp backend/data/listings-cache.json /tmp/listings-cache.json
+          cp -R runtime-export /tmp/runtime-export
+          git restore --source=HEAD --worktree --staged .
+          git config user.name "t1-runtime-bot"
+          git config user.email "t1-runtime-bot@users.noreply.github.com"
+          git switch --orphan runtime-state-new
+          git rm -rf . >/dev/null 2>&1 || true
+          mkdir -p backend/data
+          cp /tmp/t1.db.gz backend/data/t1.db.gz
+          cp /tmp/listings-cache.json backend/data/listings-cache.json
+          git add backend/data/t1.db.gz backend/data/listings-cache.json
+          git commit -m "chore: persist runtime ledger" --allow-empty
+          git push origin HEAD:runtime-state --force
+
+      - name: Publish snapshot to public runtime repository
+        if: steps.refresh.outputs.refreshed == 'true'
+        shell: bash
+        run: |
+          find data -maxdepth 1 -type f -name "*.json" -delete
+          cp /tmp/runtime-export/*.json data/
+          git config user.name "t1-runtime-bot"
+          git config user.email "t1-runtime-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: refresh market snapshot"
+          git push origin main
+
+          expected_as_of=$(jq -r ".asOf" /tmp/runtime-export/dashboard.json)
+          verified=false
+          for attempt in {1..18}; do
+            dashboard=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/dashboard || true)
+            account=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/shadow/account || true)
+            validation=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/validation/summary || true)
+            if jq -e --arg expected "$expected_as_of" \
+              ".asOf == \$expected
+              and .dataStatus == \"live\"
+              and (.completeness >= 0.9)
+              and ((.data.marketSummary.coverage // 0) >= 1000)
+              and ((.data.themes | length) > 0)
+              and ((.data.qualifiedRanking | length) > 0)" <<<"$dashboard" >/dev/null \
+              && jq -e --arg expected "$expected_as_of" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$account" >/dev/null \
+              && jq -e --arg expected "$expected_as_of" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$validation" >/dev/null; then
+              verified=true
+              jq "{asOf,dataStatus,completeness,coverage:.data.marketSummary.coverage,themes:(.data.themes|length),qualifiedRanking:(.data.qualifiedRanking|length)}" <<<"$dashboard"
+              break
+            fi
+            sleep 5
+          done
+          if [[ "$verified" != "true" ]]; then
+            echo "生产主域没有读取到本次通过硬验收的快照" >&2
+            exit 1
+          fi
