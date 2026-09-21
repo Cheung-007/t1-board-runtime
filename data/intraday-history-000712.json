@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-18T01:46:06+00:00",
+  "asOf": "2026-09-21T08:14:00+00:00",
   "dataStatus": "live",
   "data": {
     "source": "current-strategy-intraday-snapshots",
@@ -7,19 +7,19 @@
     "history": [
       {
         "code": "000712",
-        "tradingDate": "2026-08-31",
-        "capturedAt": "2026-08-31T01:36:28.220284",
-        "sourceTime": "2026-08-31T01:35:51",
-        "price": 12.98,
-        "amount": 1354890000.0,
-        "vwap": 1287.4618,
-        "rawScore": 61.15,
+        "tradingDate": "2026-08-28",
+        "capturedAt": "2026-08-28T15:39:33.266537",
+        "sourceTime": "2026-08-28T08:14:02",
+        "price": 11.8,
+        "amount": 178850000.0,
+        "vwap": 11.8,
+        "rawScore": 65.75,
         "rawBand": "B",
         "signal": "B",
-        "executionState": "当前不执行",
-        "theme": "算力租赁",
-        "themeRank": 90,
-        "themeHeat": 31.0,
+        "executionState": "等待条件",
+        "theme": "期货概念",
+        "themeRank": 208,
+        "themeHeat": 7.7,
         "payload": {
           "code": "000712",
           "name": "锦龙股份",
@@ -27,55 +27,60 @@
           "securityType": "stock",
           "signal": "B",
           "scoreBand": "B",
-          "rawScore": 61.15,
+          "rawScore": 65.75,
           "rawBand": "B",
-          "bLevel": "B3",
-          "totalScore": 61.15,
-          "marketScore": 13.86,
-          "themeScore": 16.17,
-          "capitalScore": 21.12,
-          "theme": "算力租赁",
-          "themeRank": 90,
-          "themeHeat": 31.0,
-          "vwap": 1287.4618,
-          "intradayVwap": 1287.4618,
-          "vwapStatus": "持续低于VWAP",
+          "bLevel": "B2",
+          "totalScore": 65.75,
+          "marketScore": 18.47,
+          "themeScore": 20.22,
+          "capitalScore": 19.06,
+          "theme": "期货概念",
+          "themeRank": 208,
+          "themeHeat": 7.7,
+          "vwap": 11.8,
+          "intradayVwap": 11.8,
+          "vwapStatus": "站在VWAP上方",
           "vwapSource": "腾讯分钟线",
-          "vwapSampleCount": 8,
-          "vwapBelowCount": 8,
-          "price": 12.98,
-          "changePct": 10.0,
-          "amount": 1354890000.0,
-          "turnoverRate": 11.76,
-          "floatMarketCap": 11627000000.0,
-          "netInflow": 148957500.0,
-          "netInflowRatio": 0.1099406594,
-          "flow5d": 1241041300.0,
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 11.8,
+          "changePct": 9.97,
+          "amount": 178850000.0,
+          "turnoverRate": 1.69,
+          "floatMarketCap": 10570000000.0,
+          "netInflow": 103665100.0,
+          "netInflowRatio": 0.5796203523,
+          "flow5d": 507178100.0,
           "technical": [
             "趋势向上",
             "突破/动量",
-            "量能放大",
             "资金与价格同向"
           ],
-          "technicalScore": 10.0,
-          "entryWindow": "B3｜当前不买，原因：尾盘跌破当日均价",
+          "technicalScore": 8.0,
+          "directionalReasons": [],
+          "dataMissingReasons": [],
+          "structuralReasons": [],
+          "liquidityTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "entryWindow": "B2｜等待涨幅与资金转强",
           "suggestedPosition": 0,
           "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
           "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
           "riskTags": [
-            "成交可得性低"
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
           ],
-          "liquidityTags": [
-            "成交可得性低"
-          ],
-          "executionState": "当前不执行",
-          "executionReason": "尾盘跌破当日均价",
+          "executionState": "等待条件",
+          "executionReason": "强势基础尚未同步转强",
           "actionLocked": true,
           "lockReasons": [
-            "盘后候选需在当前交易时段重新确认",
-            "尾盘跌破当日均价"
+            "盘后候选需在下个交易日交易时段重新确认"
           ],
-          "selectionReason": "算力租赁位居热点第90；资金、涨跌幅和技术快照已完成核对",
+          "selectionReason": "期货概念位居热点第208；资金、涨跌幅和技术快照已完成核对",
           "sourceTrace": [
             "腾讯财经行情",
             "同花顺概念资金",
@@ -83,11 +88,584 @@
             "上交所/深交所上市清单"
           ],
           "noviceFit": true,
-          "personalizedReason": "题材#90 算力租赁；热度31.0；今日+10.00%；成交额13.5亿；换手11.8%；趋势向上、突破/动量；持续低于VWAP；尾盘跌破当日均价",
-          "personalizedAdvice": "现价12.98元当前不执行，系统已确认障碍：尾盘跌破当日均价。 成交可得性低，不代表方向判断失效。",
-          "formalRank": 4,
-          "candidateTier": "qualified",
-          "recommendationLabel": "B3｜当前不买，原因：尾盘跌破当日均价"
+          "personalizedReason": "题材#208 期货概念；热度7.7；今日+9.97%；成交额1.8亿；换手1.7%；趋势向上、突破/动量；站在VWAP上方；强势基础尚未同步转强",
+          "personalizedAdvice": "现价11.80元暂不执行；等涨幅、资金和题材热度同步转强。 成交可得性低；成交额偏低；换手偏低，不代表方向判断失效。",
+          "formalRank": 49,
+          "candidateTier": "qualified"
+        }
+      },
+      {
+        "code": "000712",
+        "tradingDate": "2026-08-28",
+        "capturedAt": "2026-08-28T15:45:39.665341",
+        "sourceTime": "2026-08-28T08:14:02",
+        "price": 11.8,
+        "amount": 178850000.0,
+        "vwap": 11.8,
+        "rawScore": 65.75,
+        "rawBand": "B",
+        "signal": "B",
+        "executionState": "等待条件",
+        "theme": "期货概念",
+        "themeRank": 208,
+        "themeHeat": 7.7,
+        "payload": {
+          "code": "000712",
+          "name": "锦龙股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 65.75,
+          "rawBand": "B",
+          "bLevel": "B2",
+          "totalScore": 65.75,
+          "marketScore": 18.47,
+          "themeScore": 20.22,
+          "capitalScore": 19.06,
+          "theme": "期货概念",
+          "themeRank": 208,
+          "themeHeat": 7.7,
+          "vwap": 11.8,
+          "intradayVwap": 11.8,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 11.8,
+          "changePct": 9.97,
+          "amount": 178850000.0,
+          "turnoverRate": 1.69,
+          "floatMarketCap": 10570000000.0,
+          "netInflow": 103665100.0,
+          "netInflowRatio": 0.5796203523,
+          "flow5d": 507178100.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "directionalReasons": [],
+          "dataMissingReasons": [],
+          "structuralReasons": [],
+          "liquidityTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "entryWindow": "B2｜等待涨幅与资金转强",
+          "suggestedPosition": 0,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "强势基础尚未同步转强",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "期货概念位居热点第208；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#208 期货概念；热度7.7；今日+9.97%；成交额1.8亿；换手1.7%；趋势向上、突破/动量；站在VWAP上方；强势基础尚未同步转强",
+          "personalizedAdvice": "现价11.80元暂不执行；等涨幅、资金和题材热度同步转强。 成交可得性低；成交额偏低；换手偏低，不代表方向判断失效。",
+          "formalRank": 49,
+          "candidateTier": "qualified"
+        }
+      },
+      {
+        "code": "000712",
+        "tradingDate": "2026-08-29",
+        "capturedAt": "2026-08-28T16:14:57.763525",
+        "sourceTime": "2026-08-28T08:14:02",
+        "price": 11.8,
+        "amount": 178850000.0,
+        "vwap": 11.8,
+        "rawScore": 65.75,
+        "rawBand": "B",
+        "signal": "B",
+        "executionState": "等待条件",
+        "theme": "期货概念",
+        "themeRank": 208,
+        "themeHeat": 7.7,
+        "payload": {
+          "code": "000712",
+          "name": "锦龙股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 65.75,
+          "rawBand": "B",
+          "bLevel": "B2",
+          "totalScore": 65.75,
+          "marketScore": 18.47,
+          "themeScore": 20.22,
+          "capitalScore": 19.06,
+          "theme": "期货概念",
+          "themeRank": 208,
+          "themeHeat": 7.7,
+          "vwap": 11.8,
+          "intradayVwap": 11.8,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "vwapSourceTime": null,
+          "vwapCumulativeVolume": null,
+          "vwapCumulativeAmount": null,
+          "price": 11.8,
+          "changePct": 9.97,
+          "amount": 178850000.0,
+          "turnoverRate": 1.69,
+          "floatMarketCap": 10570000000.0,
+          "netInflow": 103665100.0,
+          "netInflowRatio": 0.5796203523,
+          "flow5d": 507178100.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "directionalReasons": [],
+          "dataMissingReasons": [],
+          "structuralReasons": [],
+          "liquidityTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "tailWindow": "14:30–14:55（北京时间）",
+          "tailWindowState": "closed",
+          "entryWindow": "B2｜等待涨幅与资金转强",
+          "suggestedPosition": 0,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "强势基础尚未同步转强",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "期货概念位居热点第208；资金、涨跌幅和技术快照已完成核对",
+          "sourceTime": null,
+          "scoreWeights": {
+            "market": 30,
+            "theme": 35,
+            "capital": 35,
+            "technical": 10
+          },
+          "scoreEvidence": {
+            "market": [
+              "市场中位涨幅+0.22%",
+              "市场评分18.5"
+            ],
+            "theme": [
+              "题材#208 期货概念",
+              "题材热度7.7"
+            ],
+            "capital": [
+              "资金净额+1.04亿",
+              "资金占比57.96%"
+            ],
+            "technical": [
+              "趋势向上",
+              "突破/动量",
+              "资金与价格同向"
+            ]
+          },
+          "sourceTrace": [
+            "腾讯财经行情",
+            "腾讯分钟线VWAP",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#208 期货概念；热度7.7；今日+9.97%；成交额1.8亿；换手1.7%；趋势向上、突破/动量；站在VWAP上方；强势基础尚未同步转强",
+          "personalizedAdvice": "现价11.80元暂不执行；等涨幅、资金和题材热度同步转强。 成交可得性低；成交额偏低；换手偏低，不代表方向判断失效。",
+          "formalRank": 49,
+          "candidateTier": "qualified"
+        }
+      },
+      {
+        "code": "000712",
+        "tradingDate": "2026-08-29",
+        "capturedAt": "2026-08-28T16:22:39.198355",
+        "sourceTime": "2026-08-28T08:14:02",
+        "price": 11.8,
+        "amount": 178850000.0,
+        "vwap": 11.8,
+        "rawScore": 65.75,
+        "rawBand": "B",
+        "signal": "B",
+        "executionState": "等待条件",
+        "theme": "期货概念",
+        "themeRank": 208,
+        "themeHeat": 7.7,
+        "payload": {
+          "code": "000712",
+          "name": "锦龙股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 65.75,
+          "rawBand": "B",
+          "bLevel": "B2",
+          "totalScore": 65.75,
+          "marketScore": 18.47,
+          "themeScore": 20.22,
+          "capitalScore": 19.06,
+          "theme": "期货概念",
+          "themeRank": 208,
+          "themeHeat": 7.7,
+          "vwap": 11.8,
+          "intradayVwap": 11.8,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "vwapSourceTime": "2026-08-28T16:14:02+08:00",
+          "vwapCumulativeVolume": null,
+          "vwapCumulativeAmount": null,
+          "price": 11.8,
+          "changePct": 9.97,
+          "amount": 178850000.0,
+          "turnoverRate": 1.69,
+          "floatMarketCap": 10570000000.0,
+          "netInflow": 103665100.0,
+          "netInflowRatio": 0.5796203523,
+          "flow5d": 507178100.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "directionalReasons": [],
+          "dataMissingReasons": [],
+          "structuralReasons": [],
+          "liquidityTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "tailWindow": "14:30–14:55（北京时间）",
+          "tailWindowState": "closed",
+          "entryWindow": "B2｜等待涨幅与资金转强",
+          "suggestedPosition": 0,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "强势基础尚未同步转强",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "期货概念位居热点第208；资金、涨跌幅和技术快照已完成核对",
+          "sourceTime": null,
+          "scoreWeights": {
+            "market": 30,
+            "theme": 35,
+            "capital": 35,
+            "technical": 10
+          },
+          "scoreEvidence": {
+            "market": [
+              "市场中位涨幅+0.22%",
+              "市场评分18.5"
+            ],
+            "theme": [
+              "题材#208 期货概念",
+              "题材热度7.7"
+            ],
+            "capital": [
+              "资金净额+1.04亿",
+              "资金占比57.96%"
+            ],
+            "technical": [
+              "趋势向上",
+              "突破/动量",
+              "资金与价格同向"
+            ]
+          },
+          "sourceTrace": [
+            "腾讯财经行情",
+            "腾讯分钟线VWAP",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#208 期货概念；热度7.7；今日+9.97%；成交额1.8亿；换手1.7%；趋势向上、突破/动量；站在VWAP上方；强势基础尚未同步转强",
+          "personalizedAdvice": "现价11.80元暂不执行；等涨幅、资金和题材热度同步转强。 成交可得性低；成交额偏低；换手偏低，不代表方向判断失效。",
+          "formalRank": 49,
+          "candidateTier": "qualified"
+        }
+      },
+      {
+        "code": "000712",
+        "tradingDate": "2026-08-29",
+        "capturedAt": "2026-08-28T16:27:04.387462",
+        "sourceTime": "2026-08-28T08:14:02",
+        "price": 11.8,
+        "amount": 178850000.0,
+        "vwap": 11.8,
+        "rawScore": 65.75,
+        "rawBand": "B",
+        "signal": "B",
+        "executionState": "等待条件",
+        "theme": "期货概念",
+        "themeRank": 208,
+        "themeHeat": 7.7,
+        "payload": {
+          "code": "000712",
+          "name": "锦龙股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 65.75,
+          "rawBand": "B",
+          "bLevel": "B2",
+          "totalScore": 65.75,
+          "marketScore": 18.47,
+          "themeScore": 20.22,
+          "capitalScore": 19.06,
+          "theme": "期货概念",
+          "themeRank": 208,
+          "themeHeat": 7.7,
+          "vwap": 11.8,
+          "intradayVwap": 11.8,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "vwapSourceTime": "2026-08-28T16:14:02+08:00",
+          "vwapCumulativeVolume": null,
+          "vwapCumulativeAmount": null,
+          "price": 11.8,
+          "changePct": 9.97,
+          "amount": 178850000.0,
+          "turnoverRate": 1.69,
+          "floatMarketCap": 10570000000.0,
+          "netInflow": 103665100.0,
+          "netInflowRatio": 0.5796203523,
+          "flow5d": 507178100.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "directionalReasons": [],
+          "dataMissingReasons": [],
+          "structuralReasons": [],
+          "liquidityTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "tailWindow": "14:30–14:55（北京时间）",
+          "tailWindowState": "closed",
+          "entryWindow": "B2｜等待涨幅与资金转强",
+          "suggestedPosition": 0,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "executionState": "等待条件",
+          "executionReason": "强势基础尚未同步转强",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "期货概念位居热点第208；资金、涨跌幅和技术快照已完成核对",
+          "sourceTime": null,
+          "scoreWeights": {
+            "market": 30,
+            "theme": 35,
+            "capital": 35,
+            "technical": 10
+          },
+          "scoreEvidence": {
+            "market": [
+              "市场中位涨幅+0.22%",
+              "市场评分18.5"
+            ],
+            "theme": [
+              "题材#208 期货概念",
+              "题材热度7.7"
+            ],
+            "capital": [
+              "资金净额+1.04亿",
+              "资金占比57.96%"
+            ],
+            "technical": [
+              "趋势向上",
+              "突破/动量",
+              "资金与价格同向"
+            ]
+          },
+          "sourceTrace": [
+            "腾讯财经行情",
+            "腾讯分钟线VWAP",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#208 期货概念；热度7.7；今日+9.97%；成交额1.8亿；换手1.7%；趋势向上、突破/动量；站在VWAP上方；强势基础尚未同步转强",
+          "personalizedAdvice": "现价11.80元暂不执行；等涨幅、资金和题材热度同步转强。 成交可得性低；成交额偏低；换手偏低，不代表方向判断失效。",
+          "formalRank": 49,
+          "candidateTier": "qualified"
+        }
+      },
+      {
+        "code": "000712",
+        "tradingDate": "2026-08-29",
+        "capturedAt": "2026-08-28T16:53:21.653848",
+        "sourceTime": "2026-08-28T08:14:02",
+        "price": 11.8,
+        "amount": 178850000.0,
+        "vwap": 11.8,
+        "rawScore": 65.75,
+        "rawBand": "B",
+        "signal": "B",
+        "executionState": "等待同步转强",
+        "theme": "期货概念",
+        "themeRank": 208,
+        "themeHeat": 7.7,
+        "payload": {
+          "code": "000712",
+          "name": "锦龙股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 65.75,
+          "rawBand": "B",
+          "bLevel": "B2",
+          "totalScore": 65.75,
+          "marketScore": 18.47,
+          "themeScore": 20.22,
+          "capitalScore": 19.06,
+          "theme": "期货概念",
+          "themeRank": 208,
+          "themeHeat": 7.7,
+          "vwap": 11.8,
+          "intradayVwap": 11.8,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "vwapSourceTime": "2026-08-28T16:14:02+08:00",
+          "vwapCumulativeVolume": null,
+          "vwapCumulativeAmount": null,
+          "price": 11.8,
+          "changePct": 9.97,
+          "amount": 178850000.0,
+          "turnoverRate": 1.69,
+          "floatMarketCap": 10570000000.0,
+          "netInflow": 103665100.0,
+          "netInflowRatio": 0.5796203523,
+          "flow5d": 507178100.0,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "资金与价格同向"
+          ],
+          "technicalScore": 8.0,
+          "directionalReasons": [],
+          "dataMissingReasons": [],
+          "structuralReasons": [],
+          "liquidityTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "tailWindow": "14:30–14:55（北京时间）",
+          "tailWindowState": "closed",
+          "entryWindow": "B2｜观察：等待同步转强",
+          "suggestedPosition": 0,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [
+            "成交可得性低",
+            "成交额偏低",
+            "换手偏低"
+          ],
+          "executionState": "等待同步转强",
+          "executionReason": "强势基础尚未同步转强",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认"
+          ],
+          "selectionReason": "期货概念位居热点第208；资金、涨跌幅和技术快照已完成核对",
+          "sourceTime": null,
+          "scoreWeights": {
+            "market": 30,
+            "theme": 35,
+            "capital": 35,
+            "technical": 10
+          },
+          "scoreEvidence": {
+            "market": [
+              "市场中位涨幅+0.22%",
+              "市场评分18.5"
+            ],
+            "theme": [
+              "题材#208 期货概念",
+              "题材热度7.7"
+            ],
+            "capital": [
+              "资金净额+1.04亿",
+              "资金占比57.96%"
+            ],
+            "technical": [
+              "趋势向上",
+              "突破/动量",
+              "资金与价格同向"
+            ]
+          },
+          "sourceTrace": [
+            "腾讯财经行情",
+            "腾讯分钟线VWAP",
+            "同花顺概念资金",
+            "同花顺个股资金",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": true,
+          "personalizedReason": "题材#208 期货概念；热度7.7；今日+9.97%；成交额1.8亿；换手1.7%；趋势向上、突破/动量；站在VWAP上方；强势基础尚未同步转强",
+          "personalizedAdvice": "现价11.80元观察等待同步转强；涨幅、资金和题材热度同时改善后再看。 成交可得性低；成交额偏低；换手偏低，不代表方向判断失效。",
+          "scoreRank": 49,
+          "formalRank": 27,
+          "candidateTier": "qualified"
         }
       }
     ]
