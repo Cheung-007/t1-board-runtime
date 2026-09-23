@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-23T03:11:48+00:00",
+  "asOf": "2026-09-23T03:16:09+00:00",
   "dataStatus": "live",
-  "freshness": 74,
-  "nextRefreshDueAt": "2026-09-23T03:15:00+00:00",
+  "freshness": 76,
+  "nextRefreshDueAt": "2026-09-23T03:20:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-23T11:11:48+08:00",
-      "fetchedAt": "2026-09-23T03:11:51.485082+00:00",
-      "freshness": 3,
+      "sourceTime": "2026-09-23T11:16:09+08:00",
+      "fetchedAt": "2026-09-23T03:16:13.369032+00:00",
+      "freshness": 4,
       "completeness": 1.0,
-      "checksum": "cadf325a3603dff71e893626bf5474fad1c80ab9f4c883776c4e5906640721e6",
+      "checksum": "5c3d4472ee41d8eed3e4c453f8e47a3eaeb8e86c60cb8c86868fb3c83136a159",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-23T03:12:36.938671+00:00",
-      "fetchedAt": "2026-09-23T03:12:36.938671+00:00",
+      "sourceTime": "2026-09-23T03:17:02.914085+00:00",
+      "fetchedAt": "2026-09-23T03:17:02.914085+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "165198d00ebeb4e3f186220bd2ef18e1148eaeff4b4452f236455123b0e9dbf4",
+      "checksum": "0aceb448a0c08df1f9ab11544179858dc54c9f34defb4f2ab498ae5c9b9645d7",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-09-21T21:03:13.997678+00:00",
-      "fetchedAt": "2026-09-23T03:12:43.249092+00:00",
-      "freshness": 108569,
+      "fetchedAt": "2026-09-23T03:17:07.981930+00:00",
+      "freshness": 108833,
       "completeness": 1.0,
       "checksum": "a988b16bf60f6359ce05a840215db3b210c822e8a54d3cffd2dfdc17b67e098f",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-23T03:12:43.499271+00:00",
-      "fetchedAt": "2026-09-23T03:12:43.499271+00:00",
+      "sourceTime": "2026-09-23T03:17:08.139944+00:00",
+      "fetchedAt": "2026-09-23T03:17:08.139944+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "6a3dec2d714c9303ab0024984c7b0e182508b6afaa49ea6724fe1a7db356bc1f",
+      "checksum": "4f2543c91682905c2aa53d34a3c182a40928862225451201863f4f16aff99fab",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,16 +56,16 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-09-23T03:12:59.640110+00:00",
-      "lastSnapshotId": "7167da31-33ac-4098-bf4a-5589012a8209",
-      "lastResult": "waiting_for_confirmation",
-      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
-      "todayCycles": 18,
-      "todayCandidates": 143,
-      "todayAttempted": 0,
-      "todayFilled": 0,
+      "lastCycleAt": "2026-09-23T03:17:23.053837+00:00",
+      "lastSnapshotId": "ad75e0ca-a0b5-4a17-a289-f5b586779fb6",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 19,
+      "todayCandidates": 151,
+      "todayAttempted": 1,
+      "todayFilled": 1,
       "todayRejected": 0,
-      "todayCancelled": 2
+      "todayCancelled": 3
     },
     "reset": {
       "occurredAt": "2026-09-08T08:13:15.229076+00:00",
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "49467.18",
+    "cash": "46959.01",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,7 +88,31 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [],
+    "positions": [
+      {
+        "code": "300520",
+        "quantity": 100,
+        "price": "25.03",
+        "buyFees": "5.17",
+        "name": "科大国创",
+        "boughtAt": "2026-09-23T03:17:18+00:00",
+        "buySequence": 675,
+        "buyReason": "题材#3 DeepSeek概念；热度69.5；今日+7.85%；成交额4.7亿；换手7.0%；趋势向上、突破/动量；站在VWAP上方；距VWAP +3.82%；此前5日+4.37%，5日中4日上涨",
+        "tradeDate": "2026-09-23",
+        "signalSnapshotId": "7167da31-33ac-4098-bf4a-5589012a8209",
+        "signal": "A",
+        "candidateScore": "58.0",
+        "costBasis": "2508.17",
+        "latestPrice": "24.98",
+        "marketValue": "2498.00",
+        "unrealizedPnl": "-10.17",
+        "returnPct": "-0.004054749080006538631751436306",
+        "priceChangePct": "-0.0019976028765481422293248102",
+        "quoteTime": "2026-09-23T03:17:21+00:00",
+        "quoteSource": "腾讯财经个股行情",
+        "valuationStatus": "已估值"
+      }
+    ],
     "orders": [
       {
         "sequence": 307,
@@ -562,6 +586,77 @@
         "supersededBySnapshotId": "268b2ce3-048e-4320-9249-599d8aec2839",
         "reason": "最新快照已撤销或改变原可执行评级",
         "name": "联得装备"
+      },
+      {
+        "sequence": 675,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-23T03:17:18+00:00",
+        "code": "300520",
+        "quantity": 100,
+        "price": "25.03",
+        "notional": "2503.00",
+        "fees": "5.17",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.03",
+          "exchangeHandling": "0.09",
+          "regulatoryFee": "0.05",
+          "total": "5.17"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-23",
+        "signalSnapshotId": "7167da31-33ac-4098-bf4a-5589012a8209",
+        "signal": "A",
+        "candidateScore": "58.0",
+        "strategyVersion": "v1.3.0",
+        "dataVersion": "v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionModel": "retail-book-v1",
+        "signalAt": "2026-09-23T03:12:59.640110+00:00",
+        "executionEvidence": {
+          "price": 24.98,
+          "name": "科大国创",
+          "quoteTime": "2026-09-23T11:17:18+08:00",
+          "bid": 24.98,
+          "bidVolume": 1200,
+          "ask": 25.0,
+          "askVolume": 300,
+          "limitUp": 27.52,
+          "limitDown": 18.34,
+          "source": "腾讯实时五档",
+          "previousClose": 22.93,
+          "open": 23.61,
+          "observedAt": "2026-09-23T03:17:23.053837+00:00",
+          "minutePrevious": {
+            "date": "2026-09-23",
+            "time": "11:16",
+            "price": 24.7,
+            "volume": 204229.0,
+            "amount": 487148013.64
+          },
+          "minuteLatest": {
+            "date": "2026-09-23",
+            "time": "11:17",
+            "price": 25.09,
+            "volume": 208128.0,
+            "amount": 496880331.7
+          },
+          "incrementalVolumeShares": 389900,
+          "incrementalAmount": "9732318.06",
+          "participationCap": "0.01"
+        },
+        "name": "科大国创"
+      },
+      {
+        "sequence": 676,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-09-23T03:17:23.053837+00:00",
+        "code": "300520",
+        "signalSnapshotId": "ad75e0ca-a0b5-4a17-a289-f5b586779fb6",
+        "supersededBySnapshotId": "ad75e0ca-a0b5-4a17-a289-f5b586779fb6",
+        "reason": "已持仓，不重复买入",
+        "name": "科大国创"
       }
     ],
     "fills": [
@@ -930,6 +1025,67 @@
         "returnPct": "-0.05514920480975600994998069273",
         "buyPrice": "44.49",
         "boughtAt": "2026-09-15T05:56:24+00:00"
+      },
+      {
+        "sequence": 675,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-09-23T03:17:18+00:00",
+        "code": "300520",
+        "quantity": 100,
+        "price": "25.03",
+        "notional": "2503.00",
+        "fees": "5.17",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.03",
+          "exchangeHandling": "0.09",
+          "regulatoryFee": "0.05",
+          "total": "5.17"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-09-23",
+        "signalSnapshotId": "7167da31-33ac-4098-bf4a-5589012a8209",
+        "signal": "A",
+        "candidateScore": "58.0",
+        "strategyVersion": "v1.3.0",
+        "dataVersion": "v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionModel": "retail-book-v1",
+        "signalAt": "2026-09-23T03:12:59.640110+00:00",
+        "executionEvidence": {
+          "price": 24.98,
+          "name": "科大国创",
+          "quoteTime": "2026-09-23T11:17:18+08:00",
+          "bid": 24.98,
+          "bidVolume": 1200,
+          "ask": 25.0,
+          "askVolume": 300,
+          "limitUp": 27.52,
+          "limitDown": 18.34,
+          "source": "腾讯实时五档",
+          "previousClose": 22.93,
+          "open": 23.61,
+          "observedAt": "2026-09-23T03:17:23.053837+00:00",
+          "minutePrevious": {
+            "date": "2026-09-23",
+            "time": "11:16",
+            "price": 24.7,
+            "volume": 204229.0,
+            "amount": 487148013.64
+          },
+          "minuteLatest": {
+            "date": "2026-09-23",
+            "time": "11:17",
+            "price": 25.09,
+            "volume": 208128.0,
+            "amount": 496880331.7
+          },
+          "incrementalVolumeShares": 389900,
+          "incrementalAmount": "9732318.06",
+          "participationCap": "0.01"
+        },
+        "name": "科大国创"
       }
     ],
     "rejectedOrders": [
@@ -962,11 +1118,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "37.82",
-    "slippageRateTotal": "0.006",
+    "fees": "42.99",
+    "slippageRateTotal": "0.007",
     "realizedPnl": "-532.82",
-    "unrealizedPnl": "0.00",
-    "equity": "49467.18",
+    "unrealizedPnl": "-10.17",
+    "equity": "49457.01",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -977,13 +1133,13 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "7167da31-33ac-4098-bf4a-5589012a8209",
-    "capturedAt": "2026-09-23T03:13:01.074980+00:00",
-    "valuationAsOf": "2026-09-23T03:11:48+00:00",
-    "marketValue": "0.00",
-    "totalPnl": "-532.82",
-    "totalReturnPct": "-0.0106564",
-    "positionRatio": "0E+2",
+    "snapshotId": "ad75e0ca-a0b5-4a17-a289-f5b586779fb6",
+    "capturedAt": "2026-09-23T03:17:24.803074+00:00",
+    "valuationAsOf": "2026-09-23T03:16:09+00:00",
+    "marketValue": "2498.00",
+    "totalPnl": "-542.99",
+    "totalReturnPct": "-0.0108598",
+    "positionRatio": "0.05050851234233529281288941649",
     "closedTradeCount": 3,
     "winRate": "0"
   }
