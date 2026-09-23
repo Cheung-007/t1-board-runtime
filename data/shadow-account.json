@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-23T05:06:12+00:00",
+  "asOf": "2026-09-23T05:11:12+00:00",
   "dataStatus": "live",
-  "freshness": 72,
-  "nextRefreshDueAt": "2026-09-23T05:10:00+00:00",
+  "freshness": 76,
+  "nextRefreshDueAt": "2026-09-23T05:15:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-23T13:06:12+08:00",
-      "fetchedAt": "2026-09-23T05:06:14.139227+00:00",
-      "freshness": 2,
+      "sourceTime": "2026-09-23T13:11:12+08:00",
+      "fetchedAt": "2026-09-23T05:11:17.206397+00:00",
+      "freshness": 5,
       "completeness": 1.0,
-      "checksum": "32c1f061d1a910bbd453c452a92e591faf992d339f3e10d483721d3d161ee9a4",
+      "checksum": "eb3d0133d9c5fc37002e488b4f63f839da67d50791136c8eafb956edb5e02585",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-23T05:06:57.780181+00:00",
-      "fetchedAt": "2026-09-23T05:06:57.780181+00:00",
+      "sourceTime": "2026-09-23T05:11:56.591180+00:00",
+      "fetchedAt": "2026-09-23T05:11:56.591180+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "ff4df34e1f7d3f3476947e8237298cb11848eb6fedddb650ecada30a265f60c0",
+      "checksum": "b44005baeb00e636de0415669a98bab80da4064a40fdc8ec6b40a730c0d233b8",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,21 +31,21 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-09-21T21:03:13.997678+00:00",
-      "fetchedAt": "2026-09-23T05:07:00.598890+00:00",
-      "freshness": 115426,
+      "fetchedAt": "2026-09-23T05:12:10.337001+00:00",
+      "freshness": 115736,
       "completeness": 1.0,
       "checksum": "a988b16bf60f6359ce05a840215db3b210c822e8a54d3cffd2dfdc17b67e098f",
-      "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: HTTPError",
+      "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
       "semantics": "上交所与深交所官方A股清单缓存；仅用于交易所和上市天数校验，不参与实时行情评分"
     },
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-09-23T05:07:00.762114+00:00",
-      "fetchedAt": "2026-09-23T05:07:00.762114+00:00",
+      "sourceTime": "2026-09-23T05:12:10.547728+00:00",
+      "fetchedAt": "2026-09-23T05:12:10.547728+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "b2832b9daaeca85af4436b6367ddeff15590c4fa79fa5ca4f3c9a7d530e7fe59",
+      "checksum": "1867359fdc65a3e8c5a652ef61738d88c2ce3814c65625581d54c298385fce27",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,16 +56,16 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-09-23T05:07:21.399561+00:00",
-      "lastSnapshotId": "faf12439-d020-4b4d-8da8-8715a54a732c",
-      "lastResult": "waiting_for_confirmation",
-      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
-      "todayCycles": 24,
-      "todayCandidates": 191,
+      "lastCycleAt": "2026-09-23T05:12:25.350672+00:00",
+      "lastSnapshotId": "1d4ddf39-50e6-430e-b831-d6d77568c0b3",
+      "lastResult": "no_position_sized_signal",
+      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
+      "todayCycles": 25,
+      "todayCandidates": 199,
       "todayAttempted": 1,
       "todayFilled": 1,
       "todayRejected": 0,
-      "todayCancelled": 3
+      "todayCancelled": 4
     },
     "reset": {
       "occurredAt": "2026-09-08T08:13:15.229076+00:00",
@@ -103,12 +103,12 @@
         "signal": "A",
         "candidateScore": "58.0",
         "costBasis": "2508.17",
-        "latestPrice": "25.15",
-        "marketValue": "2515.00",
-        "unrealizedPnl": "6.83",
-        "returnPct": "0.002723100906238412866751456241",
-        "priceChangePct": "0.004794246903715541350379545",
-        "quoteTime": "2026-09-23T05:07:18+00:00",
+        "latestPrice": "25.44",
+        "marketValue": "2544.00",
+        "unrealizedPnl": "35.83",
+        "returnPct": "0.01428531558865627130537403764",
+        "priceChangePct": "0.016380343587694766280463444",
+        "quoteTime": "2026-09-23T05:12:24+00:00",
         "quoteSource": "腾讯财经个股行情",
         "valuationStatus": "已估值"
       }
@@ -657,6 +657,16 @@
         "supersededBySnapshotId": "ad75e0ca-a0b5-4a17-a289-f5b586779fb6",
         "reason": "已持仓，不重复买入",
         "name": "科大国创"
+      },
+      {
+        "sequence": 689,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-09-23T05:12:25.350672+00:00",
+        "code": "600790",
+        "signalSnapshotId": "faf12439-d020-4b4d-8da8-8715a54a732c",
+        "supersededBySnapshotId": "1d4ddf39-50e6-430e-b831-d6d77568c0b3",
+        "reason": "最新快照已撤销或改变原可执行评级",
+        "name": "轻纺城"
       }
     ],
     "fills": [
@@ -1121,8 +1131,8 @@
     "fees": "42.99",
     "slippageRateTotal": "0.007",
     "realizedPnl": "-532.82",
-    "unrealizedPnl": "6.83",
-    "equity": "49474.01",
+    "unrealizedPnl": "35.83",
+    "equity": "49503.01",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -1133,13 +1143,13 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "faf12439-d020-4b4d-8da8-8715a54a732c",
-    "capturedAt": "2026-09-23T05:07:23.407754+00:00",
-    "valuationAsOf": "2026-09-23T05:06:12+00:00",
-    "marketValue": "2515.00",
-    "totalPnl": "-525.99",
-    "totalReturnPct": "-0.0105198",
-    "positionRatio": "0.05083477163059958147722410211",
+    "snapshotId": "1d4ddf39-50e6-430e-b831-d6d77568c0b3",
+    "capturedAt": "2026-09-23T05:12:27.279063+00:00",
+    "valuationAsOf": "2026-09-23T05:11:12+00:00",
+    "marketValue": "2544.00",
+    "totalPnl": "-496.99",
+    "totalReturnPct": "-0.0099398",
+    "positionRatio": "0.05139081441714352319182207304",
     "closedTradeCount": 3,
     "winRate": "0"
   }
