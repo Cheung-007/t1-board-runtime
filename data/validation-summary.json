@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-10-13T06:21:21+00:00",
+  "asOf": "2026-10-13T06:26:18+00:00",
   "dataStatus": "live",
-  "freshness": 79,
-  "nextRefreshDueAt": "2026-10-13T06:25:00+00:00",
+  "freshness": 106,
+  "nextRefreshDueAt": "2026-10-13T06:30:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-13T14:21:21+08:00",
-      "fetchedAt": "2026-10-13T06:21:24.448017+00:00",
+      "sourceTime": "2026-10-13T14:26:18+08:00",
+      "fetchedAt": "2026-10-13T06:26:21.368976+00:00",
       "freshness": 3,
       "completeness": 1.0,
-      "checksum": "a14476edbd97be4110013db9447cced167f10588e955d309e52d6944efef0fd1",
+      "checksum": "730f1ee58fbdbe9aecd9840b0b38243bee83f2bfd855b623f5c4587995bb16c0",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-13T06:21:59.334908+00:00",
-      "fetchedAt": "2026-10-13T06:21:59.334908+00:00",
+      "sourceTime": "2026-10-13T06:27:19.319331+00:00",
+      "fetchedAt": "2026-10-13T06:27:19.319331+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "cc6ccf3bd29513a469eaa22c1d44420df7cf76a8f1e446a54304157a120be556",
+      "checksum": "d9a7c3388ce98ae82cfad663279b7a64c8e4a762237a9a810cf51dd69a473e77",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,21 +31,21 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-13T06:22:05.183345+00:00",
-      "fetchedAt": "2026-10-13T06:22:05.183345+00:00",
-      "freshness": 0,
-      "completeness": 0.44401913875598087,
+      "fetchedAt": "2026-10-13T06:27:23.996181+00:00",
+      "freshness": 318,
+      "completeness": 1.0,
       "checksum": "61c945a1df5af4df5f8a6b11b6408c8197ff19bb211502dc84222201897dcc70",
-      "error": null,
-      "semantics": "上交所与深交所公开A股清单，用于交易所和上市天数校验"
+      "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: HTTPError",
+      "semantics": "上交所与深交所官方A股清单缓存；仅用于交易所和上市天数校验，不参与实时行情评分"
     },
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-13T06:22:05.357612+00:00",
-      "fetchedAt": "2026-10-13T06:22:05.357612+00:00",
+      "sourceTime": "2026-10-13T06:27:24.178037+00:00",
+      "fetchedAt": "2026-10-13T06:27:24.178037+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "e4cb8fbaf4fa606e1071541c5d67c778fa4f68c99d7ad664d0052761875a5501",
+      "checksum": "5069105b015032ac2e55e10e13956fbd828d09fb57bdcb3e17eaf83831084e49",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -54,7 +54,7 @@
   "actionLocked": true,
   "data": {
     "status": "策略验证中",
-    "effectiveSignals": 4654,
+    "effectiveSignals": 4662,
     "tradingDays": 16,
     "minimumForConclusion": 100,
     "incumbent": "v1.3.1",
