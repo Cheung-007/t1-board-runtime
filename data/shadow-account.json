@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-10-16T06:47:06+00:00",
+  "asOf": "2026-10-16T06:52:09+00:00",
   "dataStatus": "live",
-  "freshness": 79,
-  "nextRefreshDueAt": "2026-10-16T06:50:00+00:00",
+  "freshness": 60,
+  "nextRefreshDueAt": "2026-10-16T06:55:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-16T14:47:06+08:00",
-      "fetchedAt": "2026-10-16T06:47:09.931586+00:00",
+      "sourceTime": "2026-10-16T14:52:09+08:00",
+      "fetchedAt": "2026-10-16T06:52:12.453562+00:00",
       "freshness": 3,
       "completeness": 1.0,
-      "checksum": "168450c3961f8ebc669e81c665bcd237b23d0b0d7724c6b5ab6446a8b81f060e",
+      "checksum": "aeb2d286d3ffc055994caeeb44e8a593154995c26a4e8abe3da083ef942cbd27",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-16T06:47:52.012025+00:00",
-      "fetchedAt": "2026-10-16T06:47:52.012025+00:00",
+      "sourceTime": "2026-10-16T06:52:40.427031+00:00",
+      "fetchedAt": "2026-10-16T06:52:40.427031+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "a2c9bcdd28763da89c7b14744019fefa144fcdd9ffa3e2c1899f34008f56d810",
+      "checksum": "3bec258b959e265fe29d87ac4123b4ee6844b26edd40f4bd33a246f33fd76f2b",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-15T05:21:38.103452+00:00",
-      "fetchedAt": "2026-10-16T06:48:04.367556+00:00",
-      "freshness": 91586,
+      "fetchedAt": "2026-10-16T06:52:49.692890+00:00",
+      "freshness": 91871,
       "completeness": 1.0,
       "checksum": "71f2a8589d1370096d2fd58466dd9d7203652687196bf1be6b317405636ad156",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-16T06:48:04.526993+00:00",
-      "fetchedAt": "2026-10-16T06:48:04.526993+00:00",
+      "sourceTime": "2026-10-16T06:52:49.878428+00:00",
+      "fetchedAt": "2026-10-16T06:52:49.878428+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "6c519a1bc958714453bb7534b55f24e2ceaa0568830a8bf4ee662e8e772ca005",
+      "checksum": "7d1e11fe68f2877213f5fef83b70824f3e173782e22c74165820e2afd12d0f97",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,14 +56,14 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-10-16T06:48:20.339832+00:00",
-      "lastSnapshotId": "5eb81666-4faf-4dea-9871-575b144b25ab",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 45,
-      "todayCandidates": 360,
-      "todayAttempted": 4,
-      "todayFilled": 4,
+      "lastCycleAt": "2026-10-16T06:53:05.061941+00:00",
+      "lastSnapshotId": "7ee358c8-08cb-41a2-b942-0570f0c2223d",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 46,
+      "todayCandidates": 368,
+      "todayAttempted": 5,
+      "todayFilled": 5,
       "todayRejected": 0,
       "todayCancelled": 0
     },
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "45054.03",
+    "cash": "49002.80",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,31 +88,7 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [
-      {
-        "code": "300368",
-        "quantity": 400,
-        "price": "10.35",
-        "buyFees": "5.26",
-        "name": "汇金股份",
-        "boughtAt": "2026-10-15T01:54:45+00:00",
-        "buySequence": 1275,
-        "buyReason": "题材#3 国企改革；热度69.5；今日+7.40%；成交额4.0亿；换手7.5%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.80%；此前5日+6.57%，5日中3日上涨",
-        "tradeDate": "2026-10-15",
-        "signalSnapshotId": "607f356e-b900-4265-82a3-8ea1a3c7f7d2",
-        "signal": "A",
-        "candidateScore": "58.0",
-        "costBasis": "4145.26",
-        "latestPrice": "9.87",
-        "marketValue": "3948.00",
-        "unrealizedPnl": "-197.26",
-        "returnPct": "-0.04758688236684791786281198284",
-        "priceChangePct": "-0.0463768115942028985507246377",
-        "quoteTime": "2026-10-16T06:48:21+00:00",
-        "quoteSource": "腾讯财经个股行情",
-        "valuationStatus": "已估值"
-      }
-    ],
+    "positions": [],
     "orders": [
       {
         "sequence": 307,
@@ -1792,6 +1768,67 @@
         "returnPct": "-0.07066347811578888827095267227",
         "buyPrice": "8.98",
         "boughtAt": "2026-10-14T02:32:00+00:00"
+      },
+      {
+        "sequence": 1459,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-10-16T06:53:03+00:00",
+        "code": "300368",
+        "quantity": 400,
+        "price": "9.89",
+        "notional": "3956.00",
+        "fees": "7.23",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "1.98",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "7.23"
+        },
+        "slippageRate": "0.001",
+        "signalSnapshotId": "7ee358c8-08cb-41a2-b942-0570f0c2223d",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.26",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 9.9,
+          "name": "汇金股份",
+          "quoteTime": "2026-10-16T14:53:03+08:00",
+          "bid": 9.9,
+          "bidVolume": 76500,
+          "ask": 9.91,
+          "askVolume": 24400,
+          "limitUp": 12.13,
+          "limitDown": 8.09,
+          "source": "腾讯实时五档",
+          "previousClose": 10.11,
+          "open": 10.11,
+          "observedAt": "2026-10-16T06:53:05.061941+00:00",
+          "minutePrevious": {
+            "date": "2026-10-16",
+            "time": "14:52",
+            "price": 9.87,
+            "volume": 682359.0,
+            "amount": 683434856.32
+          },
+          "minuteLatest": {
+            "date": "2026-10-16",
+            "time": "14:53",
+            "price": 9.9,
+            "volume": 686916.0,
+            "amount": 687941319.32
+          },
+          "incrementalVolumeShares": 455700,
+          "incrementalAmount": "4506463.00",
+          "participationCap": "0.01"
+        },
+        "name": "汇金股份",
+        "realizedPnl": "-196.49",
+        "returnPct": "-0.04740112803539464352055118376",
+        "buyPrice": "10.35",
+        "boughtAt": "2026-10-15T01:54:45+00:00"
       }
     ],
     "fills": [
@@ -3258,6 +3295,67 @@
         "returnPct": "-0.07066347811578888827095267227",
         "buyPrice": "8.98",
         "boughtAt": "2026-10-14T02:32:00+00:00"
+      },
+      {
+        "sequence": 1459,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-10-16T06:53:03+00:00",
+        "code": "300368",
+        "quantity": 400,
+        "price": "9.89",
+        "notional": "3956.00",
+        "fees": "7.23",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "1.98",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "7.23"
+        },
+        "slippageRate": "0.001",
+        "signalSnapshotId": "7ee358c8-08cb-41a2-b942-0570f0c2223d",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.26",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 9.9,
+          "name": "汇金股份",
+          "quoteTime": "2026-10-16T14:53:03+08:00",
+          "bid": 9.9,
+          "bidVolume": 76500,
+          "ask": 9.91,
+          "askVolume": 24400,
+          "limitUp": 12.13,
+          "limitDown": 8.09,
+          "source": "腾讯实时五档",
+          "previousClose": 10.11,
+          "open": 10.11,
+          "observedAt": "2026-10-16T06:53:05.061941+00:00",
+          "minutePrevious": {
+            "date": "2026-10-16",
+            "time": "14:52",
+            "price": 9.87,
+            "volume": 682359.0,
+            "amount": 683434856.32
+          },
+          "minuteLatest": {
+            "date": "2026-10-16",
+            "time": "14:53",
+            "price": 9.9,
+            "volume": 686916.0,
+            "amount": 687941319.32
+          },
+          "incrementalVolumeShares": 455700,
+          "incrementalAmount": "4506463.00",
+          "participationCap": "0.01"
+        },
+        "name": "汇金股份",
+        "realizedPnl": "-196.49",
+        "returnPct": "-0.04740112803539464352055118376",
+        "buyPrice": "10.35",
+        "boughtAt": "2026-10-15T01:54:45+00:00"
       }
     ],
     "rejectedOrders": [
@@ -3308,11 +3406,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "141.97",
-    "slippageRateTotal": "0.024",
-    "realizedPnl": "-800.71",
-    "unrealizedPnl": "-197.26",
-    "equity": "49002.03",
+    "fees": "149.20",
+    "slippageRateTotal": "0.025",
+    "realizedPnl": "-997.20",
+    "unrealizedPnl": "0.00",
+    "equity": "49002.80",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -3323,14 +3421,14 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "5eb81666-4faf-4dea-9871-575b144b25ab",
-    "capturedAt": "2026-10-16T06:48:24.096937+00:00",
-    "valuationAsOf": "2026-10-16T06:47:06+00:00",
-    "marketValue": "3948.00",
-    "totalPnl": "-997.97",
-    "totalReturnPct": "-0.0199594",
-    "positionRatio": "0.08056809075052604963508654641",
-    "closedTradeCount": 13,
-    "winRate": "0.3076923076923076923076923077"
+    "snapshotId": "7ee358c8-08cb-41a2-b942-0570f0c2223d",
+    "capturedAt": "2026-10-16T06:53:08.176163+00:00",
+    "valuationAsOf": "2026-10-16T06:52:09+00:00",
+    "marketValue": "0.00",
+    "totalPnl": "-997.20",
+    "totalReturnPct": "-0.019944",
+    "positionRatio": "0E+2",
+    "closedTradeCount": 14,
+    "winRate": "0.2857142857142857142857142857"
   }
 }
