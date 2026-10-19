@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-10-19T05:01:51+00:00",
+  "asOf": "2026-10-19T05:06:42+00:00",
   "dataStatus": "live",
-  "freshness": 81,
-  "nextRefreshDueAt": "2026-10-19T05:05:00+00:00",
+  "freshness": 126,
+  "nextRefreshDueAt": "2026-10-19T05:10:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-19T13:01:51+08:00",
-      "fetchedAt": "2026-10-19T05:01:53.732373+00:00",
-      "freshness": 2,
+      "sourceTime": "2026-10-19T13:06:42+08:00",
+      "fetchedAt": "2026-10-19T05:06:45.612285+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "39d282ecb7f788b436abfe4799ec9ea95dbce11f288d825f757502e8c2b528c9",
+      "checksum": "75d565f5342a86e4df71581e4ab163bc5d63f88618188ea6a140bffbc9a99733",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-19T05:02:46.762799+00:00",
-      "fetchedAt": "2026-10-19T05:02:46.762799+00:00",
+      "sourceTime": "2026-10-19T05:07:05.923784+00:00",
+      "fetchedAt": "2026-10-19T05:07:05.923784+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "9c62a1331fe01e3fe0ecff6f2a8f68c134438a19ec2a88daefac6ac48cc7d47c",
+      "checksum": "d6cdd6f8e4e8d3bb94c0c36c7fdfe983bdef10641c3e42ee96d3ec1be390378a",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-15T05:21:38.103452+00:00",
-      "fetchedAt": "2026-10-19T05:02:53.742094+00:00",
-      "freshness": 344475,
+      "fetchedAt": "2026-10-19T05:07:18.892088+00:00",
+      "freshness": 344740,
       "completeness": 1.0,
       "checksum": "71f2a8589d1370096d2fd58466dd9d7203652687196bf1be6b317405636ad156",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-19T05:02:53.941800+00:00",
-      "fetchedAt": "2026-10-19T05:02:53.941800+00:00",
+      "sourceTime": "2026-10-19T05:07:19.088538+00:00",
+      "fetchedAt": "2026-10-19T05:07:19.088538+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "01fed994a13b028e97b02fd563d8bf5535e38b92af2791117806ed45bcbf747a",
+      "checksum": "866091d181c28795949de507146abce7a1e7d4a9b3171814ad91a667c2ff2357",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,14 +56,14 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-10-19T05:03:07.993672+00:00",
-      "lastSnapshotId": "f00e37b5-f6f9-46b1-8af1-d2d736a210d6",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 25,
-      "todayCandidates": 199,
-      "todayAttempted": 0,
-      "todayFilled": 0,
+      "lastCycleAt": "2026-10-19T05:08:41.850917+00:00",
+      "lastSnapshotId": "6ec55f51-1603-48d1-9c2c-360c0f05d722",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 27,
+      "todayCandidates": 215,
+      "todayAttempted": 1,
+      "todayFilled": 1,
       "todayRejected": 0,
       "todayCancelled": 1
     },
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "49002.80",
+    "cash": "45154.55",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,7 +88,31 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [],
+    "positions": [
+      {
+        "code": "600435",
+        "quantity": 300,
+        "price": "12.81",
+        "buyFees": "5.25",
+        "name": "北方导航",
+        "boughtAt": "2026-10-19T05:08:40+00:00",
+        "buySequence": 1515,
+        "buyReason": "题材#5 无人机；热度68.4；今日+7.23%；成交额8.5亿；换手4.5%；趋势向上、突破/动量；站在VWAP上方；距VWAP +1.98%；此前5日+7.89%，5日中3日上涨",
+        "tradeDate": "2026-10-19",
+        "signalSnapshotId": "6ec55f51-1603-48d1-9c2c-360c0f05d722",
+        "signal": "A",
+        "candidateScore": "56.0",
+        "costBasis": "3848.25",
+        "latestPrice": "12.8",
+        "marketValue": "3840.00",
+        "unrealizedPnl": "-8.25",
+        "returnPct": "-0.002143831611771584486454882089",
+        "priceChangePct": "-0.0007806401249024199843871975",
+        "quoteTime": "2026-10-19T05:08:43+00:00",
+        "quoteSource": "腾讯财经个股行情",
+        "valuationStatus": "已估值"
+      }
+    ],
     "orders": [
       {
         "sequence": 307,
@@ -1839,6 +1863,67 @@
         "supersededBySnapshotId": "82908e94-d6a9-4f27-b103-aacafe9f6e26",
         "reason": "确认快照涨幅已超出A级可执行区间",
         "name": "朗特智能"
+      },
+      {
+        "sequence": 1515,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-10-19T05:08:40+00:00",
+        "code": "600435",
+        "quantity": 300,
+        "price": "12.81",
+        "notional": "3843.00",
+        "fees": "5.25",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "5.25"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-10-19",
+        "signalSnapshotId": "6ec55f51-1603-48d1-9c2c-360c0f05d722",
+        "signal": "A",
+        "candidateScore": "56.0",
+        "strategyVersion": "v1.3.2",
+        "dataVersion": "v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionModel": "retail-book-v1",
+        "signalAt": "2026-10-19T05:07:34.486244+00:00",
+        "executionEvidence": {
+          "price": 12.79,
+          "name": "北方导航",
+          "quoteTime": "2026-10-19T13:08:40+08:00",
+          "bid": 12.79,
+          "bidVolume": 2100,
+          "ask": 12.8,
+          "askVolume": 53100,
+          "limitUp": 13.08,
+          "limitDown": 10.7,
+          "source": "腾讯实时五档",
+          "previousClose": 11.89,
+          "open": 11.9,
+          "observedAt": "2026-10-19T05:08:41.850917+00:00",
+          "minutePrevious": {
+            "date": "2026-10-19",
+            "time": "13:07",
+            "price": 12.74,
+            "volume": 678796.0,
+            "amount": 848643097.46
+          },
+          "minuteLatest": {
+            "date": "2026-10-19",
+            "time": "13:08",
+            "price": 12.74,
+            "volume": 679891.0,
+            "amount": 850037665.46
+          },
+          "incrementalVolumeShares": 109500,
+          "incrementalAmount": "1394568.00",
+          "participationCap": "0.01"
+        },
+        "name": "北方导航"
       }
     ],
     "fills": [
@@ -3366,6 +3451,67 @@
         "returnPct": "-0.04740112803539464352055118376",
         "buyPrice": "10.35",
         "boughtAt": "2026-10-15T01:54:45+00:00"
+      },
+      {
+        "sequence": 1515,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-10-19T05:08:40+00:00",
+        "code": "600435",
+        "quantity": 300,
+        "price": "12.81",
+        "notional": "3843.00",
+        "fees": "5.25",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "5.25"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-10-19",
+        "signalSnapshotId": "6ec55f51-1603-48d1-9c2c-360c0f05d722",
+        "signal": "A",
+        "candidateScore": "56.0",
+        "strategyVersion": "v1.3.2",
+        "dataVersion": "v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionModel": "retail-book-v1",
+        "signalAt": "2026-10-19T05:07:34.486244+00:00",
+        "executionEvidence": {
+          "price": 12.79,
+          "name": "北方导航",
+          "quoteTime": "2026-10-19T13:08:40+08:00",
+          "bid": 12.79,
+          "bidVolume": 2100,
+          "ask": 12.8,
+          "askVolume": 53100,
+          "limitUp": 13.08,
+          "limitDown": 10.7,
+          "source": "腾讯实时五档",
+          "previousClose": 11.89,
+          "open": 11.9,
+          "observedAt": "2026-10-19T05:08:41.850917+00:00",
+          "minutePrevious": {
+            "date": "2026-10-19",
+            "time": "13:07",
+            "price": 12.74,
+            "volume": 678796.0,
+            "amount": 848643097.46
+          },
+          "minuteLatest": {
+            "date": "2026-10-19",
+            "time": "13:08",
+            "price": 12.74,
+            "volume": 679891.0,
+            "amount": 850037665.46
+          },
+          "incrementalVolumeShares": 109500,
+          "incrementalAmount": "1394568.00",
+          "participationCap": "0.01"
+        },
+        "name": "北方导航"
       }
     ],
     "rejectedOrders": [
@@ -3416,11 +3562,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "149.20",
-    "slippageRateTotal": "0.025",
+    "fees": "154.45",
+    "slippageRateTotal": "0.026",
     "realizedPnl": "-997.20",
-    "unrealizedPnl": "0.00",
-    "equity": "49002.80",
+    "unrealizedPnl": "-8.25",
+    "equity": "48994.55",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -3431,13 +3577,13 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "f00e37b5-f6f9-46b1-8af1-d2d736a210d6",
-    "capturedAt": "2026-10-19T05:03:11.061520+00:00",
-    "valuationAsOf": "2026-10-19T05:01:51+00:00",
-    "marketValue": "0.00",
-    "totalPnl": "-997.20",
-    "totalReturnPct": "-0.019944",
-    "positionRatio": "0E+2",
+    "snapshotId": "6ec55f51-1603-48d1-9c2c-360c0f05d722",
+    "capturedAt": "2026-10-19T05:08:47.063844+00:00",
+    "valuationAsOf": "2026-10-19T05:06:42+00:00",
+    "marketValue": "3840.00",
+    "totalPnl": "-1005.45",
+    "totalReturnPct": "-0.020109",
+    "positionRatio": "0.07837606427653688012238095870",
     "closedTradeCount": 11,
     "winRate": "0.2727272727272727272727272727"
   }
