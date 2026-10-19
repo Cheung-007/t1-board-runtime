@@ -36,6 +36,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Test snapshot publish race and stale payload handling
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+
       - name: Checkout private source repository
         uses: actions/checkout@v4
         with:
