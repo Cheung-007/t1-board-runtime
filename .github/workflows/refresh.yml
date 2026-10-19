@@ -136,33 +136,33 @@ jobs:
           git commit -m "chore: persist runtime ledger" --allow-empty
           git push origin HEAD:runtime-state --force
 
-      - name: Publish snapshot to public runtime repository
+      - name: Publish snapshot with monotonic compare and retry
+        id: publish
+        if: steps.refresh.outputs.refreshed == 'true'
+        run: python3 scripts/publish_runtime_snapshot.py --snapshot-dir /tmp/runtime-export --attempts 5
+
+      - name: Verify live dashboard and account APIs
         if: steps.refresh.outputs.refreshed == 'true'
         shell: bash
+        env:
+          EXPECTED_AS_OF: ${{ steps.publish.outputs.published_as_of }}
         run: |
-          find data -maxdepth 1 -type f -name "*.json" -delete
-          cp /tmp/runtime-export/*.json data/
-          git config user.name "t1-runtime-bot"
-          git config user.email "t1-runtime-bot@users.noreply.github.com"
-          git add data
-          git diff --cached --quiet || git commit -m "data: refresh market snapshot"
-          git push origin main
-
-          expected_as_of=$(jq -r ".asOf" /tmp/runtime-export/dashboard.json)
           verified=false
           for attempt in {1..18}; do
             dashboard=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/dashboard || true)
             account=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/shadow/account || true)
+            trades=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/shadow/trades || true)
             validation=$(curl -fsS --max-time 20 https://t1-board.pages.dev/api/v1/validation/summary || true)
-            if jq -e --arg expected "$expected_as_of" \
+            if jq -e --arg expected "$EXPECTED_AS_OF" \
               ".asOf == \$expected
               and .dataStatus == \"live\"
               and (.completeness >= 0.9)
               and ((.data.marketSummary.coverage // 0) >= 1000)
               and ((.data.themes | length) > 0)
               and ((.data.qualifiedRanking | length) > 0)" <<<"$dashboard" >/dev/null \
-              && jq -e --arg expected "$expected_as_of" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$account" >/dev/null \
-              && jq -e --arg expected "$expected_as_of" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$validation" >/dev/null; then
+              && jq -e --arg expected "$EXPECTED_AS_OF" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$account" >/dev/null \
+              && jq -e --arg expected "$EXPECTED_AS_OF" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$trades" >/dev/null \
+              && jq -e --arg expected "$EXPECTED_AS_OF" ".asOf == \$expected and .dataStatus == \"live\"" <<<"$validation" >/dev/null; then
               verified=true
               jq "{asOf,dataStatus,completeness,coverage:.data.marketSummary.coverage,themes:(.data.themes|length),qualifiedRanking:(.data.qualifiedRanking|length)}" <<<"$dashboard"
               break
@@ -170,6 +170,6 @@ jobs:
             sleep 5
           done
           if [[ "$verified" != "true" ]]; then
-            echo "生产主域没有读取到本次通过硬验收的快照" >&2
+            echo "生产主域没有读取到本次已发布且不旧于远端的快照，或 dashboard/account/trades/validation 的 asOf 不一致" >&2
             exit 1
           fi
