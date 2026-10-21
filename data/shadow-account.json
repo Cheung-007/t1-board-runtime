@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-10-21T06:11:21+00:00",
+  "asOf": "2026-10-21T06:16:33+00:00",
   "dataStatus": "live",
-  "freshness": 57,
-  "nextRefreshDueAt": "2026-10-21T06:15:00+00:00",
+  "freshness": 131,
+  "nextRefreshDueAt": "2026-10-21T06:20:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-21T14:11:21+08:00",
-      "fetchedAt": "2026-10-21T06:11:23.837585+00:00",
-      "freshness": 2,
+      "sourceTime": "2026-10-21T14:16:33+08:00",
+      "fetchedAt": "2026-10-21T06:16:36.291127+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "8b594b194ebf1eb2a57454d981800192d87176aa17d782aa5e9033b1cb6995d7",
+      "checksum": "c57f0175b6ea45a099a8da10261ed2d52570950810309bbccfef03077e062eb3",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-21T06:11:54.038101+00:00",
-      "fetchedAt": "2026-10-21T06:11:54.038101+00:00",
+      "sourceTime": "2026-10-21T06:17:03.596724+00:00",
+      "fetchedAt": "2026-10-21T06:17:03.596724+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "359d300c574130bb20ecc5670d7354f191c302913af55f9abd01f75e63eaadd4",
+      "checksum": "ccd5ae95f3d699cdc39335640cc6bef561ba26c7fd6643ad67796ae052158e09",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-15T05:21:38.103452+00:00",
-      "fetchedAt": "2026-10-21T06:11:58.058071+00:00",
-      "freshness": 521419,
+      "fetchedAt": "2026-10-21T06:17:14.811681+00:00",
+      "freshness": 521736,
       "completeness": 1.0,
       "checksum": "71f2a8589d1370096d2fd58466dd9d7203652687196bf1be6b317405636ad156",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-21T06:11:58.224145+00:00",
-      "fetchedAt": "2026-10-21T06:11:58.224145+00:00",
+      "sourceTime": "2026-10-21T06:17:14.967437+00:00",
+      "fetchedAt": "2026-10-21T06:17:14.967437+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "e66402c4bf15386f73c88570aaab6eacfd5ec25c3a3f0292c2a0e5da19707c6d",
+      "checksum": "99bb91653225b7abd5766657434580cb5a45b08b5bdbe249c8c60514c9988f60",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,15 +56,15 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-10-21T06:12:13.957998+00:00",
-      "lastSnapshotId": "7ed18d5a-072a-4256-8361-507e8ba173c2",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 38,
-      "todayCandidates": 304,
+      "lastCycleAt": "2026-10-21T06:18:38.611583+00:00",
+      "lastSnapshotId": "84d76d73-39b6-4eb0-a428-a7d19ed0f4fe",
+      "lastResult": "waiting_for_confirmation",
+      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
+      "todayCycles": 40,
+      "todayCandidates": 320,
       "todayAttempted": 0,
       "todayFilled": 0,
-      "todayRejected": 0,
+      "todayRejected": 1,
       "todayCancelled": 0
     },
     "reset": {
@@ -1961,6 +1961,15 @@
         "returnPct": "-0.003227441044630676281426622491",
         "buyPrice": "12.81",
         "boughtAt": "2026-10-19T05:08:40+00:00"
+      },
+      {
+        "sequence": 1724,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-10-21T06:18:38.611583+00:00",
+        "code": "002881",
+        "signalSnapshotId": "84d76d73-39b6-4eb0-a428-a7d19ed0f4fe",
+        "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
+        "name": "美格智能"
       }
     ],
     "fills": [
@@ -3657,6 +3666,15 @@
         "reason": "资金预算或卖盘/分钟成交量不足一手",
         "signalSnapshotId": "3266feb4-eb93-45d0-8d7b-276cd3a4f337",
         "name": "魅视科技"
+      },
+      {
+        "sequence": 1724,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-10-21T06:18:38.611583+00:00",
+        "code": "002881",
+        "signalSnapshotId": "84d76d73-39b6-4eb0-a428-a7d19ed0f4fe",
+        "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
+        "name": "美格智能"
       }
     ],
     "correctedInvalidOrders": 0,
@@ -3675,9 +3693,9 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "7ed18d5a-072a-4256-8361-507e8ba173c2",
-    "capturedAt": "2026-10-21T06:12:17.246308+00:00",
-    "valuationAsOf": "2026-10-21T06:11:21+00:00",
+    "snapshotId": "84d76d73-39b6-4eb0-a428-a7d19ed0f4fe",
+    "capturedAt": "2026-10-21T06:18:43.690492+00:00",
+    "valuationAsOf": "2026-10-21T06:16:33+00:00",
     "marketValue": "0.00",
     "totalPnl": "-1009.62",
     "totalReturnPct": "-0.0201924",
