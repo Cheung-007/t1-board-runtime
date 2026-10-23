@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-10-23T02:21:18+00:00",
+  "asOf": "2026-10-23T02:26:30+00:00",
   "dataStatus": "live",
-  "freshness": 152,
-  "nextRefreshDueAt": "2026-10-23T02:25:00+00:00",
+  "freshness": 66,
+  "nextRefreshDueAt": "2026-10-23T02:30:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-23T10:21:18+08:00",
-      "fetchedAt": "2026-10-23T02:21:19.773045+00:00",
-      "freshness": 1,
+      "sourceTime": "2026-10-23T10:26:30+08:00",
+      "fetchedAt": "2026-10-23T02:26:33.621624+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "bb3b93bf6d3a522bca4e279faf755542fec65fb24e121c1043802fc7a729b2ae",
+      "checksum": "059f27f06e06109c9901f9e9161bd074c3057d5a1f660d5dcafc35552fdf9358",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-23T02:23:18.505452+00:00",
-      "fetchedAt": "2026-10-23T02:23:18.505452+00:00",
+      "sourceTime": "2026-10-23T02:27:05.700746+00:00",
+      "fetchedAt": "2026-10-23T02:27:05.700746+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "0fff1cd1b550b92ff09e6428bff9d95e6716fa30eec6e41177ac0d5c63c6f8c5",
+      "checksum": "572110eb5ad25ee86f4e50fb7a53a888413313893a13950a23e63116745f24ed",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-22T05:08:06.436951+00:00",
-      "fetchedAt": "2026-10-23T02:23:23.899534+00:00",
-      "freshness": 76517,
+      "fetchedAt": "2026-10-23T02:27:12.984220+00:00",
+      "freshness": 76746,
       "completeness": 1.0,
       "checksum": "6e1932aee10378b59a91ff45a1126c7ad94d3608d4269e0baef1b5d1d300183c",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-23T02:23:24.061935+00:00",
-      "fetchedAt": "2026-10-23T02:23:24.061935+00:00",
+      "sourceTime": "2026-10-23T02:27:13.156539+00:00",
+      "fetchedAt": "2026-10-23T02:27:13.156539+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "802df8d59994c9a9dd4a80b3c216e08367c336233a06f2c24afdbaabc6957ec0",
+      "checksum": "2fd1924cf75d7699d96063659adfdbc21e6c4c723fa5b506aa2097611a4846de",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,14 +56,14 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-10-23T02:23:44.194310+00:00",
-      "lastSnapshotId": "029f30c2-5a93-4d41-b39a-04c99dc8a422",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 10,
-      "todayCandidates": 73,
-      "todayAttempted": 2,
-      "todayFilled": 2,
+      "lastCycleAt": "2026-10-23T02:27:31.137800+00:00",
+      "lastSnapshotId": "92bc63b8-441a-4fd7-b470-91a2a5baa3a5",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 11,
+      "todayCandidates": 81,
+      "todayAttempted": 3,
+      "todayFilled": 3,
       "todayRejected": 0,
       "todayCancelled": 0
     },
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "44496.36",
+    "cash": "48383.16",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,31 +88,7 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [
-      {
-        "code": "601778",
-        "quantity": 1100,
-        "price": "3.77",
-        "buyFees": "5.26",
-        "name": "晶科科技",
-        "boughtAt": "2026-10-22T05:04:33+00:00",
-        "buySequence": 1794,
-        "buyReason": "题材#5 储能；热度69.2；今日+7.10%；成交额11.9亿；换手8.6%；趋势向上、突破/动量；站在VWAP上方；距VWAP +2.00%；此前5日+6.67%，5日中3日上涨",
-        "tradeDate": "2026-10-22",
-        "signalSnapshotId": "b10e5ca1-4d55-4534-9566-a9cea4081712",
-        "signal": "A",
-        "candidateScore": "59.0",
-        "costBasis": "4152.26",
-        "latestPrice": "3.59",
-        "marketValue": "3949.00",
-        "unrealizedPnl": "-203.26",
-        "returnPct": "-0.04895165524316878037502468535",
-        "priceChangePct": "-0.0477453580901856763925729443",
-        "quoteTime": "2026-10-23T02:23:46+00:00",
-        "quoteSource": "腾讯财经个股行情",
-        "valuationStatus": "已估值"
-      }
-    ],
+    "positions": [],
     "orders": [
       {
         "sequence": 307,
@@ -2238,6 +2214,67 @@
         "returnPct": "-0.07251647713690537171737868388",
         "buyPrice": "5.85",
         "boughtAt": "2026-10-22T01:58:18+00:00"
+      },
+      {
+        "sequence": 1865,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-10-23T02:27:28+00:00",
+        "code": "601778",
+        "quantity": 1100,
+        "price": "3.54",
+        "notional": "3894.00",
+        "fees": "7.20",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "1.95",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "7.20"
+        },
+        "slippageRate": "0.001412429378531073446327683616",
+        "signalSnapshotId": "92bc63b8-441a-4fd7-b470-91a2a5baa3a5",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.26",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 3.54,
+          "name": "晶科科技",
+          "quoteTime": "2026-10-23T10:27:28+08:00",
+          "bid": 3.54,
+          "bidVolume": 25400,
+          "ask": 3.55,
+          "askVolume": 51800,
+          "limitUp": 4.08,
+          "limitDown": 3.34,
+          "source": "腾讯实时五档",
+          "previousClose": 3.71,
+          "open": 3.69,
+          "observedAt": "2026-10-23T02:27:31.137800+00:00",
+          "minutePrevious": {
+            "date": "2026-10-23",
+            "time": "10:26",
+            "price": 3.57,
+            "volume": 1423374.0,
+            "amount": 516059713.65
+          },
+          "minuteLatest": {
+            "date": "2026-10-23",
+            "time": "10:27",
+            "price": 3.54,
+            "volume": 1508303.0,
+            "amount": 546210376.48
+          },
+          "incrementalVolumeShares": 8492900,
+          "incrementalAmount": "30150662.83",
+          "participationCap": "0.01"
+        },
+        "name": "晶科科技",
+        "realizedPnl": "-265.46",
+        "returnPct": "-0.06393144937937412397104227577",
+        "buyPrice": "3.77",
+        "boughtAt": "2026-10-22T05:04:33+00:00"
       }
     ],
     "fills": [
@@ -4131,6 +4168,67 @@
         "returnPct": "-0.07251647713690537171737868388",
         "buyPrice": "5.85",
         "boughtAt": "2026-10-22T01:58:18+00:00"
+      },
+      {
+        "sequence": 1865,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-10-23T02:27:28+00:00",
+        "code": "601778",
+        "quantity": 1100,
+        "price": "3.54",
+        "notional": "3894.00",
+        "fees": "7.20",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "1.95",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.13",
+          "regulatoryFee": "0.08",
+          "total": "7.20"
+        },
+        "slippageRate": "0.001412429378531073446327683616",
+        "signalSnapshotId": "92bc63b8-441a-4fd7-b470-91a2a5baa3a5",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.26",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 3.54,
+          "name": "晶科科技",
+          "quoteTime": "2026-10-23T10:27:28+08:00",
+          "bid": 3.54,
+          "bidVolume": 25400,
+          "ask": 3.55,
+          "askVolume": 51800,
+          "limitUp": 4.08,
+          "limitDown": 3.34,
+          "source": "腾讯实时五档",
+          "previousClose": 3.71,
+          "open": 3.69,
+          "observedAt": "2026-10-23T02:27:31.137800+00:00",
+          "minutePrevious": {
+            "date": "2026-10-23",
+            "time": "10:26",
+            "price": 3.57,
+            "volume": 1423374.0,
+            "amount": 516059713.65
+          },
+          "minuteLatest": {
+            "date": "2026-10-23",
+            "time": "10:27",
+            "price": 3.54,
+            "volume": 1508303.0,
+            "amount": 546210376.48
+          },
+          "incrementalVolumeShares": 8492900,
+          "incrementalAmount": "30150662.83",
+          "participationCap": "0.01"
+        },
+        "name": "晶科科技",
+        "realizedPnl": "-265.46",
+        "returnPct": "-0.06393144937937412397104227577",
+        "buyPrice": "3.77",
+        "boughtAt": "2026-10-22T05:04:33+00:00"
       }
     ],
     "rejectedOrders": [
@@ -4190,11 +4288,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "184.64",
-    "slippageRateTotal": "0.03132978723404255319148936170",
-    "realizedPnl": "-1351.38",
-    "unrealizedPnl": "-203.26",
-    "equity": "48445.36",
+    "fees": "191.84",
+    "slippageRateTotal": "0.03274221661257362663781704532",
+    "realizedPnl": "-1616.84",
+    "unrealizedPnl": "0.00",
+    "equity": "48383.16",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -4205,14 +4303,14 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "029f30c2-5a93-4d41-b39a-04c99dc8a422",
-    "capturedAt": "2026-10-23T02:23:49.006113+00:00",
-    "valuationAsOf": "2026-10-23T02:21:18+00:00",
-    "marketValue": "3949.00",
-    "totalPnl": "-1554.64",
-    "totalReturnPct": "-0.0310928",
-    "positionRatio": "0.08151451449633153722048922745",
-    "closedTradeCount": 13,
-    "winRate": "0.2307692307692307692307692308"
+    "snapshotId": "92bc63b8-441a-4fd7-b470-91a2a5baa3a5",
+    "capturedAt": "2026-10-23T02:27:35.141501+00:00",
+    "valuationAsOf": "2026-10-23T02:26:30+00:00",
+    "marketValue": "0.00",
+    "totalPnl": "-1616.84",
+    "totalReturnPct": "-0.0323368",
+    "positionRatio": "0E+2",
+    "closedTradeCount": 14,
+    "winRate": "0.2142857142857142857142857143"
   }
 }
