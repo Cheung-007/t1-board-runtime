@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-10-26T06:26:51+00:00",
+  "asOf": "2026-10-26T06:31:48+00:00",
   "dataStatus": "live",
-  "freshness": 75,
-  "nextRefreshDueAt": "2026-10-26T06:30:00+00:00",
+  "freshness": 63,
+  "nextRefreshDueAt": "2026-10-26T06:35:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-26T14:26:51+08:00",
-      "fetchedAt": "2026-10-26T06:26:54.119642+00:00",
-      "freshness": 3,
+      "sourceTime": "2026-10-26T14:31:48+08:00",
+      "fetchedAt": "2026-10-26T06:31:50.266561+00:00",
+      "freshness": 2,
       "completeness": 1.0,
-      "checksum": "04bd65b5b5ac5b1acae7c0ad8f3aaeee7b48bd4227cfaca1fe095eb620a93a33",
+      "checksum": "0f88eb85ef089b14c8ea9cefd2a02c7575ab80c979f07d9a6d1b161bfa3a67c0",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-26T06:27:27.292823+00:00",
-      "fetchedAt": "2026-10-26T06:27:27.292823+00:00",
+      "sourceTime": "2026-10-26T06:32:22.633698+00:00",
+      "fetchedAt": "2026-10-26T06:32:22.633698+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "9a530455af42a9d76cc5df62121b6b2281389e52e184d15ca789e53b6fcd3057",
+      "checksum": "6a5efc6294532de5583f0d0dcb9c160b2ae3955f5251ac55c59c7b512b689814",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-23T06:09:45.830512+00:00",
-      "fetchedAt": "2026-10-26T06:27:41.660267+00:00",
-      "freshness": 260275,
+      "fetchedAt": "2026-10-26T06:32:27.226228+00:00",
+      "freshness": 260561,
       "completeness": 1.0,
       "checksum": "f31725dee438e1e51d8851e61ed879744964f074d208f9ffc1307c6e8746ba8b",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-10-26T06:27:41.830614+00:00",
-      "fetchedAt": "2026-10-26T06:27:41.830614+00:00",
+      "sourceTime": "2026-10-26T06:32:27.372837+00:00",
+      "fetchedAt": "2026-10-26T06:32:27.372837+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "a6e371e29f3174aac21dd6a8d9b51e46bea26749e67cd724e3705071955f9ae4",
+      "checksum": "8bea2ac1d3c30e57b3358502d55a3dde66cedc947bde005a8b16a0970234c3c5",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,16 +56,16 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-10-26T06:28:00.377563+00:00",
-      "lastSnapshotId": "47aa1f64-5786-4b21-ba3e-ec4dd0184a62",
-      "lastResult": "waiting_for_confirmation",
-      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
-      "todayCycles": 41,
-      "todayCandidates": 328,
+      "lastCycleAt": "2026-10-26T06:32:45.812549+00:00",
+      "lastSnapshotId": "20d88a19-4354-48b9-87af-22c2c20013b6",
+      "lastResult": "no_position_sized_signal",
+      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
+      "todayCycles": 42,
+      "todayCandidates": 336,
       "todayAttempted": 1,
       "todayFilled": 1,
       "todayRejected": 0,
-      "todayCancelled": 0
+      "todayCancelled": 1
     },
     "reset": {
       "occurredAt": "2026-09-08T08:13:15.229076+00:00",
@@ -103,12 +103,12 @@
         "signal": "A",
         "candidateScore": "55.0",
         "costBasis": "3387.22",
-        "latestPrice": "16.85",
-        "marketValue": "3370.00",
-        "unrealizedPnl": "-17.22",
-        "returnPct": "-0.005083815045966899109003843860",
-        "priceChangePct": "-0.0035481963335304553518628031",
-        "quoteTime": "2026-10-26T06:28:00+00:00",
+        "latestPrice": "16.93",
+        "marketValue": "3386.00",
+        "unrealizedPnl": "-1.22",
+        "returnPct": "-0.0003601773725946351285124674512",
+        "priceChangePct": "0.001182732111176818450620934",
+        "quoteTime": "2026-10-26T06:32:45+00:00",
         "quoteSource": "腾讯财经个股行情",
         "valuationStatus": "已估值"
       }
@@ -2370,6 +2370,16 @@
           "participationCap": "0.01"
         },
         "name": "顺网科技"
+      },
+      {
+        "sequence": 2020,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-10-26T06:32:45.812549+00:00",
+        "code": "002420",
+        "signalSnapshotId": "47aa1f64-5786-4b21-ba3e-ec4dd0184a62",
+        "supersededBySnapshotId": "20d88a19-4354-48b9-87af-22c2c20013b6",
+        "reason": "最新快照已撤销或改变原可执行评级",
+        "name": "毅昌科技"
       }
     ],
     "fills": [
@@ -4447,8 +4457,8 @@
     "fees": "197.06",
     "slippageRateTotal": "0.03374221661257362663781704532",
     "realizedPnl": "-1616.84",
-    "unrealizedPnl": "-17.22",
-    "equity": "48365.94",
+    "unrealizedPnl": "-1.22",
+    "equity": "48381.94",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -4459,13 +4469,13 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "47aa1f64-5786-4b21-ba3e-ec4dd0184a62",
-    "capturedAt": "2026-10-26T06:28:05.290783+00:00",
-    "valuationAsOf": "2026-10-26T06:26:51+00:00",
-    "marketValue": "3370.00",
-    "totalPnl": "-1634.06",
-    "totalReturnPct": "-0.0326812",
-    "positionRatio": "0.06967713229599176610647906357",
+    "snapshotId": "20d88a19-4354-48b9-87af-22c2c20013b6",
+    "capturedAt": "2026-10-26T06:32:50.106251+00:00",
+    "valuationAsOf": "2026-10-26T06:31:48+00:00",
+    "marketValue": "3386.00",
+    "totalPnl": "-1618.06",
+    "totalReturnPct": "-0.0323612",
+    "positionRatio": "0.06998479184588298856970183502",
     "closedTradeCount": 14,
     "winRate": "0.2142857142857142857142857143"
   }
