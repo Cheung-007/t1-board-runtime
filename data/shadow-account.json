@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-03T02:22:18+00:00",
+  "asOf": "2026-11-03T02:28:21+00:00",
   "dataStatus": "live",
-  "freshness": 150,
-  "nextRefreshDueAt": "2026-11-03T02:25:00+00:00",
+  "freshness": 140,
+  "nextRefreshDueAt": "2026-11-03T02:30:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-03T10:22:18+08:00",
-      "fetchedAt": "2026-11-03T02:22:22.288785+00:00",
-      "freshness": 4,
+      "sourceTime": "2026-11-03T10:28:21+08:00",
+      "fetchedAt": "2026-11-03T02:28:24.370465+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "3f323b75c6bd651b3a449501173cedc296f766ab46cfaa9c826cbc287a0bb302",
+      "checksum": "5dee880a5be84fcad16f5b1468dbe8034407b784b3578d09d44784b9123760b3",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-03T02:23:05.705801+00:00",
-      "fetchedAt": "2026-11-03T02:23:05.705801+00:00",
+      "sourceTime": "2026-11-03T02:29:00.537332+00:00",
+      "fetchedAt": "2026-11-03T02:29:00.537332+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "8e5bf4210f38f5d7b4fc7c95dbf6f87ad8f8319cf6037b1f4fe5928773eacf79",
+      "checksum": "5f2f62945232aee6072142c1f9ab126f0fb95855bd485c59f014f6b90034bb20",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-10-30T05:03:01.318067+00:00",
-      "fetchedAt": "2026-11-03T02:23:12.632438+00:00",
-      "freshness": 336011,
+      "fetchedAt": "2026-11-03T02:29:05.344941+00:00",
+      "freshness": 336364,
       "completeness": 1.0,
       "checksum": "3c3036128e2de0ea51bc19feb510e80185420843d1de629ef6d0ae6c92aabd92",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-03T02:23:12.780140+00:00",
-      "fetchedAt": "2026-11-03T02:23:12.780140+00:00",
+      "sourceTime": "2026-11-03T02:29:05.538123+00:00",
+      "fetchedAt": "2026-11-03T02:29:05.538123+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "4074ad89ac09cc665a5c05011872366ef5b9ae8e2bd4d9ba163b28d042fb468b",
+      "checksum": "90852c1b6deac547e0d6b8d1007637db5e3968fa84a8bed559ac1c8fbc94a91e",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,16 +56,16 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-03T02:24:40.738145+00:00",
-      "lastSnapshotId": "c29b1f86-c2e9-4199-b7ee-4ca9e56ac34e",
+      "lastCycleAt": "2026-11-03T02:30:33.001222+00:00",
+      "lastSnapshotId": "51af59b0-bd17-405f-9c95-f197605ad21c",
       "lastResult": "waiting_for_confirmation",
       "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
-      "todayCycles": 12,
-      "todayCandidates": 96,
+      "todayCycles": 14,
+      "todayCandidates": 112,
       "todayAttempted": 0,
       "todayFilled": 0,
       "todayRejected": 0,
-      "todayCancelled": 1
+      "todayCancelled": 2
     },
     "reset": {
       "occurredAt": "2026-09-08T08:13:15.229076+00:00",
@@ -2447,6 +2447,16 @@
         "supersededBySnapshotId": "c29b1f86-c2e9-4199-b7ee-4ca9e56ac34e",
         "reason": "确认快照涨幅已超出A级可执行区间",
         "name": "久之洋"
+      },
+      {
+        "sequence": 2527,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-11-03T02:30:33.001222+00:00",
+        "code": "300516",
+        "signalSnapshotId": "51af59b0-bd17-405f-9c95-f197605ad21c",
+        "supersededBySnapshotId": "51af59b0-bd17-405f-9c95-f197605ad21c",
+        "reason": "确认快照涨幅已超出A级可执行区间",
+        "name": "久之洋"
       }
     ],
     "fills": [
@@ -4597,9 +4607,9 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "c29b1f86-c2e9-4199-b7ee-4ca9e56ac34e",
-    "capturedAt": "2026-11-03T02:24:47.665680+00:00",
-    "valuationAsOf": "2026-11-03T02:22:18+00:00",
+    "snapshotId": "51af59b0-bd17-405f-9c95-f197605ad21c",
+    "capturedAt": "2026-11-03T02:30:39.738274+00:00",
+    "valuationAsOf": "2026-11-03T02:28:21+00:00",
     "marketValue": "0.00",
     "totalPnl": "-1708.92",
     "totalReturnPct": "-0.0341784",
