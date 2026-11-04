@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-04T06:54:54+00:00",
+  "asOf": "2026-11-04T06:59:00+00:00",
   "dataStatus": "live",
   "data": {
     "source": "current-strategy-intraday-snapshots",
@@ -4454,6 +4454,230 @@
           "retailBuyBlocked": false,
           "retailExecutionStatus": "需实时卖盘确认",
           "formalRank": 22,
+          "candidateTier": "qualified",
+          "recommendationLabel": "B3｜当前不买，原因：现价偏离VWAP超过6%，追价风险偏高"
+        }
+      },
+      {
+        "code": "300751",
+        "tradingDate": "2026-11-04",
+        "capturedAt": "2026-11-04T07:01:11.438929",
+        "sourceTime": "2026-11-04T06:59:00",
+        "price": 142.08,
+        "amount": 1388440000.0,
+        "vwap": 131.845,
+        "rawScore": 59.0,
+        "rawBand": "B",
+        "signal": "B",
+        "executionState": "收盘参考，下个交易日重算",
+        "theme": "先进封装",
+        "themeRank": 4,
+        "themeHeat": 69.4,
+        "payload": {
+          "code": "300751",
+          "name": "迈为股份",
+          "exchange": "SZSE",
+          "securityType": "stock",
+          "signal": "B",
+          "scoreBand": "B",
+          "rawScore": 59.0,
+          "rawBand": "B",
+          "bLevel": "B3",
+          "totalScore": 59.0,
+          "marketScore": 15.75,
+          "themeScore": 24.0,
+          "themeScoreDetails": {
+            "topBoard": 14.0,
+            "stage": 10.0,
+            "leader": 0.0
+          },
+          "capitalScore": 25.0,
+          "theme": "先进封装",
+          "themeRank": 4,
+          "themeHeat": 69.4,
+          "vwap": 131.845,
+          "intradayVwap": 131.845,
+          "vwapStatus": "站在VWAP上方",
+          "vwapSource": "腾讯分钟线",
+          "vwapSourceTime": "2026-11-04T14:59:00+08:00",
+          "vwapCumulativeVolume": 10530900.0,
+          "vwapCumulativeAmount": 1388446005.55,
+          "vwapAboveStreak": 10,
+          "quoteTime": "2026-11-04T06:59:00+00:00",
+          "volumeRatio": 1.25,
+          "weekChangePct": 9.35,
+          "dailyBars": [
+            [
+              "2026-10-27",
+              "135.000",
+              "129.250",
+              "139.400",
+              "128.950",
+              "32711.000"
+            ],
+            [
+              "2026-10-28",
+              "130.300",
+              "129.930",
+              "132.280",
+              "122.350",
+              "66799.000"
+            ],
+            [
+              "2026-10-29",
+              "130.080",
+              "136.450",
+              "140.020",
+              "128.030",
+              "103768.000"
+            ],
+            [
+              "2026-10-30",
+              "131.990",
+              "119.050",
+              "132.900",
+              "119.050",
+              "98129.000"
+            ],
+            [
+              "2026-11-02",
+              "120.160",
+              "127.310",
+              "129.370",
+              "116.510",
+              "86855.000"
+            ],
+            [
+              "2026-11-03",
+              "126.490",
+              "121.210",
+              "130.900",
+              "120.530",
+              "64801.000"
+            ]
+          ],
+          "dailySource": "腾讯不复权日线",
+          "dailyFetchStatus": "ok",
+          "vwapSampleCount": 10,
+          "vwapBelowCount": 0,
+          "price": 142.08,
+          "changePct": 17.22,
+          "amount": 1388440000.0,
+          "turnoverRate": 5.46,
+          "floatMarketCap": 27400000000.0,
+          "netInflow": 157174200.0,
+          "netInflowRatio": 0.1132020109,
+          "flow5d": 1366110799.9999998,
+          "technical": [
+            "趋势向上",
+            "突破/动量",
+            "量能放大",
+            "资金与价格同向"
+          ],
+          "technicalScore": 10.0,
+          "entryWindow": "B3｜当前不买，原因：现价偏离VWAP超过6%，追价风险偏高",
+          "suggestedPosition": 0,
+          "shadowMinLotCost": 14228.11,
+          "shadowAffordable": false,
+          "invalidation": "高开过度、跌破盘中均价、所属热点明显退潮时取消",
+          "nextDayDiscipline": "亏损6%止损；冲高3%分批止盈；未走强14:50退出",
+          "riskTags": [],
+          "liquidityTags": [],
+          "executionState": "收盘参考，下个交易日重算",
+          "executionReason": "现价偏离VWAP超过6%，追价风险偏高",
+          "actionLocked": true,
+          "lockReasons": [
+            "盘后候选需在下个交易日交易时段重新确认",
+            "现价偏离VWAP超过6%，追价风险偏高"
+          ],
+          "selectionReason": "先进封装位居热点第4；资金、涨跌幅和技术快照已完成核对",
+          "sourceTrace": [
+            "腾讯财经行情",
+            "同花顺概念资金",
+            "腾讯zljlr大单资金强度",
+            "上交所/深交所上市清单"
+          ],
+          "noviceFit": false,
+          "entryEvidence": {
+            "version": "entry-evidence-v4",
+            "score": 50,
+            "scoreMeaning": "证据与买点质量，非胜率",
+            "vwapGapPct": 7.7629,
+            "liquidityAmountThreshold": 199166666.67,
+            "trendMode": "unconfirmed",
+            "flowToAmountRatio": 0.113202,
+            "daily": {
+              "status": "complete",
+              "throughDate": "2026-11-03",
+              "sampleCount": 6,
+              "dates": [
+                "2026-10-27",
+                "2026-10-28",
+                "2026-10-29",
+                "2026-10-30",
+                "2026-11-02",
+                "2026-11-03"
+              ],
+              "closes": [
+                129.25,
+                129.93,
+                136.45,
+                119.05,
+                127.31,
+                121.21
+              ],
+              "previousClose": 121.21,
+              "priorFiveDayChangePct": -6.2205,
+              "upDays": 3,
+              "aboveMA5": false,
+              "priorMA5": 126.79,
+              "currentVsMA5Pct": 12.0593,
+              "source": "腾讯不复权日线"
+            },
+            "risks": [
+              "现价偏离VWAP超过6%，追价风险偏高"
+            ],
+            "sChecks": {
+              "rawStrength": false,
+              "entryQuality": false,
+              "dailyHistory": true,
+              "trend": false,
+              "moderateGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "minuteEvidence": true,
+              "themeLeadership": false
+            },
+            "sEligible": false,
+            "aChecks": {
+              "rawStrength": true,
+              "entryQuality": false,
+              "dailyHistory": true,
+              "trend": false,
+              "controlledGain": false,
+              "nearVwap": false,
+              "flow": true,
+              "liquidity": true,
+              "technical": true,
+              "minuteEvidence": true,
+              "topTheme": true
+            },
+            "aEligible": false,
+            "components": {
+              "entry": 0,
+              "capital": 25,
+              "trend": 10,
+              "theme": 10,
+              "liquidity": 5
+            }
+          },
+          "strategyVersion": "entry-evidence-v4",
+          "personalizedReason": "题材#4 先进封装；热度69.4；今日+17.22%；成交额13.9亿；换手5.5%；趋势向上、突破/动量；站在VWAP上方；距VWAP +7.76%；此前5日-6.22%，5日中3日上涨；现价偏离VWAP超过6%，追价风险偏高",
+          "personalizedAdvice": "现价142.08元当前不执行，系统已确认障碍：现价偏离VWAP超过6%，追价风险偏高。",
+          "retailBuyBlocked": false,
+          "retailExecutionStatus": "需实时卖盘确认",
+          "formalRank": 13,
           "candidateTier": "qualified",
           "recommendationLabel": "B3｜当前不买，原因：现价偏离VWAP超过6%，追价风险偏高"
         }
