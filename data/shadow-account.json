@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-06T05:22:33+00:00",
+  "asOf": "2026-11-06T05:28:03+00:00",
   "dataStatus": "live",
-  "freshness": 76,
-  "nextRefreshDueAt": "2026-11-06T05:25:00+00:00",
+  "freshness": 141,
+  "nextRefreshDueAt": "2026-11-06T05:30:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-06T13:22:33+08:00",
-      "fetchedAt": "2026-11-06T05:22:35.591115+00:00",
+      "sourceTime": "2026-11-06T13:28:03+08:00",
+      "fetchedAt": "2026-11-06T05:28:05.549661+00:00",
       "freshness": 2,
       "completeness": 1.0,
-      "checksum": "c1372ac9ce3f10bca4923ad99ca477e15825267f0c1a9d0ed02364e4f4a850ef",
+      "checksum": "1b5bf90572aa58b9d4b5110367a43d9d8f633a5949f8a6034956f0e0c96cd8f7",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-06T05:23:16.638610+00:00",
-      "fetchedAt": "2026-11-06T05:23:16.638610+00:00",
+      "sourceTime": "2026-11-06T05:28:45.703819+00:00",
+      "fetchedAt": "2026-11-06T05:28:45.703819+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "2f39b6b6a7b5cc5d12490597e37ca4817f72b20db4e882ffd8b1f990f6dde4e5",
+      "checksum": "d259cbe7cb748cc7e3faa652fb76f5bda11aaf07374a64bd6c3a7b0cc2ce7d7b",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-11-06T05:07:50.979917+00:00",
-      "fetchedAt": "2026-11-06T05:23:21.274551+00:00",
-      "freshness": 930,
+      "fetchedAt": "2026-11-06T05:28:50.283590+00:00",
+      "freshness": 1259,
       "completeness": 1.0,
       "checksum": "02739163518fa22815da8673e76dc2f4759a7213ecd63ea5015e749635fedbed",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-06T05:23:21.462356+00:00",
-      "fetchedAt": "2026-11-06T05:23:21.462356+00:00",
+      "sourceTime": "2026-11-06T05:28:50.438730+00:00",
+      "fetchedAt": "2026-11-06T05:28:50.438730+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "ff5e154cf37e38bde331758094a87d0268f02b1bd31122a6f90a32d270ed67d8",
+      "checksum": "068a5d4b69b4d2b3134b88c952cde7d1e15e49b39766ca96c61d53c1b8036cb4",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,16 +56,16 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-06T05:23:42.258815+00:00",
-      "lastSnapshotId": "686462be-f109-44a9-9862-26e27463b6eb",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 31,
-      "todayCandidates": 240,
+      "lastCycleAt": "2026-11-06T05:30:16.883706+00:00",
+      "lastSnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
+      "lastResult": "waiting_for_confirmation",
+      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
+      "todayCycles": 33,
+      "todayCandidates": 256,
       "todayAttempted": 0,
       "todayFilled": 0,
-      "todayRejected": 1,
-      "todayCancelled": 0
+      "todayRejected": 2,
+      "todayCancelled": 1
     },
     "reset": {
       "occurredAt": "2026-09-08T08:13:15.229076+00:00",
@@ -2466,6 +2466,25 @@
         "signalSnapshotId": "b2d67d94-745a-479b-86d5-29ffdd139b93",
         "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
         "name": "模塑科技"
+      },
+      {
+        "sequence": 2839,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-11-06T05:30:16.883706+00:00",
+        "code": "002488",
+        "signalSnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
+        "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
+        "name": "金固股份"
+      },
+      {
+        "sequence": 2840,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-11-06T05:30:16.883706+00:00",
+        "code": "600410",
+        "signalSnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
+        "supersededBySnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
+        "reason": "确认快照已偏离实时VWAP，A级买点失效",
+        "name": "华胜天成"
       }
     ],
     "fills": [
@@ -4607,6 +4626,15 @@
         "signalSnapshotId": "b2d67d94-745a-479b-86d5-29ffdd139b93",
         "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
         "name": "模塑科技"
+      },
+      {
+        "sequence": 2839,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-11-06T05:30:16.883706+00:00",
+        "code": "002488",
+        "signalSnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
+        "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
+        "name": "金固股份"
       }
     ],
     "correctedInvalidOrders": 0,
@@ -4625,9 +4653,9 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "686462be-f109-44a9-9862-26e27463b6eb",
-    "capturedAt": "2026-11-06T05:23:48.522972+00:00",
-    "valuationAsOf": "2026-11-06T05:22:33+00:00",
+    "snapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
+    "capturedAt": "2026-11-06T05:30:23.712971+00:00",
+    "valuationAsOf": "2026-11-06T05:28:03+00:00",
     "marketValue": "0.00",
     "totalPnl": "-1708.92",
     "totalReturnPct": "-0.0341784",
