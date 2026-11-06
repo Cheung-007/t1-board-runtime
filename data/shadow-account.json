@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-06T05:28:03+00:00",
+  "asOf": "2026-11-06T05:34:15+00:00",
   "dataStatus": "live",
-  "freshness": 141,
-  "nextRefreshDueAt": "2026-11-06T05:30:00+00:00",
+  "freshness": 149,
+  "nextRefreshDueAt": "2026-11-06T05:35:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-06T13:28:03+08:00",
-      "fetchedAt": "2026-11-06T05:28:05.549661+00:00",
-      "freshness": 2,
+      "sourceTime": "2026-11-06T13:34:15+08:00",
+      "fetchedAt": "2026-11-06T05:34:18.035996+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "1b5bf90572aa58b9d4b5110367a43d9d8f633a5949f8a6034956f0e0c96cd8f7",
+      "checksum": "906fee83a37f7c9dd54888a720c1f9598a35d6b562325b9b8979959c6b3fc538",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-06T05:28:45.703819+00:00",
-      "fetchedAt": "2026-11-06T05:28:45.703819+00:00",
+      "sourceTime": "2026-11-06T05:34:59.146043+00:00",
+      "fetchedAt": "2026-11-06T05:34:59.146043+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "d259cbe7cb748cc7e3faa652fb76f5bda11aaf07374a64bd6c3a7b0cc2ce7d7b",
+      "checksum": "cd79c9fc8af542de26c1a4102afac523d08f2e9165ebbb735e7c19052d62c4bf",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-11-06T05:07:50.979917+00:00",
-      "fetchedAt": "2026-11-06T05:28:50.283590+00:00",
-      "freshness": 1259,
+      "fetchedAt": "2026-11-06T05:35:06.161186+00:00",
+      "freshness": 1635,
       "completeness": 1.0,
       "checksum": "02739163518fa22815da8673e76dc2f4759a7213ecd63ea5015e749635fedbed",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-06T05:28:50.438730+00:00",
-      "fetchedAt": "2026-11-06T05:28:50.438730+00:00",
+      "sourceTime": "2026-11-06T05:35:06.337538+00:00",
+      "fetchedAt": "2026-11-06T05:35:06.337538+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "068a5d4b69b4d2b3134b88c952cde7d1e15e49b39766ca96c61d53c1b8036cb4",
+      "checksum": "0b52c9515911231d7408e5362d0a7cf5c47d67acfe55f48dd78078c4e9f5587b",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,14 +56,14 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-06T05:30:16.883706+00:00",
-      "lastSnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
-      "lastResult": "waiting_for_confirmation",
-      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
-      "todayCycles": 33,
-      "todayCandidates": 256,
-      "todayAttempted": 0,
-      "todayFilled": 0,
+      "lastCycleAt": "2026-11-06T05:36:34.433196+00:00",
+      "lastSnapshotId": "6f4ce009-82d2-4bab-8a48-5ca4a868cb0e",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 35,
+      "todayCandidates": 272,
+      "todayAttempted": 1,
+      "todayFilled": 1,
       "todayRejected": 2,
       "todayCancelled": 1
     },
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "48291.08",
+    "cash": "44121.82",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,7 +88,31 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [],
+    "positions": [
+      {
+        "code": "002488",
+        "quantity": 600,
+        "price": "6.94",
+        "buyFees": "5.26",
+        "name": "金固股份",
+        "boughtAt": "2026-11-06T05:36:33+00:00",
+        "buySequence": 2844,
+        "buyReason": "题材#2 比亚迪概念；热度69.7；今日+6.79%；成交额3.5亿；换手5.5%；趋势向上、突破/动量；站在VWAP上方；距VWAP +0.99%；此前5日+6.06%，5日中3日上涨",
+        "tradeDate": "2026-11-06",
+        "signalSnapshotId": "6f4ce009-82d2-4bab-8a48-5ca4a868cb0e",
+        "signal": "A",
+        "candidateScore": "56.0",
+        "costBasis": "4169.26",
+        "latestPrice": "6.94",
+        "marketValue": "4164.00",
+        "unrealizedPnl": "-5.26",
+        "returnPct": "-0.001261614770966550419019202448",
+        "priceChangePct": "0",
+        "quoteTime": "2026-11-06T05:36:39+00:00",
+        "quoteSource": "腾讯财经个股行情",
+        "valuationStatus": "已估值"
+      }
+    ],
     "orders": [
       {
         "sequence": 307,
@@ -2485,6 +2509,67 @@
         "supersededBySnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
         "reason": "确认快照已偏离实时VWAP，A级买点失效",
         "name": "华胜天成"
+      },
+      {
+        "sequence": 2844,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-11-06T05:36:33+00:00",
+        "code": "002488",
+        "quantity": 600,
+        "price": "6.94",
+        "notional": "4164.00",
+        "fees": "5.26",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.14",
+          "regulatoryFee": "0.08",
+          "total": "5.26"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-11-06",
+        "signalSnapshotId": "6f4ce009-82d2-4bab-8a48-5ca4a868cb0e",
+        "signal": "A",
+        "candidateScore": "56.0",
+        "strategyVersion": "v1.3.3",
+        "dataVersion": "v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionModel": "retail-book-v1",
+        "signalAt": "2026-11-06T05:35:25.017376+00:00",
+        "executionEvidence": {
+          "price": 6.93,
+          "name": "金固股份",
+          "quoteTime": "2026-11-06T13:36:33+08:00",
+          "bid": 6.92,
+          "bidVolume": 55600,
+          "ask": 6.93,
+          "askVolume": 28000,
+          "limitUp": 7.13,
+          "limitDown": 5.83,
+          "source": "腾讯实时五档",
+          "previousClose": 6.48,
+          "open": 6.34,
+          "observedAt": "2026-11-06T05:36:34.433196+00:00",
+          "minutePrevious": {
+            "date": "2026-11-06",
+            "time": "13:35",
+            "price": 6.91,
+            "volume": 504657.0,
+            "amount": 345801803.88
+          },
+          "minuteLatest": {
+            "date": "2026-11-06",
+            "time": "13:36",
+            "price": 6.93,
+            "volume": 505491.0,
+            "amount": 346379121.88
+          },
+          "incrementalVolumeShares": 83400,
+          "incrementalAmount": "577318.00",
+          "participationCap": "0.01"
+        },
+        "name": "金固股份"
       }
     ],
     "fills": [
@@ -4561,6 +4646,67 @@
         "returnPct": "-0.02718453481025737920772787123",
         "buyPrice": "16.91",
         "boughtAt": "2026-10-26T06:08:57+00:00"
+      },
+      {
+        "sequence": 2844,
+        "eventType": "BUY_FILLED",
+        "occurredAt": "2026-11-06T05:36:33+00:00",
+        "code": "002488",
+        "quantity": 600,
+        "price": "6.94",
+        "notional": "4164.00",
+        "fees": "5.26",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "0.00",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.14",
+          "regulatoryFee": "0.08",
+          "total": "5.26"
+        },
+        "slippageRate": "0.001",
+        "tradeDate": "2026-11-06",
+        "signalSnapshotId": "6f4ce009-82d2-4bab-8a48-5ca4a868cb0e",
+        "signal": "A",
+        "candidateScore": "56.0",
+        "strategyVersion": "v1.3.3",
+        "dataVersion": "v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionModel": "retail-book-v1",
+        "signalAt": "2026-11-06T05:35:25.017376+00:00",
+        "executionEvidence": {
+          "price": 6.93,
+          "name": "金固股份",
+          "quoteTime": "2026-11-06T13:36:33+08:00",
+          "bid": 6.92,
+          "bidVolume": 55600,
+          "ask": 6.93,
+          "askVolume": 28000,
+          "limitUp": 7.13,
+          "limitDown": 5.83,
+          "source": "腾讯实时五档",
+          "previousClose": 6.48,
+          "open": 6.34,
+          "observedAt": "2026-11-06T05:36:34.433196+00:00",
+          "minutePrevious": {
+            "date": "2026-11-06",
+            "time": "13:35",
+            "price": 6.91,
+            "volume": 504657.0,
+            "amount": 345801803.88
+          },
+          "minuteLatest": {
+            "date": "2026-11-06",
+            "time": "13:36",
+            "price": 6.93,
+            "volume": 505491.0,
+            "amount": 346379121.88
+          },
+          "incrementalVolumeShares": 83400,
+          "incrementalAmount": "577318.00",
+          "participationCap": "0.01"
+        },
+        "name": "金固股份"
       }
     ],
     "rejectedOrders": [
@@ -4638,11 +4784,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "203.92",
-    "slippageRateTotal": "0.03474221661257362663781704532",
+    "fees": "209.18",
+    "slippageRateTotal": "0.03574221661257362663781704532",
     "realizedPnl": "-1708.92",
-    "unrealizedPnl": "0.00",
-    "equity": "48291.08",
+    "unrealizedPnl": "-5.26",
+    "equity": "48285.82",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -4653,13 +4799,13 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
-    "capturedAt": "2026-11-06T05:30:23.712971+00:00",
-    "valuationAsOf": "2026-11-06T05:28:03+00:00",
-    "marketValue": "0.00",
-    "totalPnl": "-1708.92",
-    "totalReturnPct": "-0.0341784",
-    "positionRatio": "0E+2",
+    "snapshotId": "6f4ce009-82d2-4bab-8a48-5ca4a868cb0e",
+    "capturedAt": "2026-11-06T05:36:42.908562+00:00",
+    "valuationAsOf": "2026-11-06T05:34:15+00:00",
+    "marketValue": "4164.00",
+    "totalPnl": "-1714.18",
+    "totalReturnPct": "-0.0342836",
+    "positionRatio": "0.08623649758873308975595733903",
     "closedTradeCount": 15,
     "winRate": "0.2"
   }
