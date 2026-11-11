@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-11T06:43:15+00:00",
+  "asOf": "2026-11-11T06:50:18+00:00",
   "dataStatus": "live",
-  "freshness": 152,
-  "nextRefreshDueAt": "2026-11-11T06:45:00+00:00",
+  "freshness": 114,
+  "nextRefreshDueAt": "2026-11-11T06:55:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-11T14:43:15+08:00",
-      "fetchedAt": "2026-11-11T06:43:19.012262+00:00",
-      "freshness": 4,
+      "sourceTime": "2026-11-11T14:50:18+08:00",
+      "fetchedAt": "2026-11-11T06:50:21.320846+00:00",
+      "freshness": 3,
       "completeness": 1.0,
-      "checksum": "1595a460fdde252df35cb175125052213919c3bb30e07e989cd700cf73f0672f",
+      "checksum": "56deb5215e3754f9346b7155baf7e1e04e07a65c1aebc7714f7199a0515fb0b0",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-11T06:45:10.195221+00:00",
-      "fetchedAt": "2026-11-11T06:45:10.195221+00:00",
+      "sourceTime": "2026-11-11T06:51:37.773122+00:00",
+      "fetchedAt": "2026-11-11T06:51:37.773122+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "836b72a93f9a658a8c5aad9da11bdb08e58c7803d03b4000718bac9c901199c7",
+      "checksum": "b67e87a8483e61082cc25b7b82744fcb6e4782c56dfabdcd500d7fac804866ba",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-11-06T06:31:19.361607+00:00",
-      "fetchedAt": "2026-11-11T06:45:20.183145+00:00",
-      "freshness": 432840,
+      "fetchedAt": "2026-11-11T06:51:44.540818+00:00",
+      "freshness": 433225,
       "completeness": 1.0,
       "checksum": "02739163518fa22815da8673e76dc2f4759a7213ecd63ea5015e749635fedbed",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-11T06:45:20.337138+00:00",
-      "fetchedAt": "2026-11-11T06:45:20.337138+00:00",
+      "sourceTime": "2026-11-11T06:51:44.687908+00:00",
+      "fetchedAt": "2026-11-11T06:51:44.687908+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "e5672fce50a2edc9528f9a56185fc5e1f74e0276ab1fa44e1b9d229e126b0f2a",
+      "checksum": "4e2d3c2f942b8b28433d4a34fcfc4f197d78bd254121475cd9cc3efb0731c8d3",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,14 +56,14 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-11T06:45:40.227771+00:00",
-      "lastSnapshotId": "a0eb1a2b-213f-42eb-bd30-68ddbe8688e2",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 42,
-      "todayCandidates": 336,
-      "todayAttempted": 1,
-      "todayFilled": 1,
+      "lastCycleAt": "2026-11-11T06:52:05.841202+00:00",
+      "lastSnapshotId": "8be39f0b-20e0-47c6-b7cf-99d47550cd4d",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 43,
+      "todayCandidates": 344,
+      "todayAttempted": 2,
+      "todayFilled": 2,
       "todayRejected": 0,
       "todayCancelled": 0
     },
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "46588.51",
+    "cash": "48638.35",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,32 +88,7 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [
-      {
-        "code": "002953",
-        "quantity": 200,
-        "price": "10.04",
-        "buyFees": "2.63",
-        "name": "日丰股份",
-        "boughtAt": "2026-11-10T02:49:27+00:00",
-        "buySequence": 2996,
-        "buyReason": "题材#1 粤港澳大湾区；热度69.8；今日+7.92%；成交额1.8亿；换手6.4%；趋势向上、突破/动量；站在VWAP上方；距VWAP +1.34%；此前5日+0.97%，5日中4日上涨",
-        "tradeDate": "2026-11-10",
-        "signalSnapshotId": "57b98e7b-80e3-4d8e-9a6a-6fde999dea84",
-        "signal": "A",
-        "candidateScore": "60.0",
-        "profitTaken": true,
-        "costBasis": "2010.63",
-        "latestPrice": "10.27",
-        "marketValue": "2054.00",
-        "unrealizedPnl": "43.37",
-        "returnPct": "0.02157035357077135027329742419",
-        "priceChangePct": "0.022908366533864541832669323",
-        "quoteTime": "2026-11-11T06:45:42+00:00",
-        "quoteSource": "腾讯财经个股行情",
-        "valuationStatus": "已估值"
-      }
-    ],
+    "positions": [],
     "orders": [
       {
         "sequence": 307,
@@ -3059,6 +3034,67 @@
         "returnPct": "0.04137509138926605093925784456",
         "buyPrice": "10.04",
         "boughtAt": "2026-11-10T02:49:27+00:00"
+      },
+      {
+        "sequence": 3144,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-11-11T06:52:00+00:00",
+        "code": "002953",
+        "quantity": 200,
+        "price": "10.28",
+        "notional": "2056.00",
+        "fees": "6.16",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "1.03",
+          "transferFee": "0.02",
+          "exchangeHandling": "0.07",
+          "regulatoryFee": "0.04",
+          "total": "6.16"
+        },
+        "slippageRate": "0.001",
+        "signalSnapshotId": "8be39f0b-20e0-47c6-b7cf-99d47550cd4d",
+        "orderType": "SELL",
+        "allocatedBuyFees": "2.63",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 10.3,
+          "name": "日丰股份",
+          "quoteTime": "2026-11-11T14:52:00+08:00",
+          "bid": 10.29,
+          "bidVolume": 42000,
+          "ask": 10.3,
+          "askVolume": 49000,
+          "limitUp": 10.98,
+          "limitDown": 8.98,
+          "source": "腾讯实时五档",
+          "previousClose": 9.98,
+          "open": 9.93,
+          "observedAt": "2026-11-11T06:52:05.841202+00:00",
+          "minutePrevious": {
+            "date": "2026-11-11",
+            "time": "14:51",
+            "price": 10.29,
+            "volume": 293702.0,
+            "amount": 300767189.8
+          },
+          "minuteLatest": {
+            "date": "2026-11-11",
+            "time": "14:52",
+            "price": 10.3,
+            "volume": 294512.0,
+            "amount": 301600668.81
+          },
+          "incrementalVolumeShares": 81000,
+          "incrementalAmount": "833479.01",
+          "participationCap": "0.01"
+        },
+        "name": "日丰股份",
+        "realizedPnl": "39.21",
+        "returnPct": "0.01950135032303307918413631548",
+        "buyPrice": "10.04",
+        "boughtAt": "2026-11-10T02:49:27+00:00"
       }
     ],
     "fills": [
@@ -5684,6 +5720,67 @@
         "returnPct": "0.04137509138926605093925784456",
         "buyPrice": "10.04",
         "boughtAt": "2026-11-10T02:49:27+00:00"
+      },
+      {
+        "sequence": 3144,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-11-11T06:52:00+00:00",
+        "code": "002953",
+        "quantity": 200,
+        "price": "10.28",
+        "notional": "2056.00",
+        "fees": "6.16",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "1.03",
+          "transferFee": "0.02",
+          "exchangeHandling": "0.07",
+          "regulatoryFee": "0.04",
+          "total": "6.16"
+        },
+        "slippageRate": "0.001",
+        "signalSnapshotId": "8be39f0b-20e0-47c6-b7cf-99d47550cd4d",
+        "orderType": "SELL",
+        "allocatedBuyFees": "2.63",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 10.3,
+          "name": "日丰股份",
+          "quoteTime": "2026-11-11T14:52:00+08:00",
+          "bid": 10.29,
+          "bidVolume": 42000,
+          "ask": 10.3,
+          "askVolume": 49000,
+          "limitUp": 10.98,
+          "limitDown": 8.98,
+          "source": "腾讯实时五档",
+          "previousClose": 9.98,
+          "open": 9.93,
+          "observedAt": "2026-11-11T06:52:05.841202+00:00",
+          "minutePrevious": {
+            "date": "2026-11-11",
+            "time": "14:51",
+            "price": 10.29,
+            "volume": 293702.0,
+            "amount": 300767189.8
+          },
+          "minuteLatest": {
+            "date": "2026-11-11",
+            "time": "14:52",
+            "price": 10.3,
+            "volume": 294512.0,
+            "amount": 301600668.81
+          },
+          "incrementalVolumeShares": 81000,
+          "incrementalAmount": "833479.01",
+          "participationCap": "0.01"
+        },
+        "name": "日丰股份",
+        "realizedPnl": "39.21",
+        "returnPct": "0.01950135032303307918413631548",
+        "buyPrice": "10.04",
+        "boughtAt": "2026-11-10T02:49:27+00:00"
       }
     ],
     "rejectedOrders": [
@@ -5761,11 +5858,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "257.49",
-    "slippageRateTotal": "0.04403253919321878792813962596",
-    "realizedPnl": "-1400.86",
-    "unrealizedPnl": "43.37",
-    "equity": "48642.51",
+    "fees": "263.65",
+    "slippageRateTotal": "0.04503253919321878792813962596",
+    "realizedPnl": "-1361.65",
+    "unrealizedPnl": "0.00",
+    "equity": "48638.35",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -5776,14 +5873,14 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "a0eb1a2b-213f-42eb-bd30-68ddbe8688e2",
-    "capturedAt": "2026-11-11T06:45:46.618181+00:00",
-    "valuationAsOf": "2026-11-11T06:43:15+00:00",
-    "marketValue": "2054.00",
-    "totalPnl": "-1357.49",
-    "totalReturnPct": "-0.0271498",
-    "positionRatio": "0.04222643938398738058541798110",
-    "closedTradeCount": 18,
-    "winRate": "0.2777777777777777777777777778"
+    "snapshotId": "8be39f0b-20e0-47c6-b7cf-99d47550cd4d",
+    "capturedAt": "2026-11-11T06:52:11.688827+00:00",
+    "valuationAsOf": "2026-11-11T06:50:18+00:00",
+    "marketValue": "0.00",
+    "totalPnl": "-1361.65",
+    "totalReturnPct": "-0.027233",
+    "positionRatio": "0E+2",
+    "closedTradeCount": 19,
+    "winRate": "0.3157894736842105263157894737"
   }
 }
