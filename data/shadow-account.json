@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-16T01:37:15+00:00",
+  "asOf": "2026-11-16T01:42:15+00:00",
   "dataStatus": "live",
-  "freshness": 48,
-  "nextRefreshDueAt": "2026-11-16T01:40:00+00:00",
+  "freshness": 47,
+  "nextRefreshDueAt": "2026-11-16T01:45:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-16T09:37:15+08:00",
-      "fetchedAt": "2026-11-16T01:37:19.436341+00:00",
-      "freshness": 4,
+      "sourceTime": "2026-11-16T09:42:15+08:00",
+      "fetchedAt": "2026-11-16T01:42:16.993214+00:00",
+      "freshness": 1,
       "completeness": 1.0,
-      "checksum": "b8aba7b9d342ab6ee3ccc3767d8340aa1a0cf5c7431b662118bd2ad50a92db81",
+      "checksum": "fcf6cf52d7bddf0e5edc46bab163bb9ff33fd263ad92b75b17df71ceb5830012",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-16T01:37:41.911267+00:00",
-      "fetchedAt": "2026-11-16T01:37:41.911267+00:00",
+      "sourceTime": "2026-11-16T01:42:39.245251+00:00",
+      "fetchedAt": "2026-11-16T01:42:39.245251+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "63e1c685a53ff70a573fb3c7ef44e69197280a0d850ca09a4c1399bd0dc1db3a",
+      "checksum": "2802de038cd79a670f33d3ed7d6992a2152faebec136eff066e1adaa66990803",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-11-12T07:05:23.269006+00:00",
-      "fetchedAt": "2026-11-16T01:37:46.459284+00:00",
-      "freshness": 325943,
+      "fetchedAt": "2026-11-16T01:42:44.480409+00:00",
+      "freshness": 326241,
       "completeness": 1.0,
       "checksum": "9404f8f4bfa4028043082e6c1939ac8735ee52bbdbb1118da125d2fc621ffe0d",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-16T01:37:46.645151+00:00",
-      "fetchedAt": "2026-11-16T01:37:46.645151+00:00",
+      "sourceTime": "2026-11-16T01:42:44.725118+00:00",
+      "fetchedAt": "2026-11-16T01:42:44.725118+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "cc880e0c6ee3e08a0d23c60855b898128b98d1c1c0ffdaca2b7ff3418c3b57cb",
+      "checksum": "ab3b36051eb0cee64b9a3ee854bbc56cd36806edc99f1c7d7bdd9f6b28b837ff",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,14 +56,14 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-16T01:37:58.236686+00:00",
-      "lastSnapshotId": "cb7db762-b3cf-46e6-accd-6f401853bde8",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 2,
-      "todayCandidates": 10,
-      "todayAttempted": 0,
-      "todayFilled": 0,
+      "lastCycleAt": "2026-11-16T01:42:58.180516+00:00",
+      "lastSnapshotId": "1006df95-ff2f-42db-8607-84f70333d0b7",
+      "lastResult": "filled",
+      "lastReason": "本轮存在可验证成交",
+      "todayCycles": 3,
+      "todayCandidates": 18,
+      "todayAttempted": 1,
+      "todayFilled": 1,
       "todayRejected": 0,
       "todayCancelled": 0
     },
@@ -78,7 +78,7 @@
       "executionModel": "retail-book-v1"
     },
     "initialCash": "50000.00",
-    "cash": "43908.05",
+    "cash": "48289.58",
     "maxPositions": 5,
     "rebalanceCount": 0,
     "rejectedReplacementCount": 0,
@@ -88,31 +88,7 @@
       "suggestedMaxPositions": null,
       "requiresUserApproval": true
     },
-    "positions": [
-      {
-        "code": "001330",
-        "quantity": 700,
-        "price": "6.75",
-        "buyFees": "5.30",
-        "name": "博纳影业",
-        "boughtAt": "2026-11-13T05:15:15+00:00",
-        "buySequence": 3302,
-        "buyReason": "题材#5 短剧游戏；热度69.2；今日+6.65%；成交额11.6亿；换手14.9%；趋势向上、突破/动量；站在VWAP上方；距VWAP +0.75%；此前5日+2.60%，5日中3日上涨",
-        "tradeDate": "2026-11-13",
-        "signalSnapshotId": "9f3a6fd3-844c-4436-b8f4-37988a2b13ef",
-        "signal": "A",
-        "candidateScore": "59.0",
-        "costBasis": "4730.30",
-        "latestPrice": "6.34",
-        "marketValue": "4438.00",
-        "unrealizedPnl": "-292.30",
-        "returnPct": "-0.06179312094370335919497706277",
-        "priceChangePct": "-0.0607407407407407407407407407",
-        "quoteTime": "2026-11-16T01:37:57+00:00",
-        "quoteSource": "腾讯财经个股行情",
-        "valuationStatus": "已估值"
-      }
-    ],
+    "positions": [],
     "orders": [
       {
         "sequence": 307,
@@ -3180,6 +3156,67 @@
           "participationCap": "0.01"
         },
         "name": "博纳影业"
+      },
+      {
+        "sequence": 3351,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-11-16T01:42:57+00:00",
+        "code": "001330",
+        "quantity": 700,
+        "price": "6.27",
+        "notional": "4389.00",
+        "fees": "7.47",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "2.19",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.15",
+          "regulatoryFee": "0.09",
+          "total": "7.47"
+        },
+        "slippageRate": "0.001592356687898089171974522293",
+        "signalSnapshotId": "1006df95-ff2f-42db-8607-84f70333d0b7",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.30",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 6.28,
+          "name": "博纳影业",
+          "quoteTime": "2026-11-16T09:42:57+08:00",
+          "bid": 6.28,
+          "bidVolume": 20800,
+          "ask": 6.3,
+          "askVolume": 81800,
+          "limitUp": 7.46,
+          "limitDown": 6.1,
+          "source": "腾讯实时五档",
+          "previousClose": 6.78,
+          "open": 6.77,
+          "observedAt": "2026-11-16T01:42:58.180516+00:00",
+          "minutePrevious": {
+            "date": "2026-11-16",
+            "time": "09:41",
+            "price": 6.36,
+            "volume": 348659.0,
+            "amount": 223913012.0
+          },
+          "minuteLatest": {
+            "date": "2026-11-16",
+            "time": "09:42",
+            "price": 6.31,
+            "volume": 363288.0,
+            "amount": 233166594.0
+          },
+          "incrementalVolumeShares": 1462900,
+          "incrementalAmount": "9253582.0",
+          "participationCap": "0.01"
+        },
+        "name": "博纳影业",
+        "realizedPnl": "-348.77",
+        "returnPct": "-0.07373105299875272181468405809",
+        "buyPrice": "6.75",
+        "boughtAt": "2026-11-13T05:15:15+00:00"
       }
     ],
     "fills": [
@@ -5927,6 +5964,67 @@
           "participationCap": "0.01"
         },
         "name": "博纳影业"
+      },
+      {
+        "sequence": 3351,
+        "eventType": "SELL_FILLED",
+        "occurredAt": "2026-11-16T01:42:57+00:00",
+        "code": "001330",
+        "quantity": 700,
+        "price": "6.27",
+        "notional": "4389.00",
+        "fees": "7.47",
+        "feeBreakdown": {
+          "commission": "5",
+          "stampDuty": "2.19",
+          "transferFee": "0.04",
+          "exchangeHandling": "0.15",
+          "regulatoryFee": "0.09",
+          "total": "7.47"
+        },
+        "slippageRate": "0.001592356687898089171974522293",
+        "signalSnapshotId": "1006df95-ff2f-42db-8607-84f70333d0b7",
+        "orderType": "SELL",
+        "allocatedBuyFees": "5.30",
+        "executionModel": "retail-book-v1",
+        "sourceTrace": "腾讯实时五档+分钟增量",
+        "executionEvidence": {
+          "price": 6.28,
+          "name": "博纳影业",
+          "quoteTime": "2026-11-16T09:42:57+08:00",
+          "bid": 6.28,
+          "bidVolume": 20800,
+          "ask": 6.3,
+          "askVolume": 81800,
+          "limitUp": 7.46,
+          "limitDown": 6.1,
+          "source": "腾讯实时五档",
+          "previousClose": 6.78,
+          "open": 6.77,
+          "observedAt": "2026-11-16T01:42:58.180516+00:00",
+          "minutePrevious": {
+            "date": "2026-11-16",
+            "time": "09:41",
+            "price": 6.36,
+            "volume": 348659.0,
+            "amount": 223913012.0
+          },
+          "minuteLatest": {
+            "date": "2026-11-16",
+            "time": "09:42",
+            "price": 6.31,
+            "volume": 363288.0,
+            "amount": 233166594.0
+          },
+          "incrementalVolumeShares": 1462900,
+          "incrementalAmount": "9253582.0",
+          "participationCap": "0.01"
+        },
+        "name": "博纳影业",
+        "realizedPnl": "-348.77",
+        "returnPct": "-0.07373105299875272181468405809",
+        "buyPrice": "6.75",
+        "boughtAt": "2026-11-13T05:15:15+00:00"
       }
     ],
     "rejectedOrders": [
@@ -6004,11 +6102,11 @@
       }
     ],
     "correctedInvalidOrders": 0,
-    "fees": "268.95",
-    "slippageRateTotal": "0.04603253919321878792813962596",
-    "realizedPnl": "-1361.65",
-    "unrealizedPnl": "-292.30",
-    "equity": "48346.05",
+    "fees": "276.42",
+    "slippageRateTotal": "0.04762489588111687710011414825",
+    "realizedPnl": "-1710.42",
+    "unrealizedPnl": "0.00",
+    "equity": "48289.58",
     "equityCurve": [
       {
         "value": "50000.00",
@@ -6019,14 +6117,14 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "cb7db762-b3cf-46e6-accd-6f401853bde8",
-    "capturedAt": "2026-11-16T01:38:02.866406+00:00",
-    "valuationAsOf": "2026-11-16T01:37:15+00:00",
-    "marketValue": "4438.00",
-    "totalPnl": "-1653.95",
-    "totalReturnPct": "-0.033079",
-    "positionRatio": "0.09179653766957176439440243826",
-    "closedTradeCount": 19,
-    "winRate": "0.3157894736842105263157894737"
+    "snapshotId": "1006df95-ff2f-42db-8607-84f70333d0b7",
+    "capturedAt": "2026-11-16T01:43:01.685403+00:00",
+    "valuationAsOf": "2026-11-16T01:42:15+00:00",
+    "marketValue": "0.00",
+    "totalPnl": "-1710.42",
+    "totalReturnPct": "-0.0342084",
+    "positionRatio": "0E+2",
+    "closedTradeCount": 20,
+    "winRate": "0.3"
   }
 }
