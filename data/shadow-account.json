@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-16T02:32:12+00:00",
+  "asOf": "2026-11-16T02:37:57+00:00",
   "dataStatus": "live",
-  "freshness": 131,
-  "nextRefreshDueAt": "2026-11-16T02:35:00+00:00",
+  "freshness": 130,
+  "nextRefreshDueAt": "2026-11-16T02:40:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-16T10:32:12+08:00",
-      "fetchedAt": "2026-11-16T02:32:13.790028+00:00",
-      "freshness": 1,
+      "sourceTime": "2026-11-16T10:37:57+08:00",
+      "fetchedAt": "2026-11-16T02:37:59.168893+00:00",
+      "freshness": 2,
       "completeness": 1.0,
-      "checksum": "cf4bf2bd54da6aac9e3a2f4b40589c6b509a4099a2029f3d98d813693397830f",
+      "checksum": "b331ec9e48947351f8188dea280a9f8a26a50aa260d2dda0299a874ef1040818",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-16T02:33:58.078838+00:00",
-      "fetchedAt": "2026-11-16T02:33:58.078838+00:00",
+      "sourceTime": "2026-11-16T02:38:27.599743+00:00",
+      "fetchedAt": "2026-11-16T02:38:27.599743+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "d95739bbca3c3941b7df7438c0b585aee44f3c3403ded7aa23a09cff5fbb8696",
+      "checksum": "825c8e4331648c9fe0d826faefd3639d89bdd707b110afbcb779b1c8f157c471",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-11-12T07:05:23.269006+00:00",
-      "fetchedAt": "2026-11-16T02:34:02.441421+00:00",
-      "freshness": 329319,
+      "fetchedAt": "2026-11-16T02:38:32.158210+00:00",
+      "freshness": 329588,
       "completeness": 1.0,
       "checksum": "9404f8f4bfa4028043082e6c1939ac8735ee52bbdbb1118da125d2fc621ffe0d",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-16T02:34:02.674038+00:00",
-      "fetchedAt": "2026-11-16T02:34:02.674038+00:00",
+      "sourceTime": "2026-11-16T02:38:32.430080+00:00",
+      "fetchedAt": "2026-11-16T02:38:32.430080+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "80b4bfb69b297b074eec81f29f8d247169bb4da90658c37bb8b8ef14df10dca1",
+      "checksum": "a5fd4bc48feaf0ac1024f392cb93b9cf939ac32349327808defdc918ebfbc589",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,15 +56,15 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-16T02:34:19.135928+00:00",
-      "lastSnapshotId": "8d362f26-39d9-49ff-b688-62cd5540c53e",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 14,
-      "todayCandidates": 106,
+      "lastCycleAt": "2026-11-16T02:39:59.429062+00:00",
+      "lastSnapshotId": "64b52eb1-d149-4f26-8a99-6be0d21cd08b",
+      "lastResult": "waiting_for_confirmation",
+      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
+      "todayCycles": 16,
+      "todayCandidates": 122,
       "todayAttempted": 1,
       "todayFilled": 1,
-      "todayRejected": 0,
+      "todayRejected": 1,
       "todayCancelled": 1
     },
     "reset": {
@@ -3227,6 +3227,15 @@
         "supersededBySnapshotId": "84eaed93-d2e3-4eca-bbfa-ac10016834eb",
         "reason": "确认快照已偏离实时VWAP，A级买点失效",
         "name": "吉视传媒"
+      },
+      {
+        "sequence": 3377,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-11-16T02:39:59.429062+00:00",
+        "code": "000628",
+        "signalSnapshotId": "64b52eb1-d149-4f26-8a99-6be0d21cd08b",
+        "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
+        "name": "高新发展"
       }
     ],
     "fills": [
@@ -6109,6 +6118,15 @@
         "signalSnapshotId": "7eba3650-6c0a-4257-ba9b-60f3a3848abd",
         "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
         "name": "金固股份"
+      },
+      {
+        "sequence": 3377,
+        "eventType": "ORDER_REJECTED",
+        "occurredAt": "2026-11-16T02:39:59.429062+00:00",
+        "code": "000628",
+        "signalSnapshotId": "64b52eb1-d149-4f26-8a99-6be0d21cd08b",
+        "reason": "缺少信号之后的同日新鲜盘口或分钟增量，未成交",
+        "name": "高新发展"
       }
     ],
     "correctedInvalidOrders": 0,
@@ -6127,9 +6145,9 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "8d362f26-39d9-49ff-b688-62cd5540c53e",
-    "capturedAt": "2026-11-16T02:34:22.729138+00:00",
-    "valuationAsOf": "2026-11-16T02:32:12+00:00",
+    "snapshotId": "64b52eb1-d149-4f26-8a99-6be0d21cd08b",
+    "capturedAt": "2026-11-16T02:40:05.736297+00:00",
+    "valuationAsOf": "2026-11-16T02:37:57+00:00",
     "marketValue": "0.00",
     "totalPnl": "-1710.42",
     "totalReturnPct": "-0.0342084",
