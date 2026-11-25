@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-11-25T05:09:48+00:00",
+  "asOf": "2026-11-25T05:15:48+00:00",
   "dataStatus": "live",
-  "freshness": 66,
-  "nextRefreshDueAt": "2026-11-25T05:10:00+00:00",
+  "freshness": 146,
+  "nextRefreshDueAt": "2026-11-25T05:20:00+00:00",
   "completeness": 1.0,
   "sourceTrace": [
     {
       "field": "quote",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-25T13:09:48+08:00",
-      "fetchedAt": "2026-11-25T05:09:51.125685+00:00",
-      "freshness": 3,
+      "sourceTime": "2026-11-25T13:15:48+08:00",
+      "fetchedAt": "2026-11-25T05:15:52.333175+00:00",
+      "freshness": 4,
       "completeness": 1.0,
-      "checksum": "1ff1945c351374451de01c00c189187e7eb8d864afacf7df08f9cf2d9c2d7c99",
+      "checksum": "3e5e4ad963ccb5c719418839c1fe5d7703547363d64bb0c234a337672ee3f2b8",
       "error": null,
       "semantics": "腾讯财经公开全市场行情；成交额单位统一为元，流通市值单位统一为元，不作为题材或资金口径"
     },
     {
       "field": "theme",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-25T05:10:21.339397+00:00",
-      "fetchedAt": "2026-11-25T05:10:21.339397+00:00",
+      "sourceTime": "2026-11-25T05:16:28.195133+00:00",
+      "fetchedAt": "2026-11-25T05:16:28.195133+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "9c886f086c37874f7e31af6034badaea4e991a9f4c0b69a0694db3aa63e3fbe9",
+      "checksum": "c88e8303266e9e1c5e6261087058b02210c6ac52ded5f8b6a083f0a4b805fb88",
       "error": null,
       "semantics": "同花顺公开概念成分页；涨幅、成分数量和领涨股来自页面成分行情聚合，未虚构资金净流入"
     },
@@ -31,8 +31,8 @@
       "field": "listing",
       "provider": "AKShare 1.18.94",
       "sourceTime": "2026-11-25T02:39:14.222579+00:00",
-      "fetchedAt": "2026-11-25T05:10:30.052419+00:00",
-      "freshness": 9075,
+      "fetchedAt": "2026-11-25T05:16:38.798166+00:00",
+      "freshness": 9444,
       "completeness": 1.0,
       "checksum": "66c60610c6839b125d999a062d6b237d40134ef1acdf96dc94d5de2e476d6b1e",
       "error": "交易所实时清单暂不可用，使用七日内官方清单缓存: ConnectionError",
@@ -41,11 +41,11 @@
     {
       "field": "capital",
       "provider": "AKShare 1.18.94",
-      "sourceTime": "2026-11-25T05:10:30.251893+00:00",
-      "fetchedAt": "2026-11-25T05:10:30.251893+00:00",
+      "sourceTime": "2026-11-25T05:16:39.064982+00:00",
+      "fetchedAt": "2026-11-25T05:16:39.064982+00:00",
       "freshness": 0,
       "completeness": 1.0,
-      "checksum": "627240d0bf5585b03629a6b9f4468e13e5e758a06c5fefc3dd7a972244c18125",
+      "checksum": "4f7707870d4c0d412d6409fc5617206530a47df0b6d61ce6fd5b93ede54d0e4b",
       "error": null,
       "semantics": "腾讯财经公开原始字段 zljlr（单位万元，转为元）与 zllc_d5（单位万元，转为元）；展示为腾讯大单资金强度，不代表主力净流入"
     }
@@ -56,16 +56,16 @@
     "executionModel": "retail-book-v1",
     "executionStatus": {
       "state": "running",
-      "lastCycleAt": "2026-11-25T05:10:47.860953+00:00",
-      "lastSnapshotId": "501570c0-a869-4040-bf16-ba74794f4094",
-      "lastResult": "no_position_sized_signal",
-      "lastReason": "本轮没有满足可模拟开仓的仓位条件；成交受限或等待条件的标的不提交买单",
-      "todayCycles": 23,
-      "todayCandidates": 184,
+      "lastCycleAt": "2026-11-25T05:18:05.890866+00:00",
+      "lastSnapshotId": "9319b311-a3b5-49f2-b823-08e367733ddc",
+      "lastResult": "waiting_for_confirmation",
+      "lastReason": "本轮可执行信号仍在等待下一快照确认或新鲜盘口证据",
+      "todayCycles": 25,
+      "todayCandidates": 200,
       "todayAttempted": 0,
       "todayFilled": 0,
       "todayRejected": 0,
-      "todayCancelled": 0
+      "todayCancelled": 1
     },
     "reset": {
       "occurredAt": "2026-09-08T08:13:15.229076+00:00",
@@ -3499,6 +3499,16 @@
         "returnPct": "-0.01955194099584653770866699228",
         "buyPrice": "26.36",
         "boughtAt": "2026-11-16T05:09:57+00:00"
+      },
+      {
+        "sequence": 4039,
+        "eventType": "ORDER_CANCELLED",
+        "occurredAt": "2026-11-25T05:18:05.890866+00:00",
+        "code": "603887",
+        "signalSnapshotId": "9319b311-a3b5-49f2-b823-08e367733ddc",
+        "supersededBySnapshotId": "9319b311-a3b5-49f2-b823-08e367733ddc",
+        "reason": "确认快照涨幅已超出A级可执行区间",
+        "name": "城地香江"
       }
     ],
     "fills": [
@@ -6661,9 +6671,9 @@
     "valuationStatus": "已按最新行情估值",
     "validationStatus": "策略验证中",
     "schemaVersion": 2,
-    "snapshotId": "501570c0-a869-4040-bf16-ba74794f4094",
-    "capturedAt": "2026-11-25T05:10:52.661909+00:00",
-    "valuationAsOf": "2026-11-25T05:09:48+00:00",
+    "snapshotId": "9319b311-a3b5-49f2-b823-08e367733ddc",
+    "capturedAt": "2026-11-25T05:18:13.167380+00:00",
+    "valuationAsOf": "2026-11-25T05:15:48+00:00",
     "marketValue": "0.00",
     "totalPnl": "-1657.01",
     "totalReturnPct": "-0.0331402",
